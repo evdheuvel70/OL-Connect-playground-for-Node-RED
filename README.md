@@ -3,5 +3,4 @@ OL-Connect-playground-for-Node-RED
 
 ### About
 
-This is your project's README.md file. It helps users understand what your
-project does, how to use it and anything else they may need to know.
+This project contains various flows to illustrate and test the integration of OL Connect in Node-RED.
