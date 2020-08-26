@@ -1,0 +1,12 @@
+{
+    "name": "OL-Connect-playground-for-Node-RED",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "ol-connect-playground.json",
+            "credentialsFile": "ol-connect-playground_cred.json"
+        }
+    }
+}
