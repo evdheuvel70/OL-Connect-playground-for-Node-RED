@@ -1,0 +1,24 @@
+{
+    "invoices": {
+      "invoice": [
+        {
+          "OrderNumber": "INV1187622",
+          "CustomerPO": "249321",
+          "CustomerNumber": "CU81211493",
+          "ContactEmail": "caryl.buckthought@example.com"
+        },
+        {
+          "OrderNumber": "INV1960975",
+          "CustomerPO": "291862",
+          "CustomerNumber": "CU60206942",
+          "ContactEmail": "radcliffe.formilli@example.com"
+        },
+        {
+          "OrderNumber": "INV1800088",
+          "CustomerPO": "272675",
+          "CustomerNumber": "CU57542925",
+          "ContactEmail": "teena.ure@example.com"
+        }
+      ]
+    }
+  }

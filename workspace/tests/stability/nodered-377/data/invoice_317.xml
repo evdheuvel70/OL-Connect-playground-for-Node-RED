@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1160876</OrderNumber>
+		<CustomerPO>476847</CustomerPO>
+		<CustomerNumber>CU62813428</CustomerNumber>
+		<SalesRep>Trace Dalrymple</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Floris</ContactFirstName>
+		<ContactLastName>Antliff</ContactLastName>
+		<ContactPhone>+1 (706) 718-4728</ContactPhone>
+		<ContactEmail>floris.antliff@example.com</ContactEmail>
+		<Company>Cogidoo</Company>
+		<StreetAddress>9045 Hayes Hill</StreetAddress>
+		<City>Markham</City>
+		<State>Ontario</State>
+		<Country>Canada</Country>
+		<ZipCode>L6E</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-CA</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>148738</Number>
+				<Description>Triple 8 Undercover Wrist Guards 2016</Description>
+				<UnitPrice>24.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>74.97</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>74.97</InvSubTotal>
+		<InvTaxTotal>11.25</InvTaxTotal>
+		<InvTotal>86.22</InvTotal>
+		<InvCurrencyCode>CAD</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

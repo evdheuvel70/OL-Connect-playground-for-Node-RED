@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<invoices>     
+  <invoice>
+    <OrderNumber>INV1187622</OrderNumber>   
+    <CustomerPO>249321</CustomerPO>  
+    <CustomerNumber>CU81211493</CustomerNumber>
+    <SalesRep>Stephan Peplaw</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Caryl</ContactFirstName>
+    <ContactLastName>Buckthought</ContactLastName> 
+    <ContactPhone>+1 (478) 320-2583</ContactPhone>
+    <ContactEmail>caryl.buckthought@example.com</ContactEmail>
+    <Company>Skibox</Company>
+    <StreetAddress>7 Hudson Plaza</StreetAddress> 
+    <City>Savannah</City>
+    <State>Georgia</State>  
+    <Country>United States</Country>
+    <ZipCode>31422</ZipCode>
+    <LanguageCode>en</LanguageCode>
+    <Locale>en-US</Locale>
+    <DeliveryDate>2019-05-30</DeliveryDate>
+    <Products>
+      <Product>
+        <Number>363372</Number>
+        <Description>Dakine Deluxe Tune Kit 2016</Description>
+        <UnitPrice>48.1</UnitPrice>
+        <Ordered>3</Ordered>
+        <Shipped>3</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>144.3</Total>
+      </Product>
+    </Products>
+    <InvSubTotal>144.3</InvSubTotal>
+    <InvTaxTotal>21.65</InvTaxTotal>
+    <InvTotal>165.95</InvTotal>
+    <InvCurrencyCode>USD</InvCurrencyCode>
+    <InvDueDate>2019-07-06</InvDueDate>
+    <InvStatus>Open</InvStatus>
+    <Reminders>0</Reminders>
+  </invoice>
+  <invoice> 
+    <OrderNumber>INV1960975</OrderNumber>
+    <CustomerPO>291862</CustomerPO>
+    <CustomerNumber>CU60206942</CustomerNumber>
+    <SalesRep>Obadiah Warhurst</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Radcliffe</ContactFirstName>
+    <ContactLastName>Formilli</ContactLastName>
+    <ContactPhone>+55 (164) 810-5738</ContactPhone>
+    <ContactEmail>radcliffe.formilli@example.com</ContactEmail>
+    <Company>Voomm</Company>
+    <StreetAddress>309 Lawn Alley</StreetAddress>
+    <City>Ibiúna</City>
+    <State/>
+    <Country>Brazil</Country>
+    <ZipCode>18150-000</ZipCode>
+    <LanguageCode>pt</LanguageCode>
+    <Locale>pt-BR</Locale>
+    <DeliveryDate>2019-05-30</DeliveryDate>
+    <Products>
+      <Product>
+        <Number>404947</Number>
+        <Description>Tubbs Wilderness Snowshoes</Description>
+        <UnitPrice>149.96</UnitPrice>
+        <Ordered>4</Ordered>
+        <Shipped>4</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>599.84</Total>
+      </Product>
+      <Product>
+        <Number>404658</Number>
+        <Description>Dakine Covert Snowboard Leash 2016</Description>
+        <UnitPrice>5.59</UnitPrice>
+        <Ordered>3</Ordered>
+        <Shipped>3</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>16.77</Total>
+      </Product>
+      <Product>
+        <Number>249294</Number>
+        <Description>Dakine Key Lock Snowboarding Tool</Description>
+        <UnitPrice>9.77</UnitPrice>
+        <Ordered>1</Ordered>
+        <Shipped>1</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>9.77</Total>
+      </Product>
+      <Product>
+        <Number>388459</Number>
+        <Description>K2 Missy Kids Skis with Marker Fastrack2 7.0 Bindings</Description>
+        <UnitPrice>278.95</UnitPrice>
+        <Ordered>4</Ordered>
+        <Shipped>4</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>1115.8</Total>
+      </Product>
+    </Products>
+    <InvSubTotal>1742.18</InvSubTotal>
+    <InvTaxTotal>261.33</InvTaxTotal>
+    <InvTotal>2003.51</InvTotal>
+    <InvCurrencyCode>BRL</InvCurrencyCode>
+    <InvDueDate>2019-07-06</InvDueDate>
+    <InvStatus>Paid</InvStatus>
+    <Reminders>0</Reminders>
+  </invoice>
+</invoices>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1639607</OrderNumber>
+		<CustomerPO>437226</CustomerPO>
+		<CustomerNumber>CU17101260</CustomerNumber>
+		<SalesRep>Victor Shankle</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Jacynth</ContactFirstName>
+		<ContactLastName>Ginn</ContactLastName>
+		<ContactPhone>+33 (744) 788-6539</ContactPhone>
+		<ContactEmail>jacynth.ginn@example.com</ContactEmail>
+		<Company>Twitterwire</Company>
+		<StreetAddress>8 Harbort Trail</StreetAddress>
+		<City>Coulommiers</City>
+		<State>Île-de-France</State>
+		<Country>France</Country>
+		<ZipCode>77529 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>363872</Number>
+				<Description>Swix F4 Universal Glide Wax 2016</Description>
+				<UnitPrice>15.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>15.99</Total>
+			</Product>
+			<Product>
+				<Number>368771</Number>
+				<Description>Tubbs 3 Piece Poles</Description>
+				<UnitPrice>44.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>134.97</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>150.96</InvSubTotal>
+		<InvTaxTotal>22.64</InvTaxTotal>
+		<InvTotal>173.6</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

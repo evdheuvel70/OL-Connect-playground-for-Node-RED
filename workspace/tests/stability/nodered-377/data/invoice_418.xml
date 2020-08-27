@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1416103</OrderNumber>
+		<CustomerPO>562713</CustomerPO>
+		<CustomerNumber>CU81351234</CustomerNumber>
+		<SalesRep>Weylin Siely</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Guinevere</ContactFirstName>
+		<ContactLastName>Raund</ContactLastName>
+		<ContactPhone>+33 (829) 302-1920</ContactPhone>
+		<ContactEmail>guinevere.raund@example.com</ContactEmail>
+		<Company>Youfeed</Company>
+		<StreetAddress>8 Sloan Park</StreetAddress>
+		<City>Valence</City>
+		<State>Rhône-Alpes</State>
+		<Country>France</Country>
+		<ZipCode>26029 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>173097</Number>
+				<Description>Triple 8 Bumsaver II Snowboard Pads 2016</Description>
+				<UnitPrice>59.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>119.98</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>119.98</InvSubTotal>
+		<InvTaxTotal>18</InvTaxTotal>
+		<InvTotal>137.98</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

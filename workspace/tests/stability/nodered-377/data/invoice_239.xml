@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1440600</OrderNumber>
+		<CustomerPO>343310</CustomerPO>
+		<CustomerNumber>CU63190739</CustomerNumber>
+		<SalesRep>Charley Birnie</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Jaquith</ContactFirstName>
+		<ContactLastName>Sturm</ContactLastName>
+		<ContactPhone>+33 (785) 347-2383</ContactPhone>
+		<ContactEmail>jaquith.sturm@example.com</ContactEmail>
+		<Company>Minyx</Company>
+		<StreetAddress>78 Karstens Center</StreetAddress>
+		<City>Valence</City>
+		<State>Rhône-Alpes</State>
+		<Country>France</Country>
+		<ZipCode>26907 CEDEX 9</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>389451</Number>
+				<Description>Gnu Riders Choice C2 Wide Snowboard 2016</Description>
+				<UnitPrice>391.94</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>391.94</Total>
+			</Product>
+			<Product>
+				<Number>400508</Number>
+				<Description>Burton Chopper Boys Snowboard 2016 130cm</Description>
+				<UnitPrice>132.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>531.76</Total>
+			</Product>
+			<Product>
+				<Number>117653</Number>
+				<Description>Swix Carving Kit 1</Description>
+				<UnitPrice>44.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>89.98</Total>
+			</Product>
+			<Product>
+				<Number>363424</Number>
+				<Description>Dakine Boot Locker 69L Ski Boot Bag </Description>
+				<UnitPrice>48</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>144</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1157.68</InvSubTotal>
+		<InvTaxTotal>173.65</InvTaxTotal>
+		<InvTotal>1331.33</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1138117</OrderNumber>
+		<CustomerPO>474207</CustomerPO>
+		<CustomerNumber>CU69738311</CustomerNumber>
+		<SalesRep>Haleigh Verecker</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Kelsey</ContactFirstName>
+		<ContactLastName>Staneland</ContactLastName>
+		<ContactPhone>+55 (263) 811-2864</ContactPhone>
+		<ContactEmail>kelsey.staneland@example.com</ContactEmail>
+		<Company>Babbleset</Company>
+		<StreetAddress>706 Shelley Point</StreetAddress>
+		<City>Três de Maio</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>98910-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>389451</Number>
+				<Description>Gnu Riders Choice C2 Wide Snowboard 2016</Description>
+				<UnitPrice>391.94</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1175.82</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1175.82</InvSubTotal>
+		<InvTaxTotal>176.37</InvTaxTotal>
+		<InvTotal>1352.19</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>2</Reminders>
+	</invoice>
+</invoices>

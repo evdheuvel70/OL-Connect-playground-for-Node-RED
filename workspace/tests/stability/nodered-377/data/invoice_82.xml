@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1096566</OrderNumber>
+		<CustomerPO>555659</CustomerPO>
+		<CustomerNumber>CU80930384</CustomerNumber>
+		<SalesRep>Laetitia Breckin</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Tommi</ContactFirstName>
+		<ContactLastName>Stucksbury</ContactLastName>
+		<ContactPhone>+55 (132) 604-9596</ContactPhone>
+		<ContactEmail>tommi.stucksbury@example.com</ContactEmail>
+		<Company>Demizz</Company>
+		<StreetAddress>76940 Sachs Way</StreetAddress>
+		<City>Ipauçu</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>18950-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>389216</Number>
+				<Description>K2 Raygun Wide Snowboard 2016</Description>
+				<UnitPrice>279.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1119.76</Total>
+			</Product>
+			<Product>
+				<Number>393065</Number>
+				<Description>Salomon Sabotage Snowboard</Description>
+				<UnitPrice>319.94</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>639.88</Total>
+			</Product>
+			<Product>
+				<Number>148080</Number>
+				<Description>Swix Alpine Racing Straps Ski Strap</Description>
+				<UnitPrice>9.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>29.97</Total>
+			</Product>
+			<Product>
+				<Number>393011</Number>
+				<Description>Rossignol Templar MagTek Wide Snowboard 2016</Description>
+				<UnitPrice>399.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1599.96</Total>
+			</Product>
+			<Product>
+				<Number>146583</Number>
+				<Description>Grabber Toe Warmers 8-Pack</Description>
+				<UnitPrice>15.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>15.99</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>3405.56</InvSubTotal>
+		<InvTaxTotal>510.83</InvTaxTotal>
+		<InvTotal>3916.39</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1309443</OrderNumber>
+		<CustomerPO>579699</CustomerPO>
+		<CustomerNumber>CU32059357</CustomerNumber>
+		<SalesRep>Ed Biasi</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Heddie</ContactFirstName>
+		<ContactLastName>Gater</ContactLastName>
+		<ContactPhone>+33 (496) 223-7428</ContactPhone>
+		<ContactEmail>heddie.gater@example.com</ContactEmail>
+		<Company>Twinder</Company>
+		<StreetAddress>4 Crescent Oaks Road</StreetAddress>
+		<City>Tournan-en-Brie</City>
+		<State>Île-de-France</State>
+		<Country>France</Country>
+		<ZipCode>77224 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>363359</Number>
+				<Description>Dakine Flame Mat Stomp Pad 2016</Description>
+				<UnitPrice>10.39</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>20.78</Total>
+			</Product>
+			<Product>
+				<Number>148080</Number>
+				<Description>Swix Alpine Racing Straps Ski Strap</Description>
+				<UnitPrice>9.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>19.98</Total>
+			</Product>
+			<Product>
+				<Number>404658</Number>
+				<Description>Dakine Covert Snowboard Leash 2016</Description>
+				<UnitPrice>5.59</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>5.59</Total>
+			</Product>
+			<Product>
+				<Number>363359</Number>
+				<Description>Dakine Flame Mat Stomp Pad 2016</Description>
+				<UnitPrice>10.39</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>41.56</Total>
+			</Product>
+			<Product>
+				<Number>352362</Number>
+				<Description>UK Pro POV 30 Case</Description>
+				<UnitPrice>54.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>164.97</Total>
+			</Product>
+			<Product>
+				<Number>281218</Number>
+				<Description>Dakine Home Grown Soy Stick Snowboard Wax</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>31.08</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>283.96</InvSubTotal>
+		<InvTaxTotal>42.59</InvTaxTotal>
+		<InvTotal>326.55</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

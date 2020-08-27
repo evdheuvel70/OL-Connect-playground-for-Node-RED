@@ -1,1 +1,8 @@
 *.backup
+
+# exclude output
+
+workspace/output/*
+
+#exception to the rule
+!workspace/output/placeholder.txt

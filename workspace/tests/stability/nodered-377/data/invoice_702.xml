@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1800088</OrderNumber>
+		<CustomerPO>272675</CustomerPO>
+		<CustomerNumber>CU57542925</CustomerNumber>
+		<SalesRep>Duffy Hickisson</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Teena</ContactFirstName>
+		<ContactLastName>Ure</ContactLastName>
+		<ContactPhone>+55 (433) 440-3666</ContactPhone>
+		<ContactEmail>teena.ure@example.com</ContactEmail>
+		<Company>Gigashots</Company>
+		<StreetAddress>937 Kennedy Trail</StreetAddress>
+		<City>Barcarena</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>68445-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>281218</Number>
+				<Description>Dakine Home Grown Soy Stick Snowboard Wax</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>31.08</Total>
+			</Product>
+			<Product>
+				<Number>173097</Number>
+				<Description>Triple 8 Bumsaver II Snowboard Pads 2016</Description>
+				<UnitPrice>59.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>239.96</Total>
+			</Product>
+			<Product>
+				<Number>404947</Number>
+				<Description>Tubbs Wilderness Snowshoes</Description>
+				<UnitPrice>149.96</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>599.84</Total>
+			</Product>
+			<Product>
+				<Number>404658</Number>
+				<Description>Dakine Covert Snowboard Leash 2016</Description>
+				<UnitPrice>5.59</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>11.18</Total>
+			</Product>
+			<Product>
+				<Number>363872</Number>
+				<Description>Swix F4 Universal Glide Wax 2016</Description>
+				<UnitPrice>15.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>31.98</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>914.04</InvSubTotal>
+		<InvTaxTotal>137.11</InvTaxTotal>
+		<InvTotal>1051.15</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

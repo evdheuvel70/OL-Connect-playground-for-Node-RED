@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cotg_ts_dataset>
+	<record>
+		<order_id>ord-4627</order_id>
+		<date>0</date>
+		<customer>Eabox</customer>
+		<customer_contact>Antonella Tanswill</customer_contact>
+		<customer_email>vandenheuvele@eu.objectiflune.com</customer_email>
+		<employee>Thoma Cullington</employee>
+		<employee_id>emp-9080</employee_id>
+		<cotg_account>vandenheuvele@eu.objectiflune.com</cotg_account>
+		<signature/>
+	</record>
+	<record>
+		<order_id>ord-3232</order_id>
+		<date>0</date>
+		<customer>Skalith</customer>
+		<customer_contact>Jeanna Headings</customer_contact>
+		<customer_email>vandenheuvele@eu.objectiflune.com</customer_email>
+		<employee>Jennette Baalham</employee>
+		<employee_id>emp-6906</employee_id>
+		<cotg_account>vandenheuvele@eu.objectiflune.com</cotg_account>
+		<signature/>
+	</record>
+</cotg_ts_dataset>

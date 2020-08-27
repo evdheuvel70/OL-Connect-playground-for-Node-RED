@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1332644</OrderNumber>
+		<CustomerPO>571732</CustomerPO>
+		<CustomerNumber>CU50258856</CustomerNumber>
+		<SalesRep>Cornela Pantry</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Delcine</ContactFirstName>
+		<ContactLastName>Dmitr</ContactLastName>
+		<ContactPhone>+55 (718) 382-0583</ContactPhone>
+		<ContactEmail>delcine.dmitr@example.com</ContactEmail>
+		<Company>Rhynyx</Company>
+		<StreetAddress>9871 Coleman Place</StreetAddress>
+		<City>Itaqui</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>97650-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>363359</Number>
+				<Description>Dakine Flame Mat Stomp Pad 2016</Description>
+				<UnitPrice>10.39</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>41.56</Total>
+			</Product>
+			<Product>
+				<Number>249294</Number>
+				<Description>Dakine Key Lock Snowboarding Tool</Description>
+				<UnitPrice>9.77</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>39.08</Total>
+			</Product>
+			<Product>
+				<Number>393011</Number>
+				<Description>Rossignol Templar MagTek Wide Snowboard 2016</Description>
+				<UnitPrice>399.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1199.97</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1280.61</InvSubTotal>
+		<InvTaxTotal>192.09</InvTaxTotal>
+		<InvTotal>1472.7</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1307788</OrderNumber>
+		<CustomerPO>616740</CustomerPO>
+		<CustomerNumber>CU40066345</CustomerNumber>
+		<SalesRep>Irma Tennant</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Joachim</ContactFirstName>
+		<ContactLastName>Amberg</ContactLastName>
+		<ContactPhone>+55 (715) 916-0659</ContactPhone>
+		<ContactEmail>joachim.amberg@example.com</ContactEmail>
+		<Company>Roomm</Company>
+		<StreetAddress>51 Schlimgen Park</StreetAddress>
+		<City>Rio Real</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>48330-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>426010</Number>
+				<Description>Rossignol Winters Fire Heated Ski Gloves</Description>
+				<UnitPrice>129.77</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>129.77</Total>
+			</Product>
+			<Product>
+				<Number>397696</Number>
+				<Description>Salomon X-Drive 8.0 Ti Skis with XT 12 Bindings</Description>
+				<UnitPrice>479.92</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>959.84</Total>
+			</Product>
+			<Product>
+				<Number>404947</Number>
+				<Description>Tubbs Wilderness Snowshoes</Description>
+				<UnitPrice>149.96</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>449.88</Total>
+			</Product>
+			<Product>
+				<Number>389216</Number>
+				<Description>K2 Raygun Wide Snowboard 2016</Description>
+				<UnitPrice>279.94</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>279.94</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1819.43</InvSubTotal>
+		<InvTaxTotal>272.91</InvTaxTotal>
+		<InvTotal>2092.34</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

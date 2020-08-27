@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1289706</OrderNumber>
+		<CustomerPO>450378</CustomerPO>
+		<CustomerNumber>CU17101260</CustomerNumber>
+		<SalesRep>Victor Shankle</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Jacynth</ContactFirstName>
+		<ContactLastName>Ginn</ContactLastName>
+		<ContactPhone>+33 (744) 788-6539</ContactPhone>
+		<ContactEmail>jacynth.ginn@example.com</ContactEmail>
+		<Company>Twitterwire</Company>
+		<StreetAddress>8 Harbort Trail</StreetAddress>
+		<City>Coulommiers</City>
+		<State>Île-de-France</State>
+		<Country>France</Country>
+		<ZipCode>77529 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>62516</Number>
+				<Description>CamelBak Arete 18 Hydration Pack 2016 Black</Description>
+				<UnitPrice>65</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>130</Total>
+			</Product>
+			<Product>
+				<Number>351992</Number>
+				<Description>K2 Style 7 Womens Ski Poles</Description>
+				<UnitPrice>29.97</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>119.88</Total>
+			</Product>
+			<Product>
+				<Number>389374</Number>
+				<Description>Flow Five Snowboard Bindings</Description>
+				<UnitPrice>129.94</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>389.82</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>639.7</InvSubTotal>
+		<InvTaxTotal>95.96</InvTaxTotal>
+		<InvTotal>735.66</InvTotal>
+		<InvCurrencyCode>USD</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>1</Reminders>
+	</invoice>
+</invoices>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1540664</OrderNumber>
+		<CustomerPO>318082</CustomerPO>
+		<CustomerNumber>CU79254947</CustomerNumber>
+		<SalesRep>Marietta Stookes</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Jakob</ContactFirstName>
+		<ContactLastName>Loreit</ContactLastName>
+		<ContactPhone>+1 (912) 460-8864</ContactPhone>
+		<ContactEmail>jakob.loreit@example.com</ContactEmail>
+		<Company>Layo</Company>
+		<StreetAddress>4 Kropf Terrace</StreetAddress>
+		<City>Savannah</City>
+		<State>Georgia</State>
+		<Country>United States</Country>
+		<ZipCode>31410</ZipCode>
+		<LanguageCode>es</LanguageCode>
+		<Locale>es-US</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>404947</Number>
+				<Description>Tubbs Wilderness Snowshoes</Description>
+				<UnitPrice>149.96</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>599.84</Total>
+			</Product>
+			<Product>
+				<Number>404654</Number>
+				<Description>Dakine Circle Mat Stomp Pad 2016</Description>
+				<UnitPrice>10.39</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>10.39</Total>
+			</Product>
+			<Product>
+				<Number>361037</Number>
+				<Description>Salomon Q-Max Jr. S Kids Skis with Ezy 5 Bindings</Description>
+				<UnitPrice>191.92</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>383.84</Total>
+			</Product>
+			<Product>
+				<Number>364716</Number>
+				<Description>Fischer BCX Variolite Cross Country Ski Poles</Description>
+				<UnitPrice>72</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>72</Total>
+			</Product>
+			<Product>
+				<Number>400508</Number>
+				<Description>Burton Chopper Boys Snowboard 2016 130cm</Description>
+				<UnitPrice>132.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>531.76</Total>
+			</Product>
+			<Product>
+				<Number>375428</Number>
+				<Description>Hot Hands Hand Warmers 10 Pack</Description>
+				<UnitPrice>19.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>39.98</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1637.81</InvSubTotal>
+		<InvTaxTotal>245.67</InvTaxTotal>
+		<InvTotal>1883.48</InvTotal>
+		<InvCurrencyCode>USD</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

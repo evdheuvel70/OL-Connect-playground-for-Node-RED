@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1228651</OrderNumber>
+		<CustomerPO>533619</CustomerPO>
+		<CustomerNumber>CU82305886</CustomerNumber>
+		<SalesRep>Molli Searchfield</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Ashla</ContactFirstName>
+		<ContactLastName>Filipovic</ContactLastName>
+		<ContactPhone>+33 (727) 969-4251</ContactPhone>
+		<ContactEmail>ashla.filipovic@example.com</ContactEmail>
+		<Company>Skynoodle</Company>
+		<StreetAddress>5 Sundown Terrace</StreetAddress>
+		<City>Amiens</City>
+		<State>Picardie</State>
+		<Country>France</Country>
+		<ZipCode>80020 CEDEX 9</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>249294</Number>
+				<Description>Dakine Key Lock Snowboarding Tool</Description>
+				<UnitPrice>9.77</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>39.08</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>39.08</InvSubTotal>
+		<InvTaxTotal>5.86</InvTaxTotal>
+		<InvTotal>44.94</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

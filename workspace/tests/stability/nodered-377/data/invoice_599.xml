@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1076364</OrderNumber>
+		<CustomerPO>393257</CustomerPO>
+		<CustomerNumber>CU61037125</CustomerNumber>
+		<SalesRep>Winona Rozsa</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Pace</ContactFirstName>
+		<ContactLastName>Heaysman</ContactLastName>
+		<ContactPhone>+33 (990) 501-0901</ContactPhone>
+		<ContactEmail>pace.heaysman@example.com</ContactEmail>
+		<Company>Linkbridge</Company>
+		<StreetAddress>9 Old Gate Pass</StreetAddress>
+		<City>Gaillac</City>
+		<State>Midi-Pyrénées</State>
+		<Country>France</Country>
+		<ZipCode>81604 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>389316</Number>
+				<Description>Hestra RSL Comp Vertical Cut Mens Ski Racing Gloves XL</Description>
+				<UnitPrice>119.77</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>479.08</Total>
+			</Product>
+			<Product>
+				<Number>381133</Number>
+				<Description>Salomon X-Mission 2 Mens Shoes s10.0</Description>
+				<UnitPrice>59.98</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>239.92</Total>
+			</Product>
+			<Product>
+				<Number>351508</Number>
+				<Description>Rossignol Alias Sensor 120 Ski Boots</Description>
+				<UnitPrice>289.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1159.76</Total>
+			</Product>
+			<Product>
+				<Number>53674</Number>
+				<Description>Thule Crossroad Railing Foot Pack M450</Description>
+				<UnitPrice>199.95</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>199.95</Total>
+			</Product>
+			<Product>
+				<Number>380881</Number>
+				<Description>K2 Fastplant Snowboard</Description>
+				<UnitPrice>279.77</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>279.77</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>2358.48</InvSubTotal>
+		<InvTaxTotal>353.77</InvTaxTotal>
+		<InvTotal>2712.25</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>2</Reminders>
+	</invoice>
+</invoices>

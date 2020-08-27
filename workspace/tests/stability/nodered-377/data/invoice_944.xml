@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1829852</OrderNumber>
+		<CustomerPO>424245</CustomerPO>
+		<CustomerNumber>CU40834827</CustomerNumber>
+		<SalesRep>Barby Lyle</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Vaughan</ContactFirstName>
+		<ContactLastName>LAbbet</ContactLastName>
+		<ContactPhone>+1 (417) 933-2120</ContactPhone>
+		<ContactEmail>vaughan.labbet@example.com</ContactEmail>
+		<Company>Oyoloo</Company>
+		<StreetAddress>7512 Spohn Terrace</StreetAddress>
+		<City>Airdrie</City>
+		<State>Alberta</State>
+		<Country>Canada</Country>
+		<ZipCode>T4B</ZipCode>
+		<LanguageCode>en</LanguageCode>
+		<Locale>en-CA</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>364716</Number>
+				<Description>Fischer BCX Variolite Cross Country Ski Poles</Description>
+				<UnitPrice>72</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>144</Total>
+			</Product>
+			<Product>
+				<Number>389374</Number>
+				<Description>Flow Five Snowboard Bindings</Description>
+				<UnitPrice>129.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>519.76</Total>
+			</Product>
+			<Product>
+				<Number>352362</Number>
+				<Description>UK Pro POV 30 Case</Description>
+				<UnitPrice>54.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>164.97</Total>
+			</Product>
+			<Product>
+				<Number>388459</Number>
+				<Description>K2 Missy Kids Skis with Marker Fastrack2 7.0 Bindings</Description>
+				<UnitPrice>278.95</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>836.85</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1665.58</InvSubTotal>
+		<InvTaxTotal>249.84</InvTaxTotal>
+		<InvTotal>1915.42</InvTotal>
+		<InvCurrencyCode>CAD</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

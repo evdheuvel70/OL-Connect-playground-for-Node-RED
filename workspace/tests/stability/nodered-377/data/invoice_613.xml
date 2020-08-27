@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1913925</OrderNumber>
+		<CustomerPO>570246</CustomerPO>
+		<CustomerNumber>CU55530755</CustomerNumber>
+		<SalesRep>Caz Dymoke</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Dyann</ContactFirstName>
+		<ContactLastName>Vela</ContactLastName>
+		<ContactPhone>+39 (701) 228-1841</ContactPhone>
+		<ContactEmail>dyann.vela@example.com</ContactEmail>
+		<Company>Avaveo</Company>
+		<StreetAddress>76782 Springview Circle</StreetAddress>
+		<City>Trieste</City>
+		<State>Friuli-Venezia Giulia</State>
+		<Country>Italy</Country>
+		<ZipCode>34129</ZipCode>
+		<LanguageCode>it</LanguageCode>
+		<Locale>it-IT</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>388459</Number>
+				<Description>K2 Missy Kids Skis with Marker Fastrack2 7.0 Bindings</Description>
+				<UnitPrice>278.95</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>836.85</Total>
+			</Product>
+			<Product>
+				<Number>423246</Number>
+				<Description>Rossignol Unique. and Nordica NXT N6 Womens Ski Package</Description>
+				<UnitPrice>419.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1259.97</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>2096.82</InvSubTotal>
+		<InvTaxTotal>314.52</InvTaxTotal>
+		<InvTotal>2411.34</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

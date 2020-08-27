@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1711010</OrderNumber>
+		<CustomerPO>584941</CustomerPO>
+		<CustomerNumber>CU50258856</CustomerNumber>
+		<SalesRep>Stearne Curryer</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Delcine</ContactFirstName>
+		<ContactLastName>Dmitr</ContactLastName>
+		<ContactPhone>+55 (718) 382-0583</ContactPhone>
+		<ContactEmail>delcine.dmitr@example.com</ContactEmail>
+		<Company>Rhynyx</Company>
+		<StreetAddress>9871 Coleman Place</StreetAddress>
+		<City>Itaqui</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>97650-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>349893</Number>
+				<Description>Dakine Peace Studs Stomp Pad</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>23.31</Total>
+			</Product>
+			<Product>
+				<Number>389216</Number>
+				<Description>K2 Raygun Wide Snowboard 2016</Description>
+				<UnitPrice>279.94</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>839.82</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>863.13</InvSubTotal>
+		<InvTaxTotal>129.47</InvTaxTotal>
+		<InvTotal>992.6</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

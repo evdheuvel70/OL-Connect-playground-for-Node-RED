@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1773649</OrderNumber>
+		<CustomerPO>606761</CustomerPO>
+		<CustomerNumber>CU47398812</CustomerNumber>
+		<SalesRep>Joe Pendlington</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Ruben</ContactFirstName>
+		<ContactLastName>Jahnisch</ContactLastName>
+		<ContactPhone>+1 (206) 931-2687</ContactPhone>
+		<ContactEmail>ruben.jahnisch@example.com</ContactEmail>
+		<Company>Jaxworks</Company>
+		<StreetAddress>3 Farwell Way</StreetAddress>
+		<City>Milwaukee</City>
+		<State>Wisconsin</State>
+		<Country>United States</Country>
+		<ZipCode>53285</ZipCode>
+		<LanguageCode>es</LanguageCode>
+		<Locale>es-US</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>389210</Number>
+				<Description>Burton Backhill Medium Duffel Bag 2016</Description>
+				<UnitPrice>69.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>279.76</Total>
+			</Product>
+			<Product>
+				<Number>148738</Number>
+				<Description>Triple 8 Undercover Wrist Guards 2016</Description>
+				<UnitPrice>24.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>49.98</Total>
+			</Product>
+			<Product>
+				<Number>275075</Number>
+				<Description>SportsStuff Air Flyer Inflatable Sled</Description>
+				<UnitPrice>39.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>39.99</Total>
+			</Product>
+			<Product>
+				<Number>148080</Number>
+				<Description>Swix Alpine Racing Straps Ski Strap</Description>
+				<UnitPrice>9.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>9.99</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>379.72</InvSubTotal>
+		<InvTaxTotal>56.96</InvTaxTotal>
+		<InvTotal>436.68</InvTotal>
+		<InvCurrencyCode>USD</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>1</Reminders>
+	</invoice>
+</invoices>

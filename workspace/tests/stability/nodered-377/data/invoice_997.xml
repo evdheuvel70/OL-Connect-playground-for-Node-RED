@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1975918</OrderNumber>
+		<CustomerPO>580924</CustomerPO>
+		<CustomerNumber>CU63294928</CustomerNumber>
+		<SalesRep>Zebulon Winchcum</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Inga</ContactFirstName>
+		<ContactLastName>Longmire</ContactLastName>
+		<ContactPhone>+1 (806) 139-3432</ContactPhone>
+		<ContactEmail>inga.longmire@example.com</ContactEmail>
+		<Company>Wikivu</Company>
+		<StreetAddress>076 Melrose Plaza</StreetAddress>
+		<City>Lubbock</City>
+		<State>Texas</State>
+		<Country>United States</Country>
+		<ZipCode>79491</ZipCode>
+		<LanguageCode>en</LanguageCode>
+		<Locale>en-US</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>389374</Number>
+				<Description>Flow Five Snowboard Bindings</Description>
+				<UnitPrice>129.94</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>389.82</Total>
+			</Product>
+			<Product>
+				<Number>248553</Number>
+				<Description>Therm-ic BasicKids Set Classic Boot Heaters 2016</Description>
+				<UnitPrice>79.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>159.98</Total>
+			</Product>
+			<Product>
+				<Number>352362</Number>
+				<Description>UK Pro POV 30 Case</Description>
+				<UnitPrice>54.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>219.96</Total>
+			</Product>
+			<Product>
+				<Number>349893</Number>
+				<Description>Dakine Peace Studs Stomp Pad</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>15.54</Total>
+			</Product>
+			<Product>
+				<Number>423246</Number>
+				<Description>Rossignol Unique. and Nordica NXT N6 Womens Ski Package</Description>
+				<UnitPrice>419.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>839.98</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1625.28</InvSubTotal>
+		<InvTaxTotal>243.79</InvTaxTotal>
+		<InvTotal>1869.07</InvTotal>
+		<InvCurrencyCode>USD</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

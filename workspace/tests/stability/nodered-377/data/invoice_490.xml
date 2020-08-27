@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1464435</OrderNumber>
+		<CustomerPO>271068</CustomerPO>
+		<CustomerNumber>CU17101260</CustomerNumber>
+		<SalesRep>Victor Shankle</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Jacynth</ContactFirstName>
+		<ContactLastName>Ginn</ContactLastName>
+		<ContactPhone>+33 (744) 788-6539</ContactPhone>
+		<ContactEmail>jacynth.ginn@example.com</ContactEmail>
+		<Company>Twitterwire</Company>
+		<StreetAddress>8 Harbort Trail</StreetAddress>
+		<City>Coulommiers</City>
+		<State>Île-de-France</State>
+		<Country>France</Country>
+		<ZipCode>77529 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>426010</Number>
+				<Description>Rossignol Winters Fire Heated Ski Gloves</Description>
+				<UnitPrice>129.77</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>519.08</Total>
+			</Product>
+			<Product>
+				<Number>404658</Number>
+				<Description>Dakine Covert Snowboard Leash 2016</Description>
+				<UnitPrice>5.59</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>5.59</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>524.67</InvSubTotal>
+		<InvTaxTotal>78.7</InvTaxTotal>
+		<InvTotal>603.37</InvTotal>
+		<InvCurrencyCode>CAD</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>1</Reminders>
+	</invoice>
+</invoices>

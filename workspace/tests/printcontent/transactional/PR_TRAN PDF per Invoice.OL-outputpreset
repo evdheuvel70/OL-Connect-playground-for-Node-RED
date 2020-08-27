@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outputCreationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.0.4.0" xsi:schemaLocation="http://www.objectiflune.com/connectschemas/OutputCreationConfig http://www.objectiflune.com/connectschemas/OutputCreationConfig/1_0_4_0.xsd">
+  <name>
+    <name>PR_TRAN PDF per Invoice</name>
+    <names>
+      <entry>
+        <key>
+          <displayNames>
+            <entry>
+              <key>
+                <iso>eng</iso>
+              </key>
+              <value>United States</value>
+            </entry>
+          </displayNames>
+          <iso>
+            <iso>eng</iso>
+          </iso>
+        </key>
+        <value>PR_TRAN PDF per Invoice</value>
+      </entry>
+    </names>
+  </name>
+  <pluginId>0</pluginId>
+  <additionalContent addContent="false">
+    <additionalContentItems></additionalContentItems>
+  </additionalContent>
+  <bookletActive>false</bookletActive>
+  <bookletBinding>SADDLE</bookletBinding>
+  <bookletCoverPageConfig>
+    <pluginId>0</pluginId>
+    <backCover>BLANK</backCover>
+    <coverPageActive>false</coverPageActive>
+    <frontCover>BLANK</frontCover>
+    <media landscape="false">
+      <displayName>Booklet Cover Sheet</displayName>
+      <size>
+        <name>A4</name>
+        <width>210mm</width>
+        <height>297mm</height>
+      </size>
+      <name>Booklet Cover Sheet</name>
+      <weight>80g</weight>
+      <frontCoating>NONE</frontCoating>
+      <backCoating>NONE</backCoating>
+      <texture>NONE</texture>
+      <grade>NONE</grade>
+      <holeName>
+        <holeCount>0</holeCount>
+        <geometry>0.0</geometry>
+        <metric>false</metric>
+      </holeName>
+    </media>
+  </bookletCoverPageConfig>
+  <collate>false</collate>
+  <copies>1</copies>
+  <customPdfFlatteningEnabled>false</customPdfFlatteningEnabled>
+  <customisedPrinterSetting>false</customisedPrinterSetting>
+  <cutStackActive>false</cutStackActive>
+  <enablePDFSignatures>false</enablePDFSignatures>
+  <impositionConfig cutMarkSide="FRONT" docRotation="ROTATE_0" inputPageLandscape="false" offset="false" offsetLeft="0mm" offsetTop="0mm" stackByColumn="false">
+    <pluginId>0</pluginId>
+    <bleed-margin-bottom-spacing>3mm</bleed-margin-bottom-spacing>
+    <bleed-margin-left-spacing>3mm</bleed-margin-left-spacing>
+    <bleed-margin-right-spacing>3mm</bleed-margin-right-spacing>
+    <bleed-margin-top-spacing>3mm</bleed-margin-top-spacing>
+    <crop-length>5mm</crop-length>
+    <cropMarkType>Off</cropMarkType>
+    <crop-offset>2mm</crop-offset>
+    <cropmarks-weight>0.5pt</cropmarks-weight>
+    <duplexInfo>Simplex</duplexInfo>
+    <forceSimplex>false</forceSimplex>
+    <horizontal-spacing>0mm</horizontal-spacing>
+    <impositionType>CutStack</impositionType>
+    <inputPage>
+      <name>Letter</name>
+      <width>8.5in</width>
+      <height>11in</height>
+    </inputPage>
+    <media landscape="false">
+      <displayName>Imposition Sheet</displayName>
+      <size>
+        <name>A4</name>
+        <width>210mm</width>
+        <height>297mm</height>
+      </size>
+      <name>Imposition Sheet</name>
+      <weight>80g</weight>
+      <frontCoating>NONE</frontCoating>
+      <backCoating>NONE</backCoating>
+      <texture>NONE</texture>
+      <grade>NONE</grade>
+      <holeName>
+        <holeCount>0</holeCount>
+        <geometry>0.0</geometry>
+        <metric>false</metric>
+      </holeName>
+    </media>
+    <noHorizontalCells>1</noHorizontalCells>
+    <noVerticalCells>1</noVerticalCells>
+    <pageOrder>Option1</pageOrder>
+    <readingDirection>RIGHT</readingDirection>
+    <reverseImposition>OFF</reverseImposition>
+    <scaleToFit>true</scaleToFit>
+    <sheetRotation>AUTO_ROTATE</sheetRotation>
+    <stackDepth>2000</stackDepth>
+    <vertical-spacing>0mm</vertical-spacing>
+  </impositionConfig>
+  <impositionConfigName>None</impositionConfigName>
+  <impositionEnabled>false</impositionEnabled>
+  <impositionType>None</impositionType>
+  <inserterEnabled>false</inserterEnabled>
+  <inserterOMRConfig>
+    <pluginId>0</pluginId>
+    <collationLevel>DOCUMENT</collationLevel>
+    <customInserterOptions drawHotSpots="false" reverseMarkOrder="false">
+      <customInserterMarkSizing>
+        <omrCustomSizing>false</omrCustomSizing>
+      </customInserterMarkSizing>
+    </customInserterOptions>
+    <foldType>0</foldType>
+    <HCFName>None</HCFName>
+    <markClearArea>
+      <bottomMargin>0pt</bottomMargin>
+      <leftMargin>0pt</leftMargin>
+      <opaque>false</opaque>
+      <rightMargin>0pt</rightMargin>
+      <topMargin>0pt</topMargin>
+    </markClearArea>
+    <markTypeID>0</markTypeID>
+    <printMarksOnBack>false</printMarksOnBack>
+    <selectiveInserts></selectiveInserts>
+  </inserterOMRConfig>
+  <inserterOMRConfigName>Create</inserterOMRConfigName>
+  <jobDirId>0</jobDirId>
+  <jobSetId>0</jobSetId>
+  <keyStores></keyStores>
+  <pdfFlattenConfig>
+    <pluginId>0</pluginId>
+    <clipComplexRegions>true</clipComplexRegions>
+    <externalDpi>300</externalDpi>
+    <internalDpi>1200</internalDpi>
+    <preserveOverprint>true</preserveOverprint>
+    <quality>100</quality>
+    <strokesToOutlines>true</strokesToOutlines>
+    <useTextOutlines>false</useTextOutlines>
+  </pdfFlattenConfig>
+  <printToFile>false</printToFile>
+  <printerDefinition printerPDL="PDF" version="1.0.0.0" suppressTransparencySupport="false" dynamicPPDBased="false" schemaVersion="1.0.1.2">
+    <name>
+      <name>Generic PDF</name>
+      <names>
+        <entry>
+          <key>
+            <displayNames>
+              <entry>
+                <key>
+                  <iso>eng</iso>
+                </key>
+                <value>USA</value>
+              </entry>
+            </displayNames>
+            <iso>
+              <iso>eng</iso>
+            </iso>
+          </key>
+          <value>Generic PDF</value>
+        </entry>
+      </names>
+    </name>
+    <pluginId>0</pluginId>
+    <capabilities speedPPM="100" speedMPS="100" printerType="NONE" printerTypeSupports="NONE" plexSupports="NONE" nativeSlipSheetSupport="false" jog="false" plex="NONE" printerTech="NONE" resolution="300">
+      <pluginId>0</pluginId>
+      <maximumDimensions width="200in" height="200in"></maximumDimensions>
+      <inputTrays></inputTrays>
+      <outputTrays></outputTrays>
+    </capabilities>
+    <inputTrays></inputTrays>
+    <outputTrays></outputTrays>
+    <ipdsConfig useGoca="false" use1440="false" useOverlay="false" pageObject="OCAOBJECTS" imageType="FS10" fontTechnology="RASTER" resolution="300" useCMR="false" useLZW="true" useGOCACubic="false" useScaleToFill="true" useIncludeDataObjects="true" useSEC="true" useWhitetoCM="false" deviceDither="ERROR_DIFFUSION" useObjectFormSupport="false" useHLC="false" useHlcCmrIndex="false" monochrome="false" useExtOverlay="true" fs10Compression="G4" fs45Compression="JPG" passThroughPDFResources="true" useTransparentPDFSupport="false" useAfpcTIFSupport="false" noScale="false" imageasForm="1" favourVector="false">
+      <pluginId>0</pluginId>
+    </ipdsConfig>
+    <afpConfig useGoca="false" use1440="false" pageObject="OCAOBJECTS" imageType="FS10" fontTechnology="RASTER" resolution="300" useCMR="false" useLZW="true" useGOCACubic="false" useScaleToFill="true" useIncludeDataObjects="true" useSEC="true" useWhitetoCM="false" deviceDither="ERROR_DIFFUSION" useObjectFormSupport="false" useHLC="false" useHlcCmrIndex="false" monochrome="false" useExtOverlay="true" fs10Compression="G4" fs45Compression="JPG" passThroughPDFResources="true" useTransparentPDFSupport="false" useAfpcTIFSupport="false" noScale="false" imageasForm="1" favourVector="false">
+      <pluginId>0</pluginId>
+    </afpConfig>
+    <pdfConfig type="PDF" compression="HIGH" embedStandardFonts="false" forceIdentity="false" passThroughPDFResources="false">
+      <pluginId>0</pluginId>
+    </pdfConfig>
+    <psConfig languageLevel="3" sevenBitClean="false" imageAsForm="0" compression="NONE" type="NORMAL" supportCFF="true" bitmapAsForm="true" expandForms="false" expandFormsThreshold="0" passThroughPDFResources="false">
+      <pluginId>0</pluginId>
+    </psConfig>
+    <tiffConfig compression="G4" resolution="300">
+      <pluginId>0</pluginId>
+    </tiffConfig>
+    <ppmlConfig imageAsForm="0" passThroughPDFResources="false">
+      <pluginId>0</pluginId>
+    </ppmlConfig>
+    <pclConfig resolution="300" leftRegistrationAdjustment="-180" xMargin="50" yMargin="50" scaleToFit="false" imageAsForm="false" deviceDither="ERROR_DIFFUSION" fontTechnology="RASTER" colorType="RGB" imageCompression="ADAPTIVE" ignoreBlankLines="false" ignoreTrailingWhiteSpace="true" imageAsFormThreshold="1" favourVector="false">
+      <pluginId>0</pluginId>
+    </pclConfig>
+    <properties></properties>
+    <script></script>
+  </printerDefinition>
+  <printerDefinitionName>Generic PDF</printerDefinitionName>
+  <printerOutputConfig>
+    <pluginId>0</pluginId>
+    <jobName>${template}</jobName>
+    <jobOwnerName></jobOwnerName>
+    <outWin32Printer></outWin32Printer>
+    <outputDirectory>C:\Users\vandenhe\My Connect Projects\Print Transactional Jobs\Workspace\Out\Per Invoice</outputDirectory>
+    <outputFileMask>${document.metadata.OrderNumber}.pdf</outputFileMask>
+    <outputLPR>1.1.1.1</outputLPR>
+    <outputLPRQueue>RAW</outputLPRQueue>
+    <outputLocal>false</outputLocal>
+    <outputType>DIRECTORY</outputType>
+    <pdfRenderChoosePaperSourceBySize>false</pdfRenderChoosePaperSourceBySize>
+    <pdfRenderPromptForProperties>false</pdfRenderPromptForProperties>
+    <pdfRenderSetRotateAndCenter>false</pdfRenderSetRotateAndCenter>
+    <pdfScale>NONE</pdfScale>
+    <segmentText>2000</segmentText>
+  </printerOutputConfig>
+  <printerOutputConfigName>Create</printerOutputConfigName>
+  <printerSettingConfig mapMediaBy="MEDIA_ATTRIBUTES">
+    <name>
+      <name>Default</name>
+      <names>
+        <entry>
+          <key>
+            <displayNames>
+              <entry>
+                <key>
+                  <iso>eng</iso>
+                </key>
+                <value>United States</value>
+              </entry>
+            </displayNames>
+            <iso>
+              <iso>eng</iso>
+            </iso>
+          </key>
+          <value>Default</value>
+        </entry>
+      </names>
+    </name>
+    <pluginId>0</pluginId>
+    <binRotation>false</binRotation>
+    <binRotationCount>1000</binRotationCount>
+    <blackThreshold>0.9</blackThreshold>
+    <detectBarcodeInForm>false</detectBarcodeInForm>
+    <dynamicPPDSettings>
+      <elements>
+        <dynamicTrayMappingElements trigger="SHEET">
+          <items>
+            <item xsi:type="dynamicTrayMappingElement" expandedJavaScript="false">
+              <mediaProperties>
+                <mediaName>Media 1</mediaName>
+                <type>Unspecified</type>
+                <size>
+                  <name>Letter</name>
+                  <width>8.5in</width>
+                  <height>11in</height>
+                </size>
+                <landscape>false</landscape>
+              </mediaProperties>
+              <rules condition="ALL">
+                <rules></rules>
+              </rules>
+              <elements></elements>
+              <name>Media 1</name>
+            </item>
+          </items>
+        </dynamicTrayMappingElements>
+        <dynamicFinishingElements trigger="FINISHING">
+          <items></items>
+        </dynamicFinishingElements>
+        <dynamicPlexElements groupName="Default plex setting" trigger="SHEET">
+          <items>
+            <item xsi:type="dynamicPlexMappingElement" expandedJavaScript="false">
+              <string>Tumble</string>
+              <rules condition="ALL">
+                <rules></rules>
+              </rules>
+              <elements></elements>
+              <name>Tumble</name>
+            </item>
+            <item xsi:type="dynamicPlexMappingElement" expandedJavaScript="false">
+              <string>Duplex</string>
+              <rules condition="ALL">
+                <rules></rules>
+              </rules>
+              <elements></elements>
+              <name>Duplex</name>
+            </item>
+            <item xsi:type="dynamicPlexMappingElement" expandedJavaScript="false">
+              <string>Simplex</string>
+              <rules condition="ALL">
+                <rules></rules>
+              </rules>
+              <elements></elements>
+              <name>Simplex</name>
+            </item>
+          </items>
+        </dynamicPlexElements>
+      </elements>
+    </dynamicPPDSettings>
+    <expandFormPages>0</expandFormPages>
+    <glyphPositioningMethod>DIFFERENCE</glyphPositioningMethod>
+    <jog>false</jog>
+    <maxGlyphDrift>0.24</maxGlyphDrift>
+    <mediaMappings>
+      <mediaName>Media 1</mediaName>
+      <trayName>not mapped</trayName>
+      <type>Unspecified</type>
+    </mediaMappings>
+    <monoChrome>false</monoChrome>
+    <pageMarks>false</pageMarks>
+    <preBindingOverride>false</preBindingOverride>
+    <preDrilledStationery>false</preDrilledStationery>
+    <removeSpaces>false</removeSpaces>
+    <slipDocumentCount>10</slipDocumentCount>
+    <slipHeader>false</slipHeader>
+    <slipMedia landscape="false">
+      <displayName>Media 1</displayName>
+      <size>
+        <name>Letter</name>
+        <width>8.5in</width>
+        <height>11in</height>
+      </size>
+      <frontSideBackgroundPath></frontSideBackgroundPath>
+      <name>Media 1</name>
+      <type>Unspecified</type>
+      <weight>0g</weight>
+      <frontCoating>UNSPECIFIED</frontCoating>
+      <backCoating>UNSPECIFIED</backCoating>
+      <texture>UNSPECIFIED</texture>
+      <grade>UNSPECIFIED</grade>
+      <holeName>
+        <holeCount>0</holeCount>
+        <geometry>0.0</geometry>
+        <metric>false</metric>
+      </holeName>
+    </slipMedia>
+    <slipPerDocument>false</slipPerDocument>
+    <slipTrailer>false</slipTrailer>
+    <virtualStationery>true</virtualStationery>
+    <whiteThreshold>0.025</whiteThreshold>
+  </printerSettingConfig>
+  <printerSettingConfigName>None</printerSettingConfigName>
+  <rangeMode>ALL_RECORDS</rangeMode>
+  <recordRangeAll>true</recordRangeAll>
+  <reverseOrder>false</reverseOrder>
+  <separation>true</separation>
+  <separationConfig>
+    <fileScope>DOCUMENT</fileScope>
+    <jogLevel>NONE</jogLevel>
+    <pageCountSplit>NONE</pageCountSplit>
+    <pageCountSplitNo>1000</pageCountSplitNo>
+    <slipMedia landscape="false">
+      <displayName>Slip Sheet</displayName>
+      <size>
+        <name>Letter</name>
+        <width>8.5in</width>
+        <height>11in</height>
+      </size>
+      <name>Slip Sheet</name>
+      <weight>80g</weight>
+      <frontCoating>NONE</frontCoating>
+      <backCoating>NONE</backCoating>
+      <texture>NONE</texture>
+      <grade>UNCOATED_WHITE_PAPER</grade>
+      <holeName>
+        <holeCount>0</holeCount>
+        <geometry>0.0</geometry>
+        <metric>false</metric>
+      </holeName>
+    </slipMedia>
+    <slipSheet>DOCUMENT</slipSheet>
+    <slipSheetPosition>NONE</slipSheetPosition>
+  </separationConfig>
+  <signatures></signatures>
+  <tleConfig>
+    <pluginId>0</pluginId>
+    <documentSetTLE>true</documentSetTLE>
+    <documentTLE>true</documentTLE>
+    <jobSegmentTLE>true</jobSegmentTLE>
+  </tleConfig>
+  <tleGeneration>true</tleGeneration>
+</outputCreationConfig>

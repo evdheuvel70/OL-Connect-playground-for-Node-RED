@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1888322</OrderNumber>
+		<CustomerPO>355765</CustomerPO>
+		<CustomerNumber>CU42321513</CustomerNumber>
+		<SalesRep>Huntlee Siberry</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Carlen</ContactFirstName>
+		<ContactLastName>Zeal</ContactLastName>
+		<ContactPhone>+55 (679) 217-9581</ContactPhone>
+		<ContactEmail>carlen.zeal@example.com</ContactEmail>
+		<Company>Shuffledrive</Company>
+		<StreetAddress>1 Bluestem Pass</StreetAddress>
+		<City>Luziânia</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>72800-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>375428</Number>
+				<Description>Hot Hands Hand Warmers 10 Pack</Description>
+				<UnitPrice>19.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>79.96</Total>
+			</Product>
+			<Product>
+				<Number>401966</Number>
+				<Description>Fischer Excursion 88 Crown Cross Country Skis 2016</Description>
+				<UnitPrice>303.96</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>911.88</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>991.84</InvSubTotal>
+		<InvTaxTotal>148.78</InvTaxTotal>
+		<InvTotal>1140.62</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>1</Reminders>
+	</invoice>
+</invoices>

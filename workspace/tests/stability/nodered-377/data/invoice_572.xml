@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1873048</OrderNumber>
+		<CustomerPO>269944</CustomerPO>
+		<CustomerNumber>CU57543012</CustomerNumber>
+		<SalesRep>Devy Woolatt</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Stesha</ContactFirstName>
+		<ContactLastName>Scholey</ContactLastName>
+		<ContactPhone>+27 (575) 150-3915</ContactPhone>
+		<ContactEmail>stesha.scholey@example.com</ContactEmail>
+		<Company>Yombu</Company>
+		<StreetAddress>69 Fallview Lane</StreetAddress>
+		<City>Krugersdorp</City>
+		<State/>
+		<Country>South Africa</Country>
+		<ZipCode>1933</ZipCode>
+		<LanguageCode>en</LanguageCode>
+		<Locale>en-ZA</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>363359</Number>
+				<Description>Dakine Flame Mat Stomp Pad 2016</Description>
+				<UnitPrice>10.39</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>41.56</Total>
+			</Product>
+			<Product>
+				<Number>391111</Number>
+				<Description>Rossignol Temptation 80 Womens Skis with Xelium Saphir 110 Bindings</Description>
+				<UnitPrice>449.94</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>899.88</Total>
+			</Product>
+			<Product>
+				<Number>400508</Number>
+				<Description>Burton Chopper Boys Snowboard 2016 130cm</Description>
+				<UnitPrice>132.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>531.76</Total>
+			</Product>
+			<Product>
+				<Number>148738</Number>
+				<Description>Triple 8 Undercover Wrist Guards 2016</Description>
+				<UnitPrice>24.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>49.98</Total>
+			</Product>
+			<Product>
+				<Number>352362</Number>
+				<Description>UK Pro POV 30 Case</Description>
+				<UnitPrice>54.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>164.97</Total>
+			</Product>
+			<Product>
+				<Number>281218</Number>
+				<Description>Dakine Home Grown Soy Stick Snowboard Wax</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>15.54</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1703.69</InvSubTotal>
+		<InvTaxTotal>255.55</InvTaxTotal>
+		<InvTotal>1959.24</InvTotal>
+		<InvCurrencyCode>ZAR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

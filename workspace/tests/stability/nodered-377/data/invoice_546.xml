@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1095006</OrderNumber>
+		<CustomerPO>332592</CustomerPO>
+		<CustomerNumber>CU69079900</CustomerNumber>
+		<SalesRep>Jami Moynham</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Van</ContactFirstName>
+		<ContactLastName>William</ContactLastName>
+		<ContactPhone>+55 (488) 667-1339</ContactPhone>
+		<ContactEmail>van.william@example.com</ContactEmail>
+		<Company>Quaxo</Company>
+		<StreetAddress>7 Jackson Plaza</StreetAddress>
+		<City>Frei Paulo</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>49514-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>362783</Number>
+				<Description>Gordini GORE-TEX STORM TROOPER II Gloves</Description>
+				<UnitPrice>69.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>209.97</Total>
+			</Product>
+			<Product>
+				<Number>389210</Number>
+				<Description>Burton Backhill Medium Duffel Bag 2016</Description>
+				<UnitPrice>69.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>279.76</Total>
+			</Product>
+			<Product>
+				<Number>357224</Number>
+				<Description>Oakley A Frame 2.0 Goggles</Description>
+				<UnitPrice>99.93</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>199.86</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>689.59</InvSubTotal>
+		<InvTaxTotal>103.44</InvTaxTotal>
+		<InvTotal>793.03</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

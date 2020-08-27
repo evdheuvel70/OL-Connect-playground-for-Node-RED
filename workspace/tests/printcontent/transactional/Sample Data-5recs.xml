@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<invoices>     
+  <invoice>
+    <OrderNumber>INV1187622</OrderNumber>   
+    <CustomerPO>249321</CustomerPO>  
+    <CustomerNumber>CU81211493</CustomerNumber>
+    <SalesRep>Stephan Peplaw</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Caryl</ContactFirstName>
+    <ContactLastName>Buckthought</ContactLastName> 
+    <ContactPhone>+1 (478) 320-2583</ContactPhone>
+    <ContactEmail>caryl.buckthought@example.com</ContactEmail>
+    <Company>Skibox</Company>
+    <StreetAddress>7 Hudson Plaza</StreetAddress> 
+    <City>Savannah</City>
+    <State>Georgia</State>  
+    <Country>United States</Country>
+    <ZipCode>31422</ZipCode>
+    <LanguageCode>en</LanguageCode>
+    <Locale>en-US</Locale>
+    <DeliveryDate>2019-05-30</DeliveryDate>
+    <Products>
+      <Product>
+        <Number>363372</Number>
+        <Description>Dakine Deluxe Tune Kit 2016</Description>
+        <UnitPrice>48.1</UnitPrice>
+        <Ordered>3</Ordered>
+        <Shipped>3</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>144.3</Total>
+      </Product>
+    </Products>
+    <InvSubTotal>144.3</InvSubTotal>
+    <InvTaxTotal>21.65</InvTaxTotal>
+    <InvTotal>165.95</InvTotal>
+    <InvCurrencyCode>USD</InvCurrencyCode>
+    <InvDueDate>2019-07-06</InvDueDate>
+    <InvStatus>Open</InvStatus>
+    <Reminders>0</Reminders>
+  </invoice>
+  <invoice> 
+    <OrderNumber>INV1960975</OrderNumber>
+    <CustomerPO>291862</CustomerPO>
+    <CustomerNumber>CU60206942</CustomerNumber>
+    <SalesRep>Obadiah Warhurst</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Radcliffe</ContactFirstName>
+    <ContactLastName>Formilli</ContactLastName>
+    <ContactPhone>+55 (164) 810-5738</ContactPhone>
+    <ContactEmail>radcliffe.formilli@example.com</ContactEmail>
+    <Company>Voomm</Company>
+    <StreetAddress>309 Lawn Alley</StreetAddress>
+    <City>Ibiúna</City>
+    <State/>
+    <Country>Brazil</Country>
+    <ZipCode>18150-000</ZipCode>
+    <LanguageCode>pt</LanguageCode>
+    <Locale>pt-BR</Locale>
+    <DeliveryDate>2019-05-30</DeliveryDate>
+    <Products>
+      <Product>
+        <Number>404947</Number>
+        <Description>Tubbs Wilderness Snowshoes</Description>
+        <UnitPrice>149.96</UnitPrice>
+        <Ordered>4</Ordered>
+        <Shipped>4</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>599.84</Total>
+      </Product>
+      <Product>
+        <Number>404658</Number>
+        <Description>Dakine Covert Snowboard Leash 2016</Description>
+        <UnitPrice>5.59</UnitPrice>
+        <Ordered>3</Ordered>
+        <Shipped>3</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>16.77</Total>
+      </Product>
+      <Product>
+        <Number>249294</Number>
+        <Description>Dakine Key Lock Snowboarding Tool</Description>
+        <UnitPrice>9.77</UnitPrice>
+        <Ordered>1</Ordered>
+        <Shipped>1</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>9.77</Total>
+      </Product>
+      <Product>
+        <Number>388459</Number>
+        <Description>K2 Missy Kids Skis with Marker Fastrack2 7.0 Bindings</Description>
+        <UnitPrice>278.95</UnitPrice>
+        <Ordered>4</Ordered>
+        <Shipped>4</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>1115.8</Total>
+      </Product>
+    </Products>
+    <InvSubTotal>1742.18</InvSubTotal>
+    <InvTaxTotal>261.33</InvTaxTotal>
+    <InvTotal>2003.51</InvTotal>
+    <InvCurrencyCode>BRL</InvCurrencyCode>
+    <InvDueDate>2019-07-06</InvDueDate>
+    <InvStatus>Paid</InvStatus>
+    <Reminders>0</Reminders>
+  </invoice>
+  <invoice> 
+    <OrderNumber>INV1800088</OrderNumber>
+    <CustomerPO>272675</CustomerPO>
+    <CustomerNumber>CU57542925</CustomerNumber>
+    <SalesRep>Duffy Hickisson</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Teena</ContactFirstName>
+    <ContactLastName>Ure</ContactLastName>
+    <ContactPhone>+55 (433) 440-3666</ContactPhone>
+    <ContactEmail>teena.ure@example.com</ContactEmail>
+    <Company>Gigashots</Company>
+    <StreetAddress>937 Kennedy Trail</StreetAddress>
+    <City>Barcarena</City>
+    <State/>
+    <Country>Brazil</Country>
+    <ZipCode>68445-000</ZipCode>
+    <LanguageCode>pt</LanguageCode>
+    <Locale>pt-BR</Locale>
+    <DeliveryDate>2019-05-30</DeliveryDate>
+    <Products>
+      <Product>
+        <Number>281218</Number>
+        <Description>Dakine Home Grown Soy Stick Snowboard Wax</Description>
+        <UnitPrice>7.77</UnitPrice>
+        <Ordered>4</Ordered>
+        <Shipped>4</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>31.08</Total>
+      </Product>
+      <Product>
+        <Number>173097</Number>
+        <Description>Triple 8 Bumsaver II Snowboard Pads 2016</Description>
+        <UnitPrice>59.99</UnitPrice>
+        <Ordered>4</Ordered>
+        <Shipped>4</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>239.96</Total>
+      </Product>
+      <Product>
+        <Number>404947</Number>
+        <Description>Tubbs Wilderness Snowshoes</Description>
+        <UnitPrice>149.96</UnitPrice>
+        <Ordered>4</Ordered>
+        <Shipped>4</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>599.84</Total>
+      </Product>
+      <Product>
+        <Number>404658</Number>
+        <Description>Dakine Covert Snowboard Leash 2016</Description>
+        <UnitPrice>5.59</UnitPrice>
+        <Ordered>2</Ordered>
+        <Shipped>2</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>11.18</Total>
+      </Product>
+      <Product>
+        <Number>363872</Number>
+        <Description>Swix F4 Universal Glide Wax 2016</Description>
+        <UnitPrice>15.99</UnitPrice>
+        <Ordered>2</Ordered>
+        <Shipped>2</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>31.98</Total>
+      </Product>
+    </Products>
+    <InvSubTotal>914.04</InvSubTotal>
+    <InvTaxTotal>137.11</InvTaxTotal>
+    <InvTotal>1051.15</InvTotal>
+    <InvCurrencyCode>BRL</InvCurrencyCode>
+    <InvDueDate>2019-07-06</InvDueDate>
+    <InvStatus>Open</InvStatus>
+    <Reminders>0</Reminders>
+  </invoice>
+  <invoice> 
+    <OrderNumber>INV1414924</OrderNumber>
+    <CustomerPO>420582</CustomerPO>
+    <CustomerNumber>CU76044474</CustomerNumber>
+    <SalesRep>Ellene Yashnov</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Ola</ContactFirstName>
+    <ContactLastName>McGarrell</ContactLastName>
+    <ContactPhone>+44 (121) 711-6660</ContactPhone>
+    <ContactEmail>ola.mcgarrell@example.com</ContactEmail>
+    <Company>Thoughtblab</Company>
+    <StreetAddress>1608 Pond Crossing</StreetAddress>
+    <City>Marston</City>
+    <State>England</State>
+    <Country>United Kingdom</Country>
+    <ZipCode>ST20</ZipCode>
+    <LanguageCode>en</LanguageCode>
+    <Locale>en-UK</Locale>
+    <DeliveryDate>2019-05-30</DeliveryDate>
+    <Products>
+      <Product>
+        <Number>351508</Number>
+        <Description>Rossignol Alias Sensor 120 Ski Boots</Description>
+        <UnitPrice>289.94</UnitPrice>
+        <Ordered>4</Ordered>
+        <Shipped>4</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>1159.76</Total>
+      </Product>
+    </Products>
+    <InvSubTotal>1159.76</InvSubTotal>
+    <InvTaxTotal>173.96</InvTaxTotal>
+    <InvTotal>1333.72</InvTotal>
+    <InvCurrencyCode>EUR</InvCurrencyCode>
+    <InvDueDate>2019-07-06</InvDueDate>
+    <InvStatus>Paid</InvStatus>
+    <Reminders>0</Reminders>
+  </invoice>
+  <invoice> 
+    <OrderNumber>INV1509025</OrderNumber>
+    <CustomerPO>590787</CustomerPO>
+    <CustomerNumber>CU61113696</CustomerNumber>
+    <SalesRep>Rodge Clubley</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Rich</ContactFirstName>
+    <ContactLastName>Pitcaithley</ContactLastName>
+    <ContactPhone>+33 (967) 768-0618</ContactPhone>
+    <ContactEmail>rich.pitcaithley@example.com</ContactEmail>
+    <Company>Gabcube</Company>
+    <StreetAddress>72 Dexter Avenue</StreetAddress>
+    <City>Croissy-sur-Seine</City>
+    <State>Île-de-France</State>
+    <Country>France</Country>
+    <ZipCode>78294 CEDEX</ZipCode>
+    <LanguageCode>fr</LanguageCode>
+    <Locale>fr-FR</Locale>
+    <DeliveryDate>2019-05-30</DeliveryDate>
+    <Products>
+      <Product>
+        <Number>117653</Number>
+        <Description>Swix Carving Kit 1</Description>
+        <UnitPrice>44.99</UnitPrice>
+        <Ordered>2</Ordered>
+        <Shipped>2</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>89.98</Total>
+      </Product>
+      <Product>
+        <Number>178399</Number>
+        <Description>Swix Base Cleaner Liquid - 500ml 2016</Description>
+        <UnitPrice>34.99</UnitPrice>
+        <Ordered>3</Ordered>
+        <Shipped>3</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>104.97</Total>
+      </Product>
+      <Product>
+        <Number>404947</Number>
+        <Description>Tubbs Wilderness Snowshoes</Description>
+        <UnitPrice>149.96</UnitPrice>
+        <Ordered>2</Ordered>
+        <Shipped>2</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>299.92</Total>
+      </Product>
+      <Product>
+        <Number>173097</Number>
+        <Description>Triple 8 Bumsaver II Snowboard Pads 2016</Description>
+        <UnitPrice>59.99</UnitPrice>
+        <Ordered>3</Ordered>
+        <Shipped>3</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>179.97</Total>
+      </Product>
+      <Product>
+        <Number>275075</Number>
+        <Description>SportsStuff Air Flyer Inflatable Sled</Description>
+        <UnitPrice>39.99</UnitPrice>
+        <Ordered>4</Ordered>
+        <Shipped>4</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>159.96</Total>
+      </Product>
+      <Product>
+        <Number>281218</Number>
+        <Description>Dakine Home Grown Soy Stick Snowboard Wax</Description>
+        <UnitPrice>7.77</UnitPrice>
+        <Ordered>1</Ordered>
+        <Shipped>1</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>7.77</Total>
+      </Product>
+    </Products>
+    <InvSubTotal>842.57</InvSubTotal>
+    <InvTaxTotal>126.39</InvTaxTotal>
+    <InvTotal>968.96</InvTotal>
+    <InvCurrencyCode>EUR</InvCurrencyCode>
+    <InvDueDate>2019-07-06</InvDueDate>
+    <InvStatus>Paid</InvStatus>
+    <Reminders>0</Reminders>
+  </invoice>
+</invoices> 

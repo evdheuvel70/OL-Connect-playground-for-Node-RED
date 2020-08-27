@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1414924</OrderNumber>
+		<CustomerPO>420582</CustomerPO>
+		<CustomerNumber>CU76044474</CustomerNumber>
+		<SalesRep>Ellene Yashnov</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Ola</ContactFirstName>
+		<ContactLastName>McGarrell</ContactLastName>
+		<ContactPhone>+44 (121) 711-6660</ContactPhone>
+		<ContactEmail>ola.mcgarrell@example.com</ContactEmail>
+		<Company>Thoughtblab</Company>
+		<StreetAddress>1608 Pond Crossing</StreetAddress>
+		<City>Marston</City>
+		<State>England</State>
+		<Country>United Kingdom</Country>
+		<ZipCode>ST20</ZipCode>
+		<LanguageCode>en</LanguageCode>
+		<Locale>en-GB</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>351508</Number>
+				<Description>Rossignol Alias Sensor 120 Ski Boots</Description>
+				<UnitPrice>289.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1159.76</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1159.76</InvSubTotal>
+		<InvTaxTotal>173.96</InvTaxTotal>
+		<InvTotal>1333.72</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

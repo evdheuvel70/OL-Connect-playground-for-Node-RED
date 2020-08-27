@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1831907</OrderNumber>
+		<CustomerPO>485612</CustomerPO>
+		<CustomerNumber>CU53738370</CustomerNumber>
+		<SalesRep>Fin Duro</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Noella</ContactFirstName>
+		<ContactLastName>Lorain</ContactLastName>
+		<ContactPhone>+33 (311) 878-9996</ContactPhone>
+		<ContactEmail>noella.lorain@example.com</ContactEmail>
+		<Company>Thoughtbeat</Company>
+		<StreetAddress>6360 Vahlen Plaza</StreetAddress>
+		<City>Troyes</City>
+		<State>Champagne-Ardenne</State>
+		<Country>France</Country>
+		<ZipCode>10081 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>363872</Number>
+				<Description>Swix F4 Universal Glide Wax 2016</Description>
+				<UnitPrice>15.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>63.96</Total>
+			</Product>
+			<Product>
+				<Number>393011</Number>
+				<Description>Rossignol Templar MagTek Wide Snowboard 2016</Description>
+				<UnitPrice>399.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1599.96</Total>
+			</Product>
+			<Product>
+				<Number>360906</Number>
+				<Description>Salomon Quest Pro 80 W Womens Ski Boots</Description>
+				<UnitPrice>319.92</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>319.92</Total>
+			</Product>
+			<Product>
+				<Number>362899</Number>
+				<Description>Marker Squire Ski Bindings</Description>
+				<UnitPrice>129.94</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>389.82</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>2373.66</InvSubTotal>
+		<InvTaxTotal>356.05</InvTaxTotal>
+		<InvTotal>2729.71</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

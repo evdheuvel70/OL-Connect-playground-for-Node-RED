@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<invoices>     
+  <invoice>
+    <OrderNumber>INV1187622</OrderNumber>   
+    <CustomerPO>249321</CustomerPO>  
+    <CustomerNumber>CU81211493</CustomerNumber>
+    <SalesRep>Stephan Peplaw</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Caryl</ContactFirstName>
+    <ContactLastName>Buckthought</ContactLastName> 
+    <ContactPhone>+1 (478) 320-2583</ContactPhone>
+    <ContactEmail>caryl.buckthought@example.com</ContactEmail>
+    <Company>Skibox</Company>
+    <StreetAddress>7 Hudson Plaza</StreetAddress> 
+    <City>Savannah</City>
+    <State>Georgia</State>  
+    <Country>United States</Country>
+    <ZipCode>31422</ZipCode>
+    <LanguageCode>en</LanguageCode>
+    <Locale>en-US</Locale>
+    <DeliveryDate>2019-05-30</DeliveryDate>
+    <Products>
+      <Product>
+        <Number>363372</Number>
+        <Description>Dakine Deluxe Tune Kit 2016</Description>
+        <UnitPrice>48.1</UnitPrice>
+        <Ordered>3</Ordered>
+        <Shipped>3</Shipped>
+        <BackOrder>0</BackOrder>
+        <Total>144.3</Total>
+      </Product>
+    </Products>
+    <InvSubTotal>144.3</InvSubTotal>
+    <InvTaxTotal>21.65</InvTaxTotal>
+    <InvTotal>165.95</InvTotal>
+    <InvCurrencyCode>USD</InvCurrencyCode>
+    <InvDueDate>2019-07-06</InvDueDate>
+    <InvStatus>Open</InvStatus>
+    <Reminders>0</Reminders>
+  </invoice>
+</invoices>

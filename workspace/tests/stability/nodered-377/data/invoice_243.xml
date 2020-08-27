@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1077482</OrderNumber>
+		<CustomerPO>249726</CustomerPO>
+		<CustomerNumber>CU51406441</CustomerNumber>
+		<SalesRep>Oren Milsap</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Orlando</ContactFirstName>
+		<ContactLastName>Gillions</ContactLastName>
+		<ContactPhone>+55 (205) 495-5195</ContactPhone>
+		<ContactEmail>orlando.gillions@example.com</ContactEmail>
+		<Company>Gabtune</Company>
+		<StreetAddress>1 Basil Park</StreetAddress>
+		<City>Mamanguape</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>58280-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>363375</Number>
+				<Description>Dakine Supertune Base Cleaner 2016</Description>
+				<UnitPrice>11.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>23.98</Total>
+			</Product>
+			<Product>
+				<Number>363872</Number>
+				<Description>Swix F4 Universal Glide Wax 2016</Description>
+				<UnitPrice>15.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>31.98</Total>
+			</Product>
+			<Product>
+				<Number>389451</Number>
+				<Description>Gnu Riders Choice C2 Wide Snowboard 2016</Description>
+				<UnitPrice>391.94</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>391.94</Total>
+			</Product>
+			<Product>
+				<Number>351508</Number>
+				<Description>Rossignol Alias Sensor 120 Ski Boots</Description>
+				<UnitPrice>289.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1159.76</Total>
+			</Product>
+			<Product>
+				<Number>360906</Number>
+				<Description>Salomon Quest Pro 80 W Womens Ski Boots</Description>
+				<UnitPrice>319.92</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>319.92</Total>
+			</Product>
+			<Product>
+				<Number>281218</Number>
+				<Description>Dakine Home Grown Soy Stick Snowboard Wax</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>15.54</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1943.12</InvSubTotal>
+		<InvTaxTotal>291.47</InvTaxTotal>
+		<InvTotal>2234.59</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

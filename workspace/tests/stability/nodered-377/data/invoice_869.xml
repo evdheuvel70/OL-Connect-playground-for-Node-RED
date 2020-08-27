@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1532424</OrderNumber>
+		<CustomerPO>470207</CustomerPO>
+		<CustomerNumber>CU15138495</CustomerNumber>
+		<SalesRep>Faith Skoyles</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Chelsy</ContactFirstName>
+		<ContactLastName>Dunklee</ContactLastName>
+		<ContactPhone>+1 (813) 523-3692</ContactPhone>
+		<ContactEmail>chelsy.dunklee@example.com</ContactEmail>
+		<Company>Mita</Company>
+		<StreetAddress>660 Nova Circle</StreetAddress>
+		<City>Tampa</City>
+		<State>Florida</State>
+		<Country>United States</Country>
+		<ZipCode>33680</ZipCode>
+		<LanguageCode>es</LanguageCode>
+		<Locale>es-US</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>146583</Number>
+				<Description>Grabber Toe Warmers 8-Pack</Description>
+				<UnitPrice>15.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>63.96</Total>
+			</Product>
+			<Product>
+				<Number>351508</Number>
+				<Description>Rossignol Alias Sensor 120 Ski Boots</Description>
+				<UnitPrice>289.94</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>869.82</Total>
+			</Product>
+			<Product>
+				<Number>148738</Number>
+				<Description>Triple 8 Undercover Wrist Guards 2016</Description>
+				<UnitPrice>24.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>49.98</Total>
+			</Product>
+			<Product>
+				<Number>362783</Number>
+				<Description>Gordini GORE-TEX STORM TROOPER II Gloves</Description>
+				<UnitPrice>69.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>69.99</Total>
+			</Product>
+			<Product>
+				<Number>404947</Number>
+				<Description>Tubbs Wilderness Snowshoes</Description>
+				<UnitPrice>149.96</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>449.88</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1503.63</InvSubTotal>
+		<InvTaxTotal>225.54</InvTaxTotal>
+		<InvTotal>1729.17</InvTotal>
+		<InvCurrencyCode>USD</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

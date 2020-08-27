@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1628162</OrderNumber>
+		<CustomerPO>402805</CustomerPO>
+		<CustomerNumber>CU26206481</CustomerNumber>
+		<SalesRep>Trevar Canfield</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Cyrus</ContactFirstName>
+		<ContactLastName>Mattimoe</ContactLastName>
+		<ContactPhone>+33 (898) 626-4988</ContactPhone>
+		<ContactEmail>cyrus.mattimoe@example.com</ContactEmail>
+		<Company>Divape</Company>
+		<StreetAddress>57662 Doe Crossing Center</StreetAddress>
+		<City>Besançon</City>
+		<State>Franche-Comté</State>
+		<Country>France</Country>
+		<ZipCode>25035 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>402102</Number>
+				<Description>Smith Prophecy Turbo Fan OTG Goggles 2016 Blue</Description>
+				<UnitPrice>160</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>320</Total>
+			</Product>
+			<Product>
+				<Number>364678</Number>
+				<Description>Fischer XC Comfort Pro NNN Cross Country Ski Boots</Description>
+				<UnitPrice>111.2</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>333.6</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>653.6</InvSubTotal>
+		<InvTaxTotal>98.04</InvTaxTotal>
+		<InvTotal>751.64</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1490232</OrderNumber>
+		<CustomerPO>373702</CustomerPO>
+		<CustomerNumber>CU81351234</CustomerNumber>
+		<SalesRep>Aggie Gartery</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Guinevere</ContactFirstName>
+		<ContactLastName>Raund</ContactLastName>
+		<ContactPhone>+33 (829) 302-1920</ContactPhone>
+		<ContactEmail>guinevere.raund@example.com</ContactEmail>
+		<Company>Youfeed</Company>
+		<StreetAddress>8 Sloan Park</StreetAddress>
+		<City>Valence</City>
+		<State>Rhône-Alpes</State>
+		<Country>France</Country>
+		<ZipCode>26029 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>389374</Number>
+				<Description>Flow Five Snowboard Bindings</Description>
+				<UnitPrice>129.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>519.76</Total>
+			</Product>
+			<Product>
+				<Number>275075</Number>
+				<Description>SportsStuff Air Flyer Inflatable Sled</Description>
+				<UnitPrice>39.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>39.99</Total>
+			</Product>
+			<Product>
+				<Number>426010</Number>
+				<Description>Rossignol Winters Fire Heated Ski Gloves</Description>
+				<UnitPrice>129.77</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>259.54</Total>
+			</Product>
+			<Product>
+				<Number>351508</Number>
+				<Description>Rossignol Alias Sensor 120 Ski Boots</Description>
+				<UnitPrice>289.94</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>289.94</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1109.23</InvSubTotal>
+		<InvTaxTotal>166.38</InvTaxTotal>
+		<InvTotal>1275.61</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1085580</OrderNumber>
+		<CustomerPO>565948</CustomerPO>
+		<CustomerNumber>CU79254947</CustomerNumber>
+		<SalesRep>Granville McGruar</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Jakob</ContactFirstName>
+		<ContactLastName>Loreit</ContactLastName>
+		<ContactPhone>+1 (912) 460-8864</ContactPhone>
+		<ContactEmail>jakob.loreit@example.com</ContactEmail>
+		<Company>Layo</Company>
+		<StreetAddress>4 Kropf Terrace</StreetAddress>
+		<City>Savannah</City>
+		<State>Georgia</State>
+		<Country>United States</Country>
+		<ZipCode>31410</ZipCode>
+		<LanguageCode>es</LanguageCode>
+		<Locale>es-US</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>364716</Number>
+				<Description>Fischer BCX Variolite Cross Country Ski Poles</Description>
+				<UnitPrice>72</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>288</Total>
+			</Product>
+			<Product>
+				<Number>423246</Number>
+				<Description>Rossignol Unique. and Nordica NXT N6 Womens Ski Package</Description>
+				<UnitPrice>419.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>419.99</Total>
+			</Product>
+			<Product>
+				<Number>393011</Number>
+				<Description>Rossignol Templar MagTek Wide Snowboard 2016</Description>
+				<UnitPrice>399.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>799.98</Total>
+			</Product>
+			<Product>
+				<Number>404658</Number>
+				<Description>Dakine Covert Snowboard Leash 2016</Description>
+				<UnitPrice>5.59</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>16.77</Total>
+			</Product>
+			<Product>
+				<Number>360081</Number>
+				<Description>Anon Raider Helmet</Description>
+				<UnitPrice>49.77</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>99.54</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1624.28</InvSubTotal>
+		<InvTaxTotal>243.64</InvTaxTotal>
+		<InvTotal>1867.92</InvTotal>
+		<InvCurrencyCode>USD</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

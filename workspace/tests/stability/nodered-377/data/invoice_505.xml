@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1324346</OrderNumber>
+		<CustomerPO>430833</CustomerPO>
+		<CustomerNumber>CU63936525</CustomerNumber>
+		<SalesRep>Letti Smithson</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Dino</ContactFirstName>
+		<ContactLastName>Lawson</ContactLastName>
+		<ContactPhone>+55 (431) 845-9786</ContactPhone>
+		<ContactEmail>dino.lawson@example.com</ContactEmail>
+		<Company>Zoomlounge</Company>
+		<StreetAddress>328 Rockefeller Alley</StreetAddress>
+		<City>Jaru</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>78940-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>275075</Number>
+				<Description>SportsStuff Air Flyer Inflatable Sled</Description>
+				<UnitPrice>39.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>39.99</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>39.99</InvSubTotal>
+		<InvTaxTotal>6</InvTaxTotal>
+		<InvTotal>45.99</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1034498</OrderNumber>
+		<CustomerPO>559821</CustomerPO>
+		<CustomerNumber>CU81250155</CustomerNumber>
+		<SalesRep>Peta MacDermot</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Ferdinande</ContactFirstName>
+		<ContactLastName>Lampett</ContactLastName>
+		<ContactPhone>+33 (136) 711-2730</ContactPhone>
+		<ContactEmail>ferdinande.lampett@example.com</ContactEmail>
+		<Company>Aibox</Company>
+		<StreetAddress>83 Del Mar Circle</StreetAddress>
+		<City>Amiens</City>
+		<State>Picardie</State>
+		<Country>France</Country>
+		<ZipCode>80891 CEDEX 3</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>357224</Number>
+				<Description>Oakley A Frame 2.0 Goggles</Description>
+				<UnitPrice>99.93</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>99.93</Total>
+			</Product>
+			<Product>
+				<Number>368771</Number>
+				<Description>Tubbs 3 Piece Poles</Description>
+				<UnitPrice>44.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>89.98</Total>
+			</Product>
+			<Product>
+				<Number>148738</Number>
+				<Description>Triple 8 Undercover Wrist Guards 2016</Description>
+				<UnitPrice>24.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>99.96</Total>
+			</Product>
+			<Product>
+				<Number>362783</Number>
+				<Description>Gordini GORE-TEX STORM TROOPER II Gloves</Description>
+				<UnitPrice>69.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>279.96</Total>
+			</Product>
+			<Product>
+				<Number>400508</Number>
+				<Description>Burton Chopper Boys Snowboard 2016 130cm</Description>
+				<UnitPrice>132.94</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>265.88</Total>
+			</Product>
+			<Product>
+				<Number>389374</Number>
+				<Description>Flow Five Snowboard Bindings</Description>
+				<UnitPrice>129.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>519.76</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1355.47</InvSubTotal>
+		<InvTaxTotal>203.32</InvTaxTotal>
+		<InvTotal>1558.79</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>1</Reminders>
+	</invoice>
+</invoices>

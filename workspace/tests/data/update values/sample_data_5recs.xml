@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+  <invoice> 
+    <OrderNumber>INV1187622</OrderNumber>
+    <CustomerPO>249321</CustomerPO>
+    <CustomerNumber>CU81211493</CustomerNumber>
+    <SalesRep>Stephan Peplaw</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Caryl</ContactFirstName>
+    <ContactLastName>Buckthought</ContactLastName>
+    <ContactPhone>+1 (478) 320-2583</ContactPhone>
+    <ContactEmail>caryl.buckthought@example.com</ContactEmail>
+    <Company>Skibox</Company>
+  </invoice>
+  <invoice> 
+    <OrderNumber>INV1960975</OrderNumber>
+    <CustomerPO>291862</CustomerPO>
+    <CustomerNumber>CU60206942</CustomerNumber>
+    <SalesRep>Obadiah Warhurst</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Radcliffe</ContactFirstName>
+    <ContactLastName>Formilli</ContactLastName>
+    <ContactPhone>+55 (164) 810-5738</ContactPhone>
+    <ContactEmail>radcliffe.formilli@example.com</ContactEmail>
+    <Company>Voomm</Company>
+  </invoice>
+  <invoice> 
+    <OrderNumber>INV1800088</OrderNumber>
+    <CustomerPO>272675</CustomerPO>
+    <CustomerNumber>CU57542925</CustomerNumber>
+    <SalesRep>Duffy Hickisson</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Teena</ContactFirstName>
+    <ContactLastName>Ure</ContactLastName>
+    <ContactPhone>+55 (433) 440-3666</ContactPhone>
+    <ContactEmail>teena.ure@example.com</ContactEmail>
+    <Company>Gigashots</Company>
+  </invoice>
+  <invoice> 
+    <OrderNumber>INV1414924</OrderNumber>
+    <CustomerPO>420582</CustomerPO>
+    <CustomerNumber>CU76044474</CustomerNumber>
+    <SalesRep>Ellene Yashnov</SalesRep>
+    <Date>2019-06-06</Date>
+    <ContactFirstName>Ola</ContactFirstName>
+    <ContactLastName>McGarrell</ContactLastName>
+    <ContactPhone>+44 (121) 711-6660</ContactPhone>
+    <ContactEmail>ola.mcgarrell@example.com</ContactEmail>
+    <Company>Thoughtblab</Company>
+  </invoice>
+</invoices>

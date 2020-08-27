@@ -1,0 +1,129 @@
+{ 
+    "environments" : {
+      "default" : {
+        "workspace" : "C:\\Node-RED Workspace"
+      }
+    },
+    "resources": [
+      {
+        "topic" : "data\\xml",
+        "resource": "basic xml data.OL-datamapper"
+      },
+      {
+        "topic" : "data\\runtime parameters",
+        "resource": "runtime parameters.OL-datamapper"
+      },
+      {
+        "topic" : "data\\update values",
+        "resource": "update values.OL-datamapper"
+      },
+      {
+        "topic" : "data\\forms",
+        "resource": "form xml data.OL-datamapper"
+      },
+      {
+        "topic" : "data\\forms",
+        "resource": "form xml data.OL-template"
+      },
+      {
+        "topic" : "data\\full",
+        "resource": "data frankentest.OL-datamapper"
+      },
+      {
+        "topic" : "data\\full",
+        "resource": "data frankentest.OL-template"
+      },
+      {
+        "topic" : "htmlcontent",
+        "resource": "basic web page.OL-template"
+      },
+      {
+        "topic" : "htmlcontent\\runtime parameters",
+        "resource": "html runtime parameters.OL-template"
+      },
+      {
+        "topic" : "htmlcontent\\runtime parameters",
+        "resource": "html runtime parameters.OL-datamapper"
+      },
+      {
+        "topic" : "emailcontent\\basic",
+        "resource": "basic-email.OL-template"
+      },
+      {
+        "topic" : "emailcontent\\basic",
+        "resource": "basic-email.OL-datamapper"
+      },
+      {
+        "topic" : "previewpdf\\basic",
+        "resource": "Monster-card.OL-template"
+      },
+      {
+        "topic" : "previewpdf\\basic",
+        "resource": "Superhero-card.OL-template"
+      },
+      {
+        "topic" : "previewpdf\\runtime parameters",
+        "resource": "pdf runtime parameters.OL-template"
+      },
+      {
+        "topic" : "previewpdf\\runtime parameters",
+        "resource": "pdf runtime parameters.OL-datamapper"
+      },
+      {
+        "topic" : "printcontent\\transactional",
+        "resource": "PR_TRAN Data XML.OL-datamapper"
+      },
+      {
+        "topic" : "printcontent\\transactional",
+        "resource": "PR_TRAN Group by Customer Num.OL-jobpreset"
+      },
+      {
+        "topic" : "printcontent\\transactional",
+        "resource": "PR_TRAN Invoice.OL-template"
+      },
+      {
+        "topic" : "printcontent\\transactional",
+        "resource": "PR_TRAN PDF Full Job PDF.OL-outputpreset"
+      },
+      {
+        "topic" : "printcontent\\transactional",
+        "resource": "PR_TRAN PDF per Customer.OL-outputpreset"
+      },
+      {
+        "topic" : "printcontent\\transactional",
+        "resource": "PR_TRAN PDF per Invoice.OL-outputpreset"
+      },
+      {
+        "topic" : "cotg\\timesheets",
+        "resource": "COTG Timesheet Form.OL-datamapper"
+      },
+      {
+        "topic" : "cotg\\timesheets",
+        "resource": "COTG Timesheet Form.OL-template"
+      },
+      {
+        "topic" : "cotg\\timesheets",
+        "resource": "COTG Timesheet Report.OL-datamapper"
+      },
+      {
+        "topic" : "cotg\\timesheets",
+        "resource": "COTG Timesheet Report.OL-template"
+      },
+      {
+        "topic" : "stability\\nodered-377",
+        "resource": "nodered-377-invoice.OL-template"
+      },
+      {
+        "topic" : "stability\\nodered-377",
+        "resource": "nodered-377-invoice.OL-datamapper"
+      },
+      {
+        "topic" : "stability\\nodered-377",
+        "resource": "nodered-377-no-grouping.OL-jobpreset"
+      },
+      {
+        "topic" : "stability\\nodered-377",
+        "resource": "nodered-377-pdf-stationery.OL-outputpreset"
+      }
+    ]
+  }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1582959</OrderNumber>
+		<CustomerPO>609522</CustomerPO>
+		<CustomerNumber>CU81351234</CustomerNumber>
+		<SalesRep>Gabi Pagon</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Guinevere</ContactFirstName>
+		<ContactLastName>Raund</ContactLastName>
+		<ContactPhone>+33 (829) 302-1920</ContactPhone>
+		<ContactEmail>guinevere.raund@example.com</ContactEmail>
+		<Company>Youfeed</Company>
+		<StreetAddress>8 Sloan Park</StreetAddress>
+		<City>Valence</City>
+		<State>Rhône-Alpes</State>
+		<Country>France</Country>
+		<ZipCode>26029 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>404681</Number>
+				<Description>ThirtyTwo Maven Snowboard Boots 2016</Description>
+				<UnitPrice>119.94</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>239.88</Total>
+			</Product>
+			<Product>
+				<Number>363872</Number>
+				<Description>Swix F4 Universal Glide Wax 2016</Description>
+				<UnitPrice>15.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>15.99</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>255.87</InvSubTotal>
+		<InvTaxTotal>38.38</InvTaxTotal>
+		<InvTotal>294.25</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

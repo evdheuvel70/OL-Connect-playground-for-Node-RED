@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1387330</OrderNumber>
+		<CustomerPO>449058</CustomerPO>
+		<CustomerNumber>CU60206942</CustomerNumber>
+		<SalesRep>Donnie Dennick</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Radcliffe</ContactFirstName>
+		<ContactLastName>Formilli</ContactLastName>
+		<ContactPhone>+55 (164) 810-5738</ContactPhone>
+		<ContactEmail>radcliffe.formilli@example.com</ContactEmail>
+		<Company>Voomm</Company>
+		<StreetAddress>309 Lawn Alley</StreetAddress>
+		<City>Ibiúna</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>18150-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>363424</Number>
+				<Description>Dakine Boot Locker 69L Ski Boot Bag </Description>
+				<UnitPrice>48</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>48</Total>
+			</Product>
+			<Product>
+				<Number>148738</Number>
+				<Description>Triple 8 Undercover Wrist Guards 2016</Description>
+				<UnitPrice>24.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>99.96</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>147.96</InvSubTotal>
+		<InvTaxTotal>22.19</InvTaxTotal>
+		<InvTotal>170.15</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>1</Reminders>
+	</invoice>
+</invoices>

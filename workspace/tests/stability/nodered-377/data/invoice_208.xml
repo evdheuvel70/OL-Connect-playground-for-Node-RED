@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1162600</OrderNumber>
+		<CustomerPO>345947</CustomerPO>
+		<CustomerNumber>CU69079900</CustomerNumber>
+		<SalesRep>Rooney Grindle</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Van</ContactFirstName>
+		<ContactLastName>William</ContactLastName>
+		<ContactPhone>+55 (488) 667-1339</ContactPhone>
+		<ContactEmail>van.william@example.com</ContactEmail>
+		<Company>Quaxo</Company>
+		<StreetAddress>7 Jackson Plaza</StreetAddress>
+		<City>Frei Paulo</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>49514-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>281218</Number>
+				<Description>Dakine Home Grown Soy Stick Snowboard Wax</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>15.54</Total>
+			</Product>
+			<Product>
+				<Number>349893</Number>
+				<Description>Dakine Peace Studs Stomp Pad</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>7.77</Total>
+			</Product>
+			<Product>
+				<Number>363872</Number>
+				<Description>Swix F4 Universal Glide Wax 2016</Description>
+				<UnitPrice>15.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>63.96</Total>
+			</Product>
+			<Product>
+				<Number>248553</Number>
+				<Description>Therm-ic BasicKids Set Classic Boot Heaters 2016</Description>
+				<UnitPrice>79.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>239.97</Total>
+			</Product>
+			<Product>
+				<Number>389374</Number>
+				<Description>Flow Five Snowboard Bindings</Description>
+				<UnitPrice>129.94</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>129.94</Total>
+			</Product>
+			<Product>
+				<Number>363872</Number>
+				<Description>Swix F4 Universal Glide Wax 2016</Description>
+				<UnitPrice>15.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>63.96</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>521.14</InvSubTotal>
+		<InvTaxTotal>78.17</InvTaxTotal>
+		<InvTotal>599.31</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

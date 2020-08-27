@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1392296</OrderNumber>
+		<CustomerPO>264532</CustomerPO>
+		<CustomerNumber>CU38656805</CustomerNumber>
+		<SalesRep>Paulette Quail</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Kennett</ContactFirstName>
+		<ContactLastName>Tinkham</ContactLastName>
+		<ContactPhone>+55 (832) 297-0087</ContactPhone>
+		<ContactEmail>kennett.tinkham@example.com</ContactEmail>
+		<Company>Quatz</Company>
+		<StreetAddress>75 Buhler Circle</StreetAddress>
+		<City>Orlândia</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>14620-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>397696</Number>
+				<Description>Salomon X-Drive 8.0 Ti Skis with XT 12 Bindings</Description>
+				<UnitPrice>479.92</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1439.76</Total>
+			</Product>
+			<Product>
+				<Number>391111</Number>
+				<Description>Rossignol Temptation 80 Womens Skis with Xelium Saphir 110 Bindings</Description>
+				<UnitPrice>449.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>1799.76</Total>
+			</Product>
+			<Product>
+				<Number>117653</Number>
+				<Description>Swix Carving Kit 1</Description>
+				<UnitPrice>44.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>89.98</Total>
+			</Product>
+			<Product>
+				<Number>375428</Number>
+				<Description>Hot Hands Hand Warmers 10 Pack</Description>
+				<UnitPrice>19.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>39.98</Total>
+			</Product>
+			<Product>
+				<Number>363372</Number>
+				<Description>Dakine Deluxe Tune Kit 2016</Description>
+				<UnitPrice>48.1</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>96.2</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>3465.68</InvSubTotal>
+		<InvTaxTotal>519.85</InvTaxTotal>
+		<InvTotal>3985.53</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>2</Reminders>
+	</invoice>
+</invoices>

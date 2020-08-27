@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jobCreationConfig schemaVersion="1.0.2.0" xmlns="http://www.objectiflune.com/connectschemas/JobCreationConfig" xsi:schemaLocation="http://www.objectiflune.com/connectschemas/JobCreationConfig http://www.objectiflune.com/connectschemas/JobCreationConfig/1_0_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Group documents by customer number. Adds customer number to the meta data of the document set and the order number to the documents.</description>
+    <name>
+        <name>PR_TRAN Group by Customer Num</name>
+        <names>
+            <entry>
+                <key>
+                    <displayNames>
+                        <entry>
+                            <key>
+                                <iso>eng</iso>
+                            </key>
+                            <value>United States</value>
+                        </entry>
+                    </displayNames>
+                    <iso>
+                        <iso>eng</iso>
+                    </iso>
+                </key>
+                <value>PR_TRAN Group by Customer Num</value>
+            </entry>
+        </names>
+    </name>
+    <pluginId>0</pluginId>
+    <customFinishing>false</customFinishing>
+    <dataSelectionFilter>
+        <filteringAndSorting>false</filteringAndSorting>
+        <grouped>true</grouped>
+        <grouping>
+            <documentSetGroupingFields>
+                <fieldName>CustomerNumber</fieldName>
+                <sorting>ASCENDING</sorting>
+            </documentSetGroupingFields>
+            <sizeBreakGroupingEnabled>false</sizeBreakGroupingEnabled>
+            <sizeBreakRanges groupBy="SHEET_COUNT" groupingItem="DOCUMENT" sizeBreakRangeMetadataField="ItemSize">
+                <breakAfterGrouping>false</breakAfterGrouping>
+                <groupingLevel>DOC_SET</groupingLevel>
+                <ranges>
+                    <maxItems>9223372036854775807</maxItems>
+                    <rangeName>Size Range 1</rangeName>
+                </ranges>
+                <reverseOrder>false</reverseOrder>
+            </sizeBreakRanges>
+        </grouping>
+        <rules>
+            <operator>AND</operator>
+        </rules>
+        <sorting/>
+    </dataSelectionFilter>
+    <documentLevelFinishing>false</documentLevelFinishing>
+    <externalSortConfig lineEnd="WINDOWS">
+        <charset>UTF-8</charset>
+        <enabled>false</enabled>
+        <escapechar>92</escapechar>
+        <firstReturnDataRowHasFieldNames>false</firstReturnDataRowHasFieldNames>
+        <firstSortDataRowHasFieldNames>false</firstSortDataRowHasFieldNames>
+        <hexEscapechar>false</hexEscapechar>
+        <hexQuotechar>false</hexQuotechar>
+        <hexSeparator>false</hexSeparator>
+        <idField>RecID</idField>
+        <includedFields/>
+        <quotechar>34</quotechar>
+        <returnFieldInfos/>
+        <returnsData>false</returnsData>
+        <separator>44</separator>
+        <sortBy>RECORD_ORDER</sortBy>
+    </externalSortConfig>
+    <finishingOverrides/>
+    <metaData>true</metaData>
+    <metaDataFields>
+        <docFields sourceType="DATA_FIELD">
+            <source>CustomerNumber</source>
+            <tagName>CustomerNumber</tagName>
+        </docFields>
+        <docFields sourceType="DATA_FIELD">
+            <source>OrderNumber</source>
+            <tagName>OrderNumber</tagName>
+        </docFields>
+        <docSetFields sourceType="DATA_FIELD">
+            <source>CustomerNumber</source>
+            <tagName>CustomerNumber</tagName>
+        </docSetFields>
+        <forceMetaDataforDocLevel>false</forceMetaDataforDocLevel>
+        <forceMetaDataforDocSetLevel>false</forceMetaDataforDocSetLevel>
+        <forceMetaDataforJobLevel>false</forceMetaDataforJobLevel>
+        <forceMetaDataforJobSegmentLevel>false</forceMetaDataforJobSegmentLevel>
+        <forceMetaDataforPageLevel>false</forceMetaDataforPageLevel>
+    </metaDataFields>
+</jobCreationConfig>

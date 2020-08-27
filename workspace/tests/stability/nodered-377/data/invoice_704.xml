@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1509025</OrderNumber>
+		<CustomerPO>590787</CustomerPO>
+		<CustomerNumber>CU61113696</CustomerNumber>
+		<SalesRep>Rodge Clubley</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Rich</ContactFirstName>
+		<ContactLastName>Pitcaithley</ContactLastName>
+		<ContactPhone>+33 (967) 768-0618</ContactPhone>
+		<ContactEmail>rich.pitcaithley@example.com</ContactEmail>
+		<Company>Gabcube</Company>
+		<StreetAddress>72 Dexter Avenue</StreetAddress>
+		<City>Croissy-sur-Seine</City>
+		<State>Île-de-France</State>
+		<Country>France</Country>
+		<ZipCode>78294 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>117653</Number>
+				<Description>Swix Carving Kit 1</Description>
+				<UnitPrice>44.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>89.98</Total>
+			</Product>
+			<Product>
+				<Number>178399</Number>
+				<Description>Swix Base Cleaner Liquid - 500ml 2016</Description>
+				<UnitPrice>34.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>104.97</Total>
+			</Product>
+			<Product>
+				<Number>404947</Number>
+				<Description>Tubbs Wilderness Snowshoes</Description>
+				<UnitPrice>149.96</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>299.92</Total>
+			</Product>
+			<Product>
+				<Number>173097</Number>
+				<Description>Triple 8 Bumsaver II Snowboard Pads 2016</Description>
+				<UnitPrice>59.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>179.97</Total>
+			</Product>
+			<Product>
+				<Number>275075</Number>
+				<Description>SportsStuff Air Flyer Inflatable Sled</Description>
+				<UnitPrice>39.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>159.96</Total>
+			</Product>
+			<Product>
+				<Number>281218</Number>
+				<Description>Dakine Home Grown Soy Stick Snowboard Wax</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>7.77</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>842.57</InvSubTotal>
+		<InvTaxTotal>126.39</InvTaxTotal>
+		<InvTotal>968.96</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

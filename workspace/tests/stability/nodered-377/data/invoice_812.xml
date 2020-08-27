@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1501100</OrderNumber>
+		<CustomerPO>427889</CustomerPO>
+		<CustomerNumber>CU76044474</CustomerNumber>
+		<SalesRep>Orelee Santora</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Ola</ContactFirstName>
+		<ContactLastName>McGarrell</ContactLastName>
+		<ContactPhone>+44 (121) 711-6660</ContactPhone>
+		<ContactEmail>ola.mcgarrell@example.com</ContactEmail>
+		<Company>Thoughtblab</Company>
+		<StreetAddress>1608 Pond Crossing</StreetAddress>
+		<City>Marston</City>
+		<State>England</State>
+		<Country>United Kingdom</Country>
+		<ZipCode>ST20</ZipCode>
+		<LanguageCode>en</LanguageCode>
+		<Locale>en-GB</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>349893</Number>
+				<Description>Dakine Peace Studs Stomp Pad</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>15.54</Total>
+			</Product>
+			<Product>
+				<Number>375428</Number>
+				<Description>Hot Hands Hand Warmers 10 Pack</Description>
+				<UnitPrice>19.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>19.99</Total>
+			</Product>
+			<Product>
+				<Number>248553</Number>
+				<Description>Therm-ic BasicKids Set Classic Boot Heaters 2016</Description>
+				<UnitPrice>79.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>239.97</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>275.5</InvSubTotal>
+		<InvTaxTotal>41.33</InvTaxTotal>
+		<InvTotal>316.83</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>2</Reminders>
+	</invoice>
+</invoices>

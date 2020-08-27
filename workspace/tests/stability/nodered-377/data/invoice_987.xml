@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1383629</OrderNumber>
+		<CustomerPO>371220</CustomerPO>
+		<CustomerNumber>CU69738311</CustomerNumber>
+		<SalesRep>Patric Harnell</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Kelsey</ContactFirstName>
+		<ContactLastName>Staneland</ContactLastName>
+		<ContactPhone>+55 (263) 811-2864</ContactPhone>
+		<ContactEmail>kelsey.staneland@example.com</ContactEmail>
+		<Company>Babbleset</Company>
+		<StreetAddress>706 Shelley Point</StreetAddress>
+		<City>Três de Maio</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>98910-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>349893</Number>
+				<Description>Dakine Peace Studs Stomp Pad</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>23.31</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>23.31</InvSubTotal>
+		<InvTaxTotal>3.5</InvTaxTotal>
+		<InvTotal>26.81</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

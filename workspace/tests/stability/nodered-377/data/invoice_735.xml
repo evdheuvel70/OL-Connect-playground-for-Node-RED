@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1501434</OrderNumber>
+		<CustomerPO>537995</CustomerPO>
+		<CustomerNumber>CU51735463</CustomerNumber>
+		<SalesRep>Junie Bartkiewicz</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Gus</ContactFirstName>
+		<ContactLastName>Laborde</ContactLastName>
+		<ContactPhone>+31 (139) 425-9240</ContactPhone>
+		<ContactEmail>gus.laborde@example.com</ContactEmail>
+		<Company>Livetube</Company>
+		<StreetAddress>3134 Melody Parkway</StreetAddress>
+		<City>Hoogeveen</City>
+		<State>Provincie Drenthe</State>
+		<Country>Netherlands</Country>
+		<ZipCode>7909</ZipCode>
+		<LanguageCode>nl</LanguageCode>
+		<Locale>nl-NL</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>431399</Number>
+				<Description>Seirus Heat Touch Inferno Mens Heated Ski Gloves</Description>
+				<UnitPrice>374.99</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>749.98</Total>
+			</Product>
+			<Product>
+				<Number>275075</Number>
+				<Description>SportsStuff Air Flyer Inflatable Sled</Description>
+				<UnitPrice>39.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>159.96</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>909.94</InvSubTotal>
+		<InvTaxTotal>136.49</InvTaxTotal>
+		<InvTotal>1046.43</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

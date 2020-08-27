@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1257879</OrderNumber>
+		<CustomerPO>559472</CustomerPO>
+		<CustomerNumber>CU66044106</CustomerNumber>
+		<SalesRep>Diane-marie Sinkins</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Susy</ContactFirstName>
+		<ContactLastName>Espinal</ContactLastName>
+		<ContactPhone>+33 (371) 689-2328</ContactPhone>
+		<ContactEmail>susy.espinal@example.com</ContactEmail>
+		<Company>Kwinu</Company>
+		<StreetAddress>33 Golf Course Road</StreetAddress>
+		<City>Annecy</City>
+		<State>Rhône-Alpes</State>
+		<Country>France</Country>
+		<ZipCode>74982 CEDEX 9</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>349893</Number>
+				<Description>Dakine Peace Studs Stomp Pad</Description>
+				<UnitPrice>7.77</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>7.77</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>7.77</InvSubTotal>
+		<InvTaxTotal>1.17</InvTaxTotal>
+		<InvTotal>8.94</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

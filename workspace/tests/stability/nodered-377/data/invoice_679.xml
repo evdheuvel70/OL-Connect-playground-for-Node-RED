@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1106859</OrderNumber>
+		<CustomerPO>286055</CustomerPO>
+		<CustomerNumber>CU29326783</CustomerNumber>
+		<SalesRep>Clare Giovannilli</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Kimberli</ContactFirstName>
+		<ContactLastName>Harrop</ContactLastName>
+		<ContactPhone>+55 (914) 941-3804</ContactPhone>
+		<ContactEmail>kimberli.harrop@example.com</ContactEmail>
+		<Company>Twimm</Company>
+		<StreetAddress>71900 Butterfield Road</StreetAddress>
+		<City>Boracéia</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>17270-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>400508</Number>
+				<Description>Burton Chopper Boys Snowboard 2016 130cm</Description>
+				<UnitPrice>132.94</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>265.88</Total>
+			</Product>
+			<Product>
+				<Number>391111</Number>
+				<Description>Rossignol Temptation 80 Womens Skis with Xelium Saphir 110 Bindings</Description>
+				<UnitPrice>449.94</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>899.88</Total>
+			</Product>
+			<Product>
+				<Number>363375</Number>
+				<Description>Dakine Supertune Base Cleaner 2016</Description>
+				<UnitPrice>11.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>11.99</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1177.75</InvSubTotal>
+		<InvTaxTotal>176.66</InvTaxTotal>
+		<InvTotal>1354.41</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>2</Reminders>
+	</invoice>
+</invoices>

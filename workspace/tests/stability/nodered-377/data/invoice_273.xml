@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1300875</OrderNumber>
+		<CustomerPO>246584</CustomerPO>
+		<CustomerNumber>CU58119097</CustomerNumber>
+		<SalesRep>L;urette Ladbrook</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Deirdre</ContactFirstName>
+		<ContactLastName>Gagin</ContactLastName>
+		<ContactPhone>+1 (602) 328-7820</ContactPhone>
+		<ContactEmail>deirdre.gagin@example.com</ContactEmail>
+		<Company>Feedfire</Company>
+		<StreetAddress>88 Armistice Avenue</StreetAddress>
+		<City>Phoenix</City>
+		<State>Arizona</State>
+		<Country>United States</Country>
+		<ZipCode>85010</ZipCode>
+		<LanguageCode>en</LanguageCode>
+		<Locale>en-US</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>351508</Number>
+				<Description>Rossignol Alias Sensor 120 Ski Boots</Description>
+				<UnitPrice>289.94</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>869.82</Total>
+			</Product>
+			<Product>
+				<Number>368771</Number>
+				<Description>Tubbs 3 Piece Poles</Description>
+				<UnitPrice>44.99</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>179.96</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1049.78</InvSubTotal>
+		<InvTaxTotal>157.47</InvTaxTotal>
+		<InvTotal>1207.25</InvTotal>
+		<InvCurrencyCode>USD</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Paid</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

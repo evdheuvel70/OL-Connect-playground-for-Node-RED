@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1144266</OrderNumber>
+		<CustomerPO>553184</CustomerPO>
+		<CustomerNumber>CU61168052</CustomerNumber>
+		<SalesRep>Leigh McKeown</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Jere</ContactFirstName>
+		<ContactLastName>Pickin</ContactLastName>
+		<ContactPhone>+33 (907) 887-2518</ContactPhone>
+		<ContactEmail>jere.pickin@example.com</ContactEmail>
+		<Company>Eamia</Company>
+		<StreetAddress>193 Loftsgordon Trail</StreetAddress>
+		<City>Meylan</City>
+		<State>Rhône-Alpes</State>
+		<Country>France</Country>
+		<ZipCode>38244 CEDEX</ZipCode>
+		<LanguageCode>fr</LanguageCode>
+		<Locale>fr-FR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>148080</Number>
+				<Description>Swix Alpine Racing Straps Ski Strap</Description>
+				<UnitPrice>9.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>9.99</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>9.99</InvSubTotal>
+		<InvTaxTotal>1.5</InvTaxTotal>
+		<InvTotal>11.49</InvTotal>
+		<InvCurrencyCode>EUR</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>0</Reminders>
+	</invoice>
+</invoices>

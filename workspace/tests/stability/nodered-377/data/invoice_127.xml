@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1591554</OrderNumber>
+		<CustomerPO>249844</CustomerPO>
+		<CustomerNumber>CU30535737</CustomerNumber>
+		<SalesRep>Helena Meier</SalesRep>
+		<Date>2020-02-26</Date>
+		<ContactFirstName>Tracey</ContactFirstName>
+		<ContactLastName>Harce</ContactLastName>
+		<ContactPhone>+55 (975) 997-4961</ContactPhone>
+		<ContactEmail>tracey.harce@example.com</ContactEmail>
+		<Company>Realpoint</Company>
+		<StreetAddress>9 Morrow Hill</StreetAddress>
+		<City>Jaguarão</City>
+		<State/>
+		<Country>Brazil</Country>
+		<ZipCode>96300-000</ZipCode>
+		<LanguageCode>pt</LanguageCode>
+		<Locale>pt-BR</Locale>
+		<DeliveryDate>2020-02-19</DeliveryDate>
+		<Products>
+			<Product>
+				<Number>393065</Number>
+				<Description>Salomon Sabotage Snowboard</Description>
+				<UnitPrice>319.94</UnitPrice>
+				<Ordered>2</Ordered>
+				<Shipped>2</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>639.88</Total>
+			</Product>
+			<Product>
+				<Number>368771</Number>
+				<Description>Tubbs 3 Piece Poles</Description>
+				<UnitPrice>44.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>134.97</Total>
+			</Product>
+			<Product>
+				<Number>363375</Number>
+				<Description>Dakine Supertune Base Cleaner 2016</Description>
+				<UnitPrice>11.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>35.97</Total>
+			</Product>
+			<Product>
+				<Number>393011</Number>
+				<Description>Rossignol Templar MagTek Wide Snowboard 2016</Description>
+				<UnitPrice>399.99</UnitPrice>
+				<Ordered>1</Ordered>
+				<Shipped>1</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>399.99</Total>
+			</Product>
+			<Product>
+				<Number>400508</Number>
+				<Description>Burton Chopper Boys Snowboard 2016 130cm</Description>
+				<UnitPrice>132.94</UnitPrice>
+				<Ordered>4</Ordered>
+				<Shipped>4</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>531.76</Total>
+			</Product>
+			<Product>
+				<Number>178399</Number>
+				<Description>Swix Base Cleaner Liquid - 500ml 2016</Description>
+				<UnitPrice>34.99</UnitPrice>
+				<Ordered>3</Ordered>
+				<Shipped>3</Shipped>
+				<BackOrder>0</BackOrder>
+				<Total>104.97</Total>
+			</Product>
+		</Products>
+		<InvSubTotal>1847.54</InvSubTotal>
+		<InvTaxTotal>277.13</InvTaxTotal>
+		<InvTotal>2124.67</InvTotal>
+		<InvCurrencyCode>BRL</InvCurrencyCode>
+		<InvDueDate>2020-03-27</InvDueDate>
+		<InvStatus>Open</InvStatus>
+		<Reminders>2</Reminders>
+	</invoice>
+</invoices>

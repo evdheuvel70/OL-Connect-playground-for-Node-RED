@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+	<invoice>
+		<OrderNumber>INV1187622</OrderNumber>
+		<CustomerPO>249321</CustomerPO>
+		<CustomerNumber>CU81211493</CustomerNumber>
+		<ContactEmail>caryl.buckthought@example.com</ContactEmail>
+	</invoice>
+	<invoice>
+		<OrderNumber>INV1960975</OrderNumber>
+		<CustomerPO>291862</CustomerPO>
+		<CustomerNumber>CU60206942</CustomerNumber>
+		<ContactEmail>radcliffe.formilli@example.com</ContactEmail>
+	</invoice>
+	<invoice>
+		<OrderNumber>INV1800088</OrderNumber>
+		<CustomerPO>272675</CustomerPO>
+		<CustomerNumber>CU57542925</CustomerNumber>
+		<ContactEmail>teena.ure@example.com</ContactEmail>
+	</invoice>
+</invoices>
