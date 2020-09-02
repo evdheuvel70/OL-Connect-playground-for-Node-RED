@@ -75,6 +75,10 @@
       },
       {
         "topic" : "printcontent\\transactional",
+        "resource": "PR_TRAN Default.OL-jobpreset"
+      },
+      {
+        "topic" : "printcontent\\transactional",
         "resource": "PR_TRAN Group by Customer Num.OL-jobpreset"
       },
       {
