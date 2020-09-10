@@ -5,125 +5,35 @@
     }
   },
   "resources": [
-    {
-      "topic" : "data/xml",
-      "resource": "basic xml data.OL-datamapper"
-    },
-    {
-      "topic" : "data/runtime parameters",
-      "resource": "runtime parameters.OL-datamapper"
-    },
-    {
-      "topic" : "data/update values",
-      "resource": "update values.OL-datamapper"
-    },
-    {
-      "topic" : "data/forms",
-      "resource": "form xml data.OL-datamapper"
-    },
-    {
-      "topic" : "data/forms",
-      "resource": "form xml data.OL-template"
-    },
-    {
-      "topic" : "data/full",
-      "resource": "data frankentest.OL-datamapper"
-    },
-    {
-      "topic" : "data/full",
-      "resource": "data frankentest.OL-template"
-    },
-    {
-      "topic" : "htmlcontent",
-      "resource": "basic web page.OL-template"
-    },
-    {
-      "topic" : "htmlcontent/runtime parameters",
-      "resource": "html runtime parameters.OL-template"
-    },
-    {
-      "topic" : "htmlcontent/runtime parameters",
-      "resource": "html runtime parameters.OL-datamapper"
-    },
-    {
-      "topic" : "emailcontent/basic",
-      "resource": "basic-email.OL-template"
-    },
-    {
-      "topic" : "emailcontent/basic",
-      "resource": "basic-email.OL-datamapper"
-    },
-    {
-      "topic" : "previewpdf/basic",
-      "resource": "Monster-card.OL-template"
-    },
-    {
-      "topic" : "previewpdf/basic",
-      "resource": "Superhero-card.OL-template"
-    },
-    {
-      "topic" : "previewpdf/runtime parameters",
-      "resource": "pdf runtime parameters.OL-template"
-    },
-    {
-      "topic" : "previewpdf/runtime parameters",
-      "resource": "pdf runtime parameters.OL-datamapper"
-    },
-    {
-      "topic" : "printcontent/transactional",
-      "resource": "PR_TRAN Data XML.OL-datamapper"
-    },
-    {
-      "topic" : "printcontent/transactional",
-      "resource": "PR_TRAN Group by Customer Num.OL-jobpreset"
-    },
-    {
-      "topic" : "printcontent/transactional",
-      "resource": "PR_TRAN Invoice.OL-template"
-    },
-    {
-      "topic" : "printcontent/transactional",
-      "resource": "PR_TRAN PDF Full Job PDF.OL-outputpreset"
-    },
-    {
-      "topic" : "printcontent/transactional",
-      "resource": "PR_TRAN PDF per Customer.OL-outputpreset"
-    },
-    {
-      "topic" : "printcontent/transactional",
-      "resource": "PR_TRAN PDF per Invoice.OL-outputpreset"
-    },
-    {
-      "topic" : "cotg/timesheets",
-      "resource": "COTG Timesheet Form.OL-datamapper"
-    },
-    {
-      "topic" : "cotg/timesheets",
-      "resource": "COTG Timesheet Form.OL-template"
-    },
-    {
-      "topic" : "cotg/timesheets",
-      "resource": "COTG Timesheet Report.OL-datamapper"
-    },
-    {
-      "topic" : "cotg/timesheets",
-      "resource": "COTG Timesheet Report.OL-template"
-    },
-    {
-      "topic" : "stability/nodered-377",
-      "resource": "nodered-377-invoice.OL-template"
-    },
-    {
-      "topic" : "stability/nodered-377",
-      "resource": "nodered-377-invoice.OL-datamapper"
-    },
-    {
-      "topic" : "stability/nodered-377",
-      "resource": "nodered-377-no-grouping.OL-jobpreset"
-    },
-    {
-      "topic" : "stability/nodered-377",
-      "resource": "nodered-377-pdf-stationery.OL-outputpreset"
-    }
+    "data/xml/basic xml data.OL-datamapper",
+    "data/runtime parameters/runtime parameters.OL-datamapper",
+    "data/update values/update values.OL-datamapper",
+    "data/forms/form xml data.OL-datamapper",
+    "data/forms/form xml data.OL-template",
+    "data/full/data frankentest.OL-datamapper",
+    "data/full/data frankentest.OL-template",
+    "htmlcontent/basic web page.OL-template",
+    "htmlcontent/runtime parameters/html runtime parameters.OL-template",
+    "htmlcontent/runtime parameters/html runtime parameters.OL-datamapper",
+    "emailcontent/basic/basic-email.OL-template",
+    "emailcontent/basic/basic-email.OL-datamapper",
+    "previewpdf/basic/Monster-card.OL-template",
+    "previewpdf/basic/Superhero-card.OL-template",
+    "previewpdf/runtime parameters/pdf runtime parameters.OL-template",
+    "previewpdf/runtime parameters/pdf runtime parameters.OL-datamapper",
+    "printcontent/transactional/PR_TRAN Data XML.OL-datamapper",
+    "printcontent/transactional/PR_TRAN Group by Customer Num.OL-jobpreset",
+    "printcontent/transactional/PR_TRAN Invoice.OL-template",
+    "printcontent/transactional/PR_TRAN PDF Full Job PDF.OL-outputpreset",
+    "printcontent/transactional/PR_TRAN PDF per Customer.OL-outputpreset",
+    "printcontent/transactional/PR_TRAN PDF per Invoice.OL-outputpreset",
+    "cotg/timesheets/COTG Timesheet Form.OL-datamapper",
+    "cotg/timesheets/COTG Timesheet Form.OL-template",
+    "cotg/timesheets/COTG Timesheet Report.OL-datamapper",
+    "cotg/timesheets/COTG Timesheet Report.OL-template",
+    "stability/nodered-377/nodered-377-invoice.OL-template",
+    "stability/nodered-377/nodered-377-invoice.OL-datamapper",
+    "stability/nodered-377/nodered-377-no-grouping.OL-jobpreset",
+    "stability/nodered-377/nodered-377-pdf-stationery.OL-outputpreset"
   ]
 }
