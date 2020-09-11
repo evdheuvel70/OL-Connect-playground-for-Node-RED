@@ -19,6 +19,7 @@
     "htmlcontent/runtime parameters/htmlrun-xml.OL-datamapper",
     "emailcontent/basic/emailbsc-message.OL-template",
     "emailcontent/basic/emailbsc-xml.OL-datamapper",
+    "emailcontent/runtime parameters/emailrun-message.OL-template",
     "printcontent/basic/printbsc-transactional xml.OL-datamapper",
     "printcontent/basic/printbsc-invoice.OL-template",
     "printcontent/basic/printbsc-group customers.OL-jobpreset",
