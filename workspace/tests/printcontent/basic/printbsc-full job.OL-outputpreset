@@ -148,7 +148,7 @@
     <strokesToOutlines>true</strokesToOutlines>
     <useTextOutlines>false</useTextOutlines>
   </pdfFlattenConfig>
-  <printToFile>false</printToFile>
+  <printToFile>true</printToFile>
   <printerDefinition printerPDL="PDF" version="1.0.0.0" suppressTransparencySupport="false" dynamicPPDBased="false" schemaVersion="1.0.1.2">
     <name>
       <name>Generic PDF</name>
@@ -178,10 +178,10 @@
     </capabilities>
     <inputTrays></inputTrays>
     <outputTrays></outputTrays>
-    <ipdsConfig useGoca="false" use1440="false" useOverlay="false" pageObject="OCAOBJECTS" imageType="FS10" fontTechnology="RASTER" resolution="300" useCMR="false" useLZW="true" useGOCACubic="false" useScaleToFill="true" useIncludeDataObjects="true" useSEC="true" useWhitetoCM="false" deviceDither="ERROR_DIFFUSION" useObjectFormSupport="false" useHLC="false" useHlcCmrIndex="false" monochrome="false" useExtOverlay="true" fs10Compression="G4" fs45Compression="JPG" passThroughPDFResources="true" useTransparentPDFSupport="false" useAfpcTIFSupport="false" noScale="false" imageasForm="1" favourVector="false" fs45InvertK="true" fs45RGB="false" lpdLppEachPage="false">
+    <ipdsConfig useGoca="false" use1440="false" useOverlay="false" pageObject="OCAOBJECTS" imageType="FS10" fontTechnology="RASTER" resolution="300" useCMR="false" useLZW="true" useGOCACubic="false" useScaleToFill="true" useIncludeDataObjects="true" useSEC="true" useWhitetoCM="false" deviceDither="ERROR_DIFFUSION" useObjectFormSupport="false" useHLC="false" useHlcCmrIndex="false" monochrome="false" useExtOverlay="true" fs10Compression="G4" fs45Compression="JPG" passThroughPDFResources="true" useTransparentPDFSupport="false" useAfpcTIFSupport="false" noScale="false" imageasForm="1" favourVector="false" fs45InvertK="true" fs45RGB="false" useMinOCA="false" lpdLppEachPage="false">
       <pluginId>0</pluginId>
     </ipdsConfig>
-    <afpConfig useGoca="false" use1440="false" useOverlay="false" pageObject="OCAOBJECTS" imageType="FS10" fontTechnology="RASTER" resolution="300" useCMR="false" useLZW="true" useGOCACubic="false" useScaleToFill="true" useIncludeDataObjects="true" useSEC="true" useWhitetoCM="false" deviceDither="ERROR_DIFFUSION" useObjectFormSupport="false" useHLC="false" useHlcCmrIndex="false" monochrome="false" useExtOverlay="true" fs10Compression="G4" fs45Compression="JPG" passThroughPDFResources="true" useTransparentPDFSupport="false" useAfpcTIFSupport="false" noScale="false" imageasForm="1" favourVector="false" fs45InvertK="true" fs45RGB="false">
+    <afpConfig useGoca="false" use1440="false" useOverlay="false" pageObject="OCAOBJECTS" imageType="FS10" fontTechnology="RASTER" resolution="300" useCMR="false" useLZW="true" useGOCACubic="false" useScaleToFill="true" useIncludeDataObjects="true" useSEC="true" useWhitetoCM="false" deviceDither="ERROR_DIFFUSION" useObjectFormSupport="false" useHLC="false" useHlcCmrIndex="false" monochrome="false" useExtOverlay="true" fs10Compression="G4" fs45Compression="JPG" passThroughPDFResources="true" useTransparentPDFSupport="false" useAfpcTIFSupport="false" noScale="false" imageasForm="1" favourVector="false" fs45InvertK="true" fs45RGB="false" useMinOCA="false">
       <pluginId>0</pluginId>
     </afpConfig>
     <pdfConfig type="PDF" compression="HIGH" embedStandardFonts="false" forceIdentity="false" passThroughPDFResources="false" xmpCanonicalFormat="true" keepPDFAttachments="false" keepPDFExtensionSchemas="false" fastWebViewOptimization="false">
@@ -230,6 +230,19 @@
         <pdfPageLayout>DEFAULT</pdfPageLayout>
         <pdfPageMagnification>0</pdfPageMagnification>
       </pdfStartLayoutAndMagnificationOptions>
+      <pdfSecurity>
+        <allowAssembleDocument>true</allowAssembleDocument>
+        <allowCopy>true</allowCopy>
+        <allowFillinForms>true</allowFillinForms>
+        <allowModifyAnnotations>true</allowModifyAnnotations>
+        <allowModifyContents>true</allowModifyContents>
+        <allowScreenreaders>true</allowScreenreaders>
+        <openDocPasswordUser>false</openDocPasswordUser>
+        <permissions>false</permissions>
+        <printSettings>PRINT_HQ</printSettings>
+        <revision>6</revision>
+        <version>5</version>
+      </pdfSecurity>
     </pdfConfig>
     <psConfig languageLevel="3" sevenBitClean="false" imageAsForm="0" compression="NONE" type="NORMAL" supportCFF="true" bitmapAsForm="true" expandForms="false" expandFormsThreshold="0" passThroughPDFResources="false" forceDuplex="false">
       <pluginId>0</pluginId>
@@ -257,7 +270,7 @@
     <outputLPR>1.1.1.1</outputLPR>
     <outputLPRQueue>RAW</outputLPRQueue>
     <outputLocal>false</outputLocal>
-    <outputType>DIRECTORY</outputType>
+    <outputType>PRINTTOFILE</outputType>
     <pdfRenderChoosePaperSourceBySize>false</pdfRenderChoosePaperSourceBySize>
     <pdfRenderPromptForProperties>false</pdfRenderPromptForProperties>
     <pdfRenderSetRotateAndCenter>false</pdfRenderSetRotateAndCenter>
@@ -303,41 +316,7 @@
           <additionalElementType>DOCSETUP</additionalElementType>
         </dynamicMiscElements>
         <dynamicTrayMappingElements trigger="SHEET">
-          <items>
-            <item xsi:type="dynamicTrayMappingElement" expandedJavaScript="false">
-              <mediaProperties>
-                <mediaName>Media 1</mediaName>
-                <type>Unspecified</type>
-                <size>
-                  <name>A5</name>
-                  <width>148mm</width>
-                  <height>210mm</height>
-                </size>
-                <landscape>false</landscape>
-              </mediaProperties>
-              <rules condition="ALL">
-                <rules></rules>
-              </rules>
-              <elements></elements>
-              <name>Media 1</name>
-            </item>
-            <item xsi:type="dynamicTrayMappingElement" expandedJavaScript="false">
-              <mediaProperties>
-                <mediaName>Media 2</mediaName>
-                <size>
-                  <name>Custom</name>
-                  <width>148mm</width>
-                  <height>105mm</height>
-                </size>
-                <landscape>false</landscape>
-              </mediaProperties>
-              <rules condition="ALL">
-                <rules></rules>
-              </rules>
-              <elements></elements>
-              <name>Media 2</name>
-            </item>
-          </items>
+          <items></items>
         </dynamicTrayMappingElements>
         <dynamicFinishingElements trigger="FINISHING">
           <items></items>
@@ -382,41 +361,7 @@
     <pageMarks>false</pageMarks>
     <ppmlDynamicPPDSettings>
       <trayMappings trigger="SHEET">
-        <items>
-          <item xsi:type="dynamicTrayMappingElement" expandedJavaScript="false">
-            <mediaProperties>
-              <mediaName>Media 1</mediaName>
-              <type>Unspecified</type>
-              <size>
-                <name>A5</name>
-                <width>148mm</width>
-                <height>210mm</height>
-              </size>
-              <landscape>false</landscape>
-            </mediaProperties>
-            <rules condition="ALL">
-              <rules></rules>
-            </rules>
-            <elements></elements>
-            <name>Media 1</name>
-          </item>
-          <item xsi:type="dynamicTrayMappingElement" expandedJavaScript="false">
-            <mediaProperties>
-              <mediaName>Media 2</mediaName>
-              <size>
-                <name>Custom</name>
-                <width>148mm</width>
-                <height>105mm</height>
-              </size>
-              <landscape>false</landscape>
-            </mediaProperties>
-            <rules condition="ALL">
-              <rules></rules>
-            </rules>
-            <elements></elements>
-            <name>Media 2</name>
-          </item>
-        </items>
+        <items></items>
       </trayMappings>
     </ppmlDynamicPPDSettings>
     <preBindingOverride>false</preBindingOverride>
