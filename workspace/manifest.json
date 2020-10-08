@@ -10,6 +10,8 @@
     "data/update values/dmupd-update values.OL-datamapper",
     "data/full/dmfull-multicontext.OL-datamapper",
     "data/full/dmfull-multicontext.OL-template",
+    "data/full/dmfull-default.OL-jobpreset",
+    "data/full/dmfull-full-job.OL-outputpreset",
     "previewpdf/basic/pdfprev-monster.OL-template",
     "previewpdf/basic/pdfprev-superhero.OL-template",
     "previewpdf/runtime parameters/pdfprevrun-xml.OL-datamapper",
