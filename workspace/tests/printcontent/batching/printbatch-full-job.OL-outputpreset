@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <outputCreationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" debugDynPPD="false" schemaVersion="1.0.9.0" xsi:schemaLocation="http://www.objectiflune.com/connectschemas/OutputCreationConfig http://www.objectiflune.com/connectschemas/OutputCreationConfig/1_0_9_0.xsd">
   <name>
-    <name>printbatchl-full-job</name>
+    <name>printbatch-full-job</name>
     <names>
       <entry>
         <key>
@@ -17,7 +17,7 @@
             <iso>eng</iso>
           </iso>
         </key>
-        <value>printbatchl-full-job</value>
+        <value>printbatch-full-job</value>
       </entry>
     </names>
   </name>
@@ -61,7 +61,7 @@
   <engineSettingConfig>
     <pluginId>0</pluginId>
   </engineSettingConfig>
-  <impositionConfig bookletSampleSize="12" cutMarkSide="FRONT" docRotation="ROTATE_0" inputPageLandscape="true" offset="false" offsetLeft="0mm" offsetTop="0mm" stackByColumn="false" standardSampleSize="4000">
+  <impositionConfig bookletSampleSize="12" cutMarkSide="FRONT" docRotation="ROTATE_0" inputPageLandscape="false" offset="false" offsetLeft="0mm" offsetTop="0mm" stackByColumn="false" standardSampleSize="4000">
     <pluginId>0</pluginId>
     <bleed-margin-bottom-spacing>3mm</bleed-margin-bottom-spacing>
     <bleed-margin-left-spacing>3mm</bleed-margin-left-spacing>
@@ -76,11 +76,11 @@
     <horizontal-spacing>0mm</horizontal-spacing>
     <impositionType>CutStack</impositionType>
     <inputPage>
-      <name>Custom</name>
-      <width>105mm</width>
-      <height>148mm</height>
+      <name>Letter</name>
+      <width>8.5in</width>
+      <height>11in</height>
     </inputPage>
-    <media landscape="true">
+    <media landscape="false">
       <displayName>Imposition Sheet</displayName>
       <size>
         <name>A4</name>
@@ -408,10 +408,11 @@
     <slipMedia landscape="false">
       <displayName>Media 1</displayName>
       <size>
-        <name>A5</name>
-        <width>148mm</width>
-        <height>210mm</height>
+        <name>Letter</name>
+        <width>8.5in</width>
+        <height>11in</height>
       </size>
+      <frontSideBackgroundPath>C:\Users\vandenhe\Connect\temp\Designer\45388\template391025524562367234\public\document\images\OLMobile-letterhead.pdf</frontSideBackgroundPath>
       <name>Media 1</name>
       <type>Unspecified</type>
       <weight>0g</weight>
@@ -427,7 +428,7 @@
     </slipMedia>
     <slipPerDocument>false</slipPerDocument>
     <slipTrailer>false</slipTrailer>
-    <virtualStationery>false</virtualStationery>
+    <virtualStationery>true</virtualStationery>
     <whiteThreshold>0.025</whiteThreshold>
   </printerSettingConfig>
   <printerSettingConfigName>None</printerSettingConfigName>
@@ -444,9 +445,9 @@
     <slipMedia landscape="false">
       <displayName>Slip Sheet</displayName>
       <size>
-        <name>A5</name>
-        <width>148mm</width>
-        <height>210mm</height>
+        <name>Letter</name>
+        <width>8.5in</width>
+        <height>11in</height>
       </size>
       <name>Slip Sheet</name>
       <weight>80g</weight>

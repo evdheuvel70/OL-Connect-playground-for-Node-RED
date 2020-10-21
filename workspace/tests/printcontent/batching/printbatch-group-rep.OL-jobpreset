@@ -2,7 +2,7 @@
 <jobCreationConfig schemaVersion="1.0.4.0" xmlns="http://www.objectiflune.com/connectschemas/JobCreationConfig" xsi:schemaLocation="http://www.objectiflune.com/connectschemas/JobCreationConfig http://www.objectiflune.com/connectschemas/JobCreationConfig/1_0_4_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <description>Group documents by customer number. Adds customer number to the meta data of the document set and the order number to the documents.</description>
     <name>
-        <name>printbatch-default.OL-jobpreset</name>
+        <name>printbatch-group-rep.OL-jobpreset</name>
         <names>
             <entry>
                 <key>
@@ -18,7 +18,7 @@
                         <iso>eng</iso>
                     </iso>
                 </key>
-                <value>printbatch-default.OL-jobpreset</value>
+                <value>printbatch-group-rep.OL-jobpreset</value>
             </entry>
         </names>
     </name>
@@ -26,7 +26,7 @@
     <customFinishing>false</customFinishing>
     <dataSelectionFilter>
         <filteringAndSorting>false</filteringAndSorting>
-        <grouped>false</grouped>
+        <grouped>true</grouped>
         <grouping>
             <jobGroupingFields>
                 <fieldName>rep_last</fieldName>
