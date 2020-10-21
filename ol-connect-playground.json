@@ -187,8 +187,7 @@
         "y": 160,
         "wires": [
             [
-                "83dd91c2.d3d078",
-                "e54ad670.1dab5"
+                "83dd91c2.d3d078"
             ]
         ]
     },
@@ -978,7 +977,7 @@
                 "t": "set",
                 "p": "filename",
                 "pt": "msg",
-                "to": "$globalContext('output') & 'cotg\\\\timesheets\\\\forms\\\\' & msg.req.params.guid & '.html'",
+                "to": "$globalContext('output') & 'cotg/timesheets/forms/' & msg.req.params.guid & '.html'",
                 "tot": "jsonata"
             }
         ],
@@ -2720,7 +2719,6 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "cotg\\timesheets\\sample-2.xml",
-        "payloadType": "str",
         "x": 130,
         "y": 100,
         "wires": [
@@ -2735,7 +2733,7 @@
         "z": "5131a1e3.fd76d8",
         "name": "Notes!",
         "info": "Park the form data in msg.form as the msg.payload will be overwritten downstream with the HTML form.",
-        "x": 1290,
+        "x": 910,
         "y": 100,
         "wires": []
     },
@@ -2883,7 +2881,7 @@
                 "t": "set",
                 "p": "filename",
                 "pt": "msg",
-                "to": "$globalContext('output') & 'cotg/timesheet/forms/' & msg.req.params.guid & '.html'",
+                "to": "$globalContext('output') & 'cotg/timesheets/forms/' & msg.req.params.guid & '.html'",
                 "tot": "jsonata"
             }
         ],
@@ -4450,23 +4448,6 @@
         ]
     },
     {
-        "id": "e54ad670.1dab5",
-        "type": "debug",
-        "z": "5131a1e3.fd76d8",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "filename",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1090,
-        "y": 160,
-        "wires": []
-    },
-    {
         "id": "7c356ed5.03e74",
         "type": "debug",
         "z": "1d910b2e.85ebd5",
@@ -4832,7 +4813,7 @@
         "type": "olcnr-data-mapping",
         "z": "5131a1e3.fd76d8",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "",
+        "datamapper": "COTG Timesheet Form.OL-datamapper",
         "active": false,
         "name": "Map data",
         "x": 320,
@@ -4914,6 +4895,7 @@
         "type": "olcnr-data-mapping",
         "z": "5131a1e3.fd76d8",
         "connect_server": "23c3ba7a.febabe",
+        "datamapper": "COTG Timesheet Report.OL-datamapper",
         "active": false,
         "name": "data mapping",
         "x": 240,
