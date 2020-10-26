@@ -3827,6 +3827,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
+        "payloadType": "str",
         "x": 140,
         "y": 480,
         "wires": [
@@ -3912,7 +3913,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 980,
+        "x": 800,
         "y": 100,
         "wires": [
             [
@@ -4049,7 +4050,7 @@
                 "t": "set",
                 "p": "filename",
                 "pt": "msg",
-                "to": "$globalContext('output') & 'stability\\\\nodered-377\\\\out\\\\' & _baseName & _extension",
+                "to": "$globalContext('output') & 'stability/nodered-377/out/' & _baseName & _extension",
                 "tot": "jsonata"
             }
         ],
@@ -4110,28 +4111,28 @@
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
-                "to": "stability\\nodered-377",
+                "to": "stability/nodered-377",
                 "tot": "str"
             },
             {
                 "t": "set",
                 "p": "source",
                 "pt": "msg",
-                "to": "$globalContext('tests') & topic & '\\\\data'",
+                "to": "$globalContext('tests') & topic & '/data'",
                 "tot": "jsonata"
             },
             {
                 "t": "set",
                 "p": "destination",
                 "pt": "msg",
-                "to": "$globalContext('output') & topic & '\\\\in'",
+                "to": "$globalContext('output') & topic & '/in'",
                 "tot": "jsonata"
             },
             {
                 "t": "set",
                 "p": "filename",
                 "pt": "msg",
-                "to": "$globalContext('output') & topic & '\\\\in\\\\log.txt'",
+                "to": "$globalContext('output') & topic & '/in/log.txt'",
                 "tot": "jsonata"
             }
         ],
@@ -4342,7 +4343,7 @@
         "topic": "printcontent\\basic\\Sample Data-1k.xml",
         "payloadType": "str",
         "x": 130,
-        "y": 940,
+        "y": 980,
         "wires": [
             [
                 "3530d7cc.c402c8"
@@ -4371,7 +4372,7 @@
         "onceDelay": 0.1,
         "topic": "printcontent\\basic\\Sample Data-50recs.xml",
         "x": 130,
-        "y": 900,
+        "y": 940,
         "wires": [
             [
                 "3530d7cc.c402c8"
@@ -4400,7 +4401,7 @@
         "onceDelay": 0.1,
         "topic": "printcontent\\basic\\Sample Data-5recs.xml",
         "x": 130,
-        "y": 860,
+        "y": 900,
         "wires": [
             [
                 "3530d7cc.c402c8"
@@ -4421,7 +4422,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1030,
-        "y": 860,
+        "y": 900,
         "wires": []
     },
     {
@@ -4461,7 +4462,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1050,
-        "y": 900,
+        "y": 940,
         "wires": []
     },
     {
@@ -5670,7 +5671,7 @@
         "persistData": false,
         "name": "all in one - full",
         "x": 640,
-        "y": 860,
+        "y": 900,
         "wires": [
             [
                 "bcdac458.f7e99",
@@ -5690,7 +5691,7 @@
         "persistData": true,
         "name": "all in one - group customers",
         "x": 480,
-        "y": 680,
+        "y": 720,
         "wires": [
             [
                 "c12c7b33.112c3",
@@ -5832,14 +5833,14 @@
         "id": "23633c3f.90aca4",
         "type": "watch-directory",
         "z": "7e87d273.bb52c4",
-        "folder": "C:\\Users\\vandenhe\\.node-red\\projects\\OL-Connect-playground-for-Node-RED\\workspace\\output\\stability\\nodered-377\\in",
+        "folder": "/data/projects/OL-Connect-playground-for-Node-RED/workspace/output/stability/nodered-377/in",
         "recursive": 0,
         "typeEvent": "create",
         "ignoreInitial": true,
         "ignoredFiles": ".txt",
         "ignoredFilesType": "re",
         "name": "",
-        "x": 450,
+        "x": 370,
         "y": 100,
         "wires": [
             [
@@ -7203,7 +7204,7 @@
         "to": "",
         "reg": false,
         "x": 440,
-        "y": 860,
+        "y": 900,
         "wires": [
             [
                 "ea668aa1.990eb8"
@@ -7224,7 +7225,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1030,
-        "y": 680,
+        "y": 720,
         "wires": []
     },
     {
@@ -7250,7 +7251,7 @@
         "topic": "printcontent\\basic\\Sample Data-1k.xml",
         "payloadType": "str",
         "x": 130,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "e0f48daa.353608"
@@ -7279,7 +7280,7 @@
         "onceDelay": 0.1,
         "topic": "printcontent\\basic\\Sample Data-50recs.xml",
         "x": 130,
-        "y": 720,
+        "y": 760,
         "wires": [
             [
                 "e0f48daa.353608"
@@ -7308,7 +7309,7 @@
         "onceDelay": 0.1,
         "topic": "printcontent\\basic\\Sample Data-5recs.xml",
         "x": 130,
-        "y": 680,
+        "y": 720,
         "wires": [
             [
                 "e0f48daa.353608"
@@ -7329,7 +7330,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1050,
-        "y": 720,
+        "y": 760,
         "wires": []
     },
     {
@@ -7799,8 +7800,8 @@
         "datamapper": "printbsc-transactional xml.OL-datamapper",
         "active": false,
         "name": "data mapping",
-        "x": 320,
-        "y": 460,
+        "x": 500,
+        "y": 520,
         "wires": [
             [
                 "c0d628b0.1da9a"
@@ -7814,8 +7815,8 @@
         "connect_server": "23c3ba7a.febabe",
         "template": "printbsc-invoice.OL-template",
         "name": "print content",
-        "x": 490,
-        "y": 460,
+        "x": 670,
+        "y": 520,
         "wires": [
             [
                 "5eb72b68.a5d014"
@@ -7829,8 +7830,8 @@
         "connect_server": "23c3ba7a.febabe",
         "jobPreset": "printbsc-group customers.OL-jobpreset",
         "name": "print job",
-        "x": 640,
-        "y": 460,
+        "x": 820,
+        "y": 520,
         "wires": [
             [
                 "6306bd21.39458c",
@@ -7846,8 +7847,8 @@
         "connect_server": "23c3ba7a.febabe",
         "outputPreset": "printbsc-full job.OL-outputpreset",
         "name": "output single PDF",
-        "x": 830,
-        "y": 460,
+        "x": 1010,
+        "y": 520,
         "wires": [
             [
                 "64e080b7.f6a71"
@@ -7861,8 +7862,8 @@
         "connect_server": "23c3ba7a.febabe",
         "outputPreset": "printbsc-per customer.OL-outputpreset",
         "name": "output per customer",
-        "x": 840,
-        "y": 520,
+        "x": 1020,
+        "y": 580,
         "wires": [
             [
                 "c1a78b8a.93f558"
@@ -7876,26 +7877,11 @@
         "connect_server": "23c3ba7a.febabe",
         "outputPreset": "printbsc-per invoice.OL-outputpreset",
         "name": "output individual invoices",
-        "x": 850,
-        "y": 580,
+        "x": 1030,
+        "y": 640,
         "wires": [
             [
                 "2b60acce.5b245c"
-            ]
-        ]
-    },
-    {
-        "id": "6972dfc7.4bd038",
-        "type": "watch",
-        "z": "1d910b2e.85ebd5",
-        "name": "",
-        "files": "/data/workspace/in",
-        "recursive": "",
-        "x": 130,
-        "y": 460,
-        "wires": [
-            [
-                "f2b706df.5a5848"
             ]
         ]
     },
@@ -7907,28 +7893,12 @@
         "managedFileId": "",
         "name": "",
         "outputas": "",
-        "x": 1050,
-        "y": 460,
+        "x": 1230,
+        "y": 520,
         "wires": [
             [
-                "bf9fcc3d.946e"
+                "505047dc.d26ce8"
             ]
-        ]
-    },
-    {
-        "id": "bf9fcc3d.946e",
-        "type": "file",
-        "z": "1d910b2e.85ebd5",
-        "name": "",
-        "filename": "/data/workspace/out/full.zip",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1260,
-        "y": 460,
-        "wires": [
-            []
         ]
     },
     {
@@ -7939,11 +7909,11 @@
         "managedFileId": "",
         "name": "",
         "outputas": "",
-        "x": 1050,
-        "y": 520,
+        "x": 1230,
+        "y": 580,
         "wires": [
             [
-                "6f9f2255.ed9434"
+                "c2ba0956.9cba58"
             ]
         ]
     },
@@ -7955,44 +7925,12 @@
         "managedFileId": "",
         "name": "",
         "outputas": "",
-        "x": 1050,
-        "y": 580,
+        "x": 1230,
+        "y": 640,
         "wires": [
             [
-                "4ab2ae32.79b618"
+                "3c1b3aea.3b92c6"
             ]
-        ]
-    },
-    {
-        "id": "6f9f2255.ed9434",
-        "type": "file",
-        "z": "1d910b2e.85ebd5",
-        "name": "",
-        "filename": "/data/workspace/out/customers.zip",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1280,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4ab2ae32.79b618",
-        "type": "file",
-        "z": "1d910b2e.85ebd5",
-        "name": "",
-        "filename": "/data/workspace/out/invoices.zip",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1270,
-        "y": 580,
-        "wires": [
-            []
         ]
     },
     {
@@ -8018,7 +7956,7 @@
         "topic": "printcontent\\basic\\Sample Data-5recs.xml",
         "payloadType": "str",
         "x": 130,
-        "y": 520,
+        "y": 580,
         "wires": [
             [
                 "f2b706df.5a5848"
@@ -8032,6 +7970,205 @@
         "name": "Transactional Print Jobs folder based",
         "info": "",
         "x": 190,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "29af1e46.dc4b5a",
+        "type": "change",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "out",
+                "pt": "msg",
+                "to": "/data/workspace/out",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 520,
+        "wires": [
+            [
+                "f2b706df.5a5848"
+            ]
+        ]
+    },
+    {
+        "id": "505047dc.d26ce8",
+        "type": "change",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "msg.out & '/full.zip'",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1410,
+        "y": 520,
+        "wires": [
+            [
+                "62521dd6.2f6bfc"
+            ]
+        ]
+    },
+    {
+        "id": "c2ba0956.9cba58",
+        "type": "change",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "msg.out & '/customers.zip'",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1410,
+        "y": 580,
+        "wires": [
+            [
+                "62521dd6.2f6bfc"
+            ]
+        ]
+    },
+    {
+        "id": "3c1b3aea.3b92c6",
+        "type": "change",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "msg.out & '/invoices.zip'",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1410,
+        "y": 640,
+        "wires": [
+            [
+                "62521dd6.2f6bfc"
+            ]
+        ]
+    },
+    {
+        "id": "62521dd6.2f6bfc",
+        "type": "file",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "filename": "",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1580,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "984a2f51.7375f8",
+        "type": "watch-directory",
+        "z": "1d910b2e.85ebd5",
+        "folder": "/data/workspace/in",
+        "recursive": 0,
+        "typeEvent": "create",
+        "ignoreInitial": true,
+        "ignoredFiles": "",
+        "ignoredFilesType": "re",
+        "name": "",
+        "x": 130,
+        "y": 520,
+        "wires": [
+            [
+                "29af1e46.dc4b5a"
+            ]
+        ]
+    },
+    {
+        "id": "1617553e.43dc4b",
+        "type": "change",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "out",
+                "pt": "msg",
+                "to": "/data/projects/OL-Connect-playground-for-Node-RED/workspace/output/printcontent/folder/out",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 460,
+        "wires": [
+            [
+                "f2b706df.5a5848"
+            ]
+        ]
+    },
+    {
+        "id": "141b9748.c6c021",
+        "type": "watch-directory",
+        "z": "1d910b2e.85ebd5",
+        "folder": "/data/projects/OL-Connect-playground-for-Node-RED/workspace/tests/printcontent/folder/in",
+        "recursive": 0,
+        "typeEvent": "create",
+        "ignoreInitial": true,
+        "ignoredFiles": "",
+        "ignoredFilesType": "re",
+        "name": "",
+        "x": 360,
+        "y": 460,
+        "wires": [
+            [
+                "1617553e.43dc4b"
+            ]
+        ]
+    },
+    {
+        "id": "d65ebcfb.ef92d8",
+        "type": "comment",
+        "z": "1d910b2e.85ebd5",
+        "name": "Why use the watchdirectory node?",
+        "info": "The native node watcher is low level, it triggers the \"add file\" event before file is completed written. It then would require a Trigger (delay) and RBE node to properly process the file.",
+        "x": 500,
         "y": 420,
         "wires": []
     }
