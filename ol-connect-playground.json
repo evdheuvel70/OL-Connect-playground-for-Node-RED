@@ -4342,7 +4342,7 @@
         "topic": "printcontent\\basic\\Sample Data-1k.xml",
         "payloadType": "str",
         "x": 130,
-        "y": 700,
+        "y": 940,
         "wires": [
             [
                 "3530d7cc.c402c8"
@@ -4371,7 +4371,7 @@
         "onceDelay": 0.1,
         "topic": "printcontent\\basic\\Sample Data-50recs.xml",
         "x": 130,
-        "y": 660,
+        "y": 900,
         "wires": [
             [
                 "3530d7cc.c402c8"
@@ -4400,7 +4400,7 @@
         "onceDelay": 0.1,
         "topic": "printcontent\\basic\\Sample Data-5recs.xml",
         "x": 130,
-        "y": 620,
+        "y": 860,
         "wires": [
             [
                 "3530d7cc.c402c8"
@@ -4421,7 +4421,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1030,
-        "y": 620,
+        "y": 860,
         "wires": []
     },
     {
@@ -4461,7 +4461,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1050,
-        "y": 660,
+        "y": 900,
         "wires": []
     },
     {
@@ -5670,7 +5670,7 @@
         "persistData": false,
         "name": "all in one - full",
         "x": 640,
-        "y": 620,
+        "y": 860,
         "wires": [
             [
                 "bcdac458.f7e99",
@@ -5690,7 +5690,7 @@
         "persistData": true,
         "name": "all in one - group customers",
         "x": 480,
-        "y": 440,
+        "y": 680,
         "wires": [
             [
                 "c12c7b33.112c3",
@@ -6173,7 +6173,7 @@
         "sendError": false,
         "encoding": "none",
         "x": 410,
-        "y": 880,
+        "y": 1080,
         "wires": [
             [
                 "def2ccfe.01377"
@@ -6501,7 +6501,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1150,
-        "y": 1080,
+        "y": 1280,
         "wires": []
     },
     {
@@ -6526,7 +6526,7 @@
         "onceDelay": 0.1,
         "topic": "printcontent\\chunk json\\Sample Data-100recs.json",
         "x": 160,
-        "y": 880,
+        "y": 1080,
         "wires": [
             [
                 "71b585be.8d7c8c"
@@ -6541,7 +6541,7 @@
         "jobPreset": "printchunk-default.OL-jobpreset",
         "name": "print job",
         "x": 820,
-        "y": 980,
+        "y": 1180,
         "wires": [
             [
                 "dd36c177.6e0f"
@@ -6556,7 +6556,7 @@
         "outputPreset": "printchunk-full job.OL-outputpreset",
         "name": "output: full job",
         "x": 980,
-        "y": 980,
+        "y": 1180,
         "wires": [
             [
                 "269cb89.3681148"
@@ -6574,7 +6574,7 @@
         "overwriteFile": "false",
         "encoding": "none",
         "x": 1010,
-        "y": 1080,
+        "y": 1280,
         "wires": [
             [
                 "c92578c4.863988"
@@ -6590,7 +6590,7 @@
         "name": "",
         "outputas": "",
         "x": 670,
-        "y": 1080,
+        "y": 1280,
         "wires": [
             [
                 "baf2bb3d.2ea3c8"
@@ -6606,7 +6606,7 @@
         "action": "",
         "pretty": true,
         "x": 530,
-        "y": 880,
+        "y": 1080,
         "wires": [
             [
                 "749b98c0.60586"
@@ -6633,7 +6633,7 @@
         "to": "",
         "reg": false,
         "x": 850,
-        "y": 1080,
+        "y": 1280,
         "wires": [
             [
                 "57122b42.c46e9c"
@@ -6660,7 +6660,7 @@
         "to": "",
         "reg": false,
         "x": 680,
-        "y": 880,
+        "y": 1080,
         "wires": [
             [
                 "dcf46157.02ea6"
@@ -6679,7 +6679,7 @@
         "stream": false,
         "addname": "",
         "x": 410,
-        "y": 980,
+        "y": 1180,
         "wires": [
             [
                 "daba6612.85acc8"
@@ -6694,7 +6694,7 @@
         "template": "printchunk-invoice.OL-template",
         "name": "print content",
         "x": 550,
-        "y": 980,
+        "y": 1180,
         "wires": [
             [
                 "a6b80567.9d209"
@@ -6722,7 +6722,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 690,
-        "y": 980,
+        "y": 1180,
         "wires": [
             [
                 "c8facfda.8f0878",
@@ -6737,7 +6737,7 @@
         "name": "Handle multiple content sets",
         "info": "",
         "x": 160,
-        "y": 840,
+        "y": 1040,
         "wires": []
     },
     {
@@ -6760,7 +6760,7 @@
         "to": "",
         "reg": false,
         "x": 470,
-        "y": 1080,
+        "y": 1280,
         "wires": [
             [
                 "a503438e.4c4618"
@@ -6789,7 +6789,7 @@
         "onceDelay": 0.1,
         "topic": "printcontent\\chunk json\\Sample Data-1000recs.json",
         "x": 160,
-        "y": 920,
+        "y": 1120,
         "wires": [
             [
                 "71b585be.8d7c8c"
@@ -6814,7 +6814,7 @@
         "payload": "[\"batch1.csv\",\"batch2.csv\",\"batch3.csv\",\"batch4.csv\",\"batch5.csv\"]",
         "payloadType": "json",
         "x": 120,
-        "y": 1240,
+        "y": 1440,
         "wires": [
             [
                 "4c6822c2.57624c"
@@ -6835,7 +6835,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1150,
-        "y": 1440,
+        "y": 1640,
         "wires": []
     },
     {
@@ -6845,7 +6845,7 @@
         "name": "Process mutliple data files",
         "info": "",
         "x": 150,
-        "y": 1200,
+        "y": 1400,
         "wires": []
     },
     {
@@ -6860,7 +6860,7 @@
         "stream": false,
         "addname": "",
         "x": 410,
-        "y": 1240,
+        "y": 1440,
         "wires": [
             [
                 "f396913d.b11a3"
@@ -6894,7 +6894,7 @@
         "to": "",
         "reg": false,
         "x": 560,
-        "y": 1240,
+        "y": 1440,
         "wires": [
             [
                 "596c2fb5.dafbc8"
@@ -6910,7 +6910,7 @@
         "active": false,
         "name": "",
         "x": 1070,
-        "y": 1240,
+        "y": 1440,
         "wires": [
             [
                 "1487eabe.3166e5"
@@ -6938,7 +6938,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 410,
-        "y": 1340,
+        "y": 1540,
         "wires": [
             [
                 "f130aeb4.9ffac",
@@ -6954,7 +6954,7 @@
         "template": "printbatch-letter.OL-template",
         "name": "print content",
         "x": 1290,
-        "y": 1240,
+        "y": 1440,
         "wires": [
             [
                 "23ae6c35.242344"
@@ -6969,7 +6969,7 @@
         "outputPreset": "printbatch-full-job.OL-outputpreset",
         "name": "output: full job",
         "x": 1000,
-        "y": 1340,
+        "y": 1540,
         "wires": [
             [
                 "9ecf387a.033098"
@@ -6996,7 +6996,7 @@
         "to": "",
         "reg": false,
         "x": 470,
-        "y": 1440,
+        "y": 1640,
         "wires": [
             [
                 "53582248.78652c"
@@ -7011,7 +7011,7 @@
         "managedFileId": "",
         "name": "",
         "x": 670,
-        "y": 1440,
+        "y": 1640,
         "wires": [
             [
                 "bb5e4789.de1878"
@@ -7038,7 +7038,7 @@
         "to": "",
         "reg": false,
         "x": 850,
-        "y": 1440,
+        "y": 1640,
         "wires": [
             [
                 "487e15e9.766ecc"
@@ -7056,7 +7056,7 @@
         "overwriteFile": "false",
         "encoding": "none",
         "x": 1010,
-        "y": 1440,
+        "y": 1640,
         "wires": [
             [
                 "4ac61f2d.7d215"
@@ -7107,7 +7107,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 910,
-        "y": 920,
+        "y": 1120,
         "wires": []
     },
     {
@@ -7124,7 +7124,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 650,
-        "y": 1300,
+        "y": 1500,
         "wires": []
     },
     {
@@ -7147,7 +7147,7 @@
         "to": "",
         "reg": false,
         "x": 790,
-        "y": 1240,
+        "y": 1440,
         "wires": [
             [
                 "2d979dfc.879dca"
@@ -7162,7 +7162,7 @@
         "jobPreset": "printbatch-group-rep.OL-jobpreset",
         "name": "printbatch-group-rep",
         "x": 660,
-        "y": 1340,
+        "y": 1540,
         "wires": [
             [
                 "1711b666.81ba02"
@@ -7203,7 +7203,7 @@
         "to": "",
         "reg": false,
         "x": 440,
-        "y": 620,
+        "y": 860,
         "wires": [
             [
                 "ea668aa1.990eb8"
@@ -7224,7 +7224,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1030,
-        "y": 440,
+        "y": 680,
         "wires": []
     },
     {
@@ -7250,7 +7250,7 @@
         "topic": "printcontent\\basic\\Sample Data-1k.xml",
         "payloadType": "str",
         "x": 130,
-        "y": 520,
+        "y": 760,
         "wires": [
             [
                 "e0f48daa.353608"
@@ -7279,7 +7279,7 @@
         "onceDelay": 0.1,
         "topic": "printcontent\\basic\\Sample Data-50recs.xml",
         "x": 130,
-        "y": 480,
+        "y": 720,
         "wires": [
             [
                 "e0f48daa.353608"
@@ -7308,7 +7308,7 @@
         "onceDelay": 0.1,
         "topic": "printcontent\\basic\\Sample Data-5recs.xml",
         "x": 130,
-        "y": 440,
+        "y": 680,
         "wires": [
             [
                 "e0f48daa.353608"
@@ -7329,7 +7329,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1050,
-        "y": 480,
+        "y": 720,
         "wires": []
     },
     {
@@ -7789,6 +7789,250 @@
         "statusType": "auto",
         "x": 690,
         "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f2b706df.5a5848",
+        "type": "olcnr-data-mapping",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "datamapper": "printbsc-transactional xml.OL-datamapper",
+        "active": false,
+        "name": "data mapping",
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "c0d628b0.1da9a"
+            ]
+        ]
+    },
+    {
+        "id": "c0d628b0.1da9a",
+        "type": "olcnr-print-content",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "template": "printbsc-invoice.OL-template",
+        "name": "print content",
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "5eb72b68.a5d014"
+            ]
+        ]
+    },
+    {
+        "id": "5eb72b68.a5d014",
+        "type": "olcnr-print-job",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "jobPreset": "printbsc-group customers.OL-jobpreset",
+        "name": "print job",
+        "x": 640,
+        "y": 460,
+        "wires": [
+            [
+                "6306bd21.39458c",
+                "85e4d199.4611e8",
+                "c660b28a.607ef"
+            ]
+        ]
+    },
+    {
+        "id": "85e4d199.4611e8",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "outputPreset": "printbsc-full job.OL-outputpreset",
+        "name": "output single PDF",
+        "x": 830,
+        "y": 460,
+        "wires": [
+            [
+                "64e080b7.f6a71"
+            ]
+        ]
+    },
+    {
+        "id": "6306bd21.39458c",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "outputPreset": "printbsc-per customer.OL-outputpreset",
+        "name": "output per customer",
+        "x": 840,
+        "y": 520,
+        "wires": [
+            [
+                "c1a78b8a.93f558"
+            ]
+        ]
+    },
+    {
+        "id": "c660b28a.607ef",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "outputPreset": "printbsc-per invoice.OL-outputpreset",
+        "name": "output individual invoices",
+        "x": 850,
+        "y": 580,
+        "wires": [
+            [
+                "2b60acce.5b245c"
+            ]
+        ]
+    },
+    {
+        "id": "6972dfc7.4bd038",
+        "type": "watch",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "files": "/data/workspace/in",
+        "recursive": "",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "f2b706df.5a5848"
+            ]
+        ]
+    },
+    {
+        "id": "64e080b7.f6a71",
+        "type": "olcnr-file-download",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 1050,
+        "y": 460,
+        "wires": [
+            [
+                "bf9fcc3d.946e"
+            ]
+        ]
+    },
+    {
+        "id": "bf9fcc3d.946e",
+        "type": "file",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "filename": "/data/workspace/out/full.zip",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1260,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1a78b8a.93f558",
+        "type": "olcnr-file-download",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 1050,
+        "y": 520,
+        "wires": [
+            [
+                "6f9f2255.ed9434"
+            ]
+        ]
+    },
+    {
+        "id": "2b60acce.5b245c",
+        "type": "olcnr-file-download",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 1050,
+        "y": 580,
+        "wires": [
+            [
+                "4ab2ae32.79b618"
+            ]
+        ]
+    },
+    {
+        "id": "6f9f2255.ed9434",
+        "type": "file",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "filename": "/data/workspace/out/customers.zip",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1280,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ab2ae32.79b618",
+        "type": "file",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "filename": "/data/workspace/out/invoices.zip",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1270,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a125ca26.ecfdf",
+        "type": "inject",
+        "z": "1d910b2e.85ebd5",
+        "name": "Sample data 5 recs",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "filename",
+                "v": "$globalContext('tests') & topic",
+                "vt": "jsonata"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "printcontent\\basic\\Sample Data-5recs.xml",
+        "payloadType": "str",
+        "x": 130,
+        "y": 520,
+        "wires": [
+            [
+                "f2b706df.5a5848"
+            ]
+        ]
+    },
+    {
+        "id": "68db6eb1.4da568",
+        "type": "comment",
+        "z": "1d910b2e.85ebd5",
+        "name": "Transactional Print Jobs folder based",
+        "info": "",
+        "x": 190,
+        "y": 420,
         "wires": []
     }
 ]
