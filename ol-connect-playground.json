@@ -95,6 +95,36 @@
         "color": "#DDAA99"
     },
     {
+        "id": "fd4744ac.b48008",
+        "type": "group",
+        "z": "7e87d273.bb52c4",
+        "name": "Inject test data for NODERED-377",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8db71ae2.ea3388",
+            "dacd8bf7.9ce3b",
+            "23589e36.231762",
+            "216552ba.351626",
+            "23b6f417.7a0ffc",
+            "4eb70647.cb8f6",
+            "7987f289.449ba4",
+            "441a0f9e.d047d8",
+            "fbe3322.af5ffd",
+            "1beca514.d1a963",
+            "7f3d1c8f.1558a4",
+            "d87d6b3b.5ba9e",
+            "22158690.d15152",
+            "ec2974df.13e19",
+            "d8c4a31d.56e38"
+        ],
+        "x": 34,
+        "y": 379,
+        "w": 1172,
+        "h": 302
+    },
+    {
         "id": "23c3ba7a.febabe",
         "type": "OL Connect Server",
         "z": "",
@@ -3793,7 +3823,7 @@
         "overwriteFile": "delete",
         "encoding": "none",
         "x": 900,
-        "y": 340,
+        "y": 300,
         "wires": [
             [
                 "231061a6.d25a56"
@@ -3814,6 +3844,7 @@
         "id": "8db71ae2.ea3388",
         "type": "inject",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "Inject 1 XML file",
         "props": [
             {
@@ -3828,8 +3859,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "str",
-        "x": 140,
-        "y": 500,
+        "x": 160,
+        "y": 440,
         "wires": [
             [
                 "4eb70647.cb8f6"
@@ -3840,6 +3871,7 @@
         "id": "dacd8bf7.9ce3b",
         "type": "debug",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -3849,14 +3881,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
-        "y": 580,
+        "x": 1100,
+        "y": 520,
         "wires": []
     },
     {
         "id": "23589e36.231762",
         "type": "change",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "",
         "rules": [
             {
@@ -3872,8 +3905,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 770,
-        "y": 580,
+        "x": 790,
+        "y": 520,
         "wires": [
             [
                 "d8c4a31d.56e38"
@@ -3934,7 +3967,7 @@
         ],
         "uncaught": false,
         "x": 140,
-        "y": 340,
+        "y": 300,
         "wires": [
             [
                 "b90bbb08.e6ab5",
@@ -3962,7 +3995,7 @@
         "to": "",
         "reg": false,
         "x": 690,
-        "y": 340,
+        "y": 300,
         "wires": [
             [
                 "fb39a714.7e3a1"
@@ -3973,6 +4006,7 @@
         "id": "216552ba.351626",
         "type": "split",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "",
         "splt": "\\n",
         "spltType": "str",
@@ -3980,8 +4014,8 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 450,
-        "y": 580,
+        "x": 470,
+        "y": 520,
         "wires": [
             [
                 "23b6f417.7a0ffc"
@@ -3992,6 +4026,7 @@
         "id": "23b6f417.7a0ffc",
         "type": "change",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "",
         "rules": [
             {
@@ -4007,8 +4042,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
-        "y": 580,
+        "x": 620,
+        "y": 520,
         "wires": [
             [
                 "23589e36.231762"
@@ -4026,7 +4061,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 1090,
-        "y": 240,
+        "y": 220,
         "wires": [
             [
                 "b90bbb08.e6ab5"
@@ -4060,7 +4095,7 @@
         "to": "",
         "reg": false,
         "x": 930,
-        "y": 240,
+        "y": 220,
         "wires": [
             [
                 "aff8e515.fbfaf8"
@@ -4081,7 +4116,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1080,
-        "y": 340,
+        "y": 300,
         "wires": []
     },
     {
@@ -4098,13 +4133,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 400,
-        "y": 380,
+        "y": 340,
         "wires": []
     },
     {
         "id": "4eb70647.cb8f6",
         "type": "change",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "",
         "rules": [
             {
@@ -4141,8 +4177,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
-        "y": 500,
+        "x": 500,
+        "y": 440,
         "wires": [
             [
                 "441a0f9e.d047d8"
@@ -4153,6 +4189,7 @@
         "id": "7987f289.449ba4",
         "type": "inject",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "Inject 5 XML files",
         "props": [
             {
@@ -4166,8 +4203,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 140,
-        "y": 540,
+        "x": 160,
+        "y": 480,
         "wires": [
             [
                 "4eb70647.cb8f6"
@@ -4178,14 +4215,15 @@
         "id": "441a0f9e.d047d8",
         "type": "function",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "",
         "func": "let payload = [];\n\nfor (var i = 0; i < msg.records; i++) {\n    payload.push(i);\n}\nmsg.payload = payload;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 640,
-        "y": 500,
+        "x": 660,
+        "y": 440,
         "wires": [
             [
                 "7f3d1c8f.1558a4"
@@ -4196,6 +4234,7 @@
         "id": "fbe3322.af5ffd",
         "type": "inject",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "Inject 10 XML files",
         "props": [
             {
@@ -4209,8 +4248,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 150,
-        "y": 580,
+        "x": 170,
+        "y": 520,
         "wires": [
             [
                 "4eb70647.cb8f6"
@@ -4221,6 +4260,7 @@
         "id": "1beca514.d1a963",
         "type": "inject",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "Inject 100 XML files",
         "props": [
             {
@@ -4234,8 +4274,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 150,
-        "y": 620,
+        "x": 170,
+        "y": 560,
         "wires": [
             [
                 "4eb70647.cb8f6"
@@ -4246,14 +4286,15 @@
         "id": "7f3d1c8f.1558a4",
         "type": "file",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "Write dummy file to create dir structure",
         "filename": "",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 980,
-        "y": 500,
+        "x": 1000,
+        "y": 440,
         "wires": [
             [
                 "216552ba.351626"
@@ -4264,6 +4305,7 @@
         "id": "d87d6b3b.5ba9e",
         "type": "inject",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "Inject 500 XML files",
         "props": [
             {
@@ -4277,8 +4319,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 150,
-        "y": 660,
+        "x": 170,
+        "y": 600,
         "wires": [
             [
                 "4eb70647.cb8f6"
@@ -4289,6 +4331,7 @@
         "id": "22158690.d15152",
         "type": "inject",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "Inject 1000 XML files",
         "props": [
             {
@@ -4302,23 +4345,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 150,
-        "y": 700,
+        "x": 170,
+        "y": 640,
         "wires": [
             [
                 "4eb70647.cb8f6"
             ]
         ]
-    },
-    {
-        "id": "ec2974df.13e19",
-        "type": "comment",
-        "z": "7e87d273.bb52c4",
-        "name": "Inject test data",
-        "info": "",
-        "x": 120,
-        "y": 460,
-        "wires": []
     },
     {
         "id": "c10c391.159d948",
@@ -4429,6 +4462,7 @@
         "id": "d8c4a31d.56e38",
         "type": "fs-ops-copy",
         "z": "7e87d273.bb52c4",
+        "g": "fd4744ac.b48008",
         "name": "",
         "sourcePath": "source",
         "sourcePathType": "msg",
@@ -4440,8 +4474,8 @@
         "destFilenameType": "msg",
         "link": false,
         "overwrite": true,
-        "x": 920,
-        "y": 580,
+        "x": 940,
+        "y": 520,
         "wires": [
             [
                 "dacd8bf7.9ce3b"
@@ -4980,7 +5014,7 @@
         "active": false,
         "name": "Data mapping",
         "x": 120,
-        "y": 240,
+        "y": 220,
         "wires": [
             [
                 "352de1ea.a2552e"
@@ -5336,7 +5370,7 @@
         "template": "nodered-377-invoice.OL-template",
         "name": "Print content",
         "x": 290,
-        "y": 240,
+        "y": 220,
         "wires": [
             [
                 "553c4dca.a0ca0c"
@@ -5367,7 +5401,7 @@
         "jobPreset": "nodered-377-no-grouping.OL-jobpreset",
         "name": "Print job",
         "x": 440,
-        "y": 240,
+        "y": 220,
         "wires": [
             [
                 "d2d88a13.e07658"
@@ -5427,7 +5461,7 @@
         "outputPreset": "nodered-377-pdf-stationery.OL-outputpreset",
         "name": "Print output",
         "x": 590,
-        "y": 240,
+        "y": 220,
         "wires": [
             [
                 "de6e7508.d71c8"
@@ -5652,7 +5686,7 @@
         "name": "",
         "outputas": "",
         "x": 750,
-        "y": 240,
+        "y": 220,
         "wires": [
             [
                 "6b57d000.231228"
@@ -8186,10 +8220,10 @@
         "id": "7a802e37.f6a77",
         "type": "comment",
         "z": "7e87d273.bb52c4",
-        "name": "NODERED-641",
+        "name": "NODERED-641 work in progress",
         "info": "NODERED-641",
-        "x": 120,
-        "y": 1200,
+        "x": 170,
+        "y": 1140,
         "wires": []
     },
     {
@@ -8494,7 +8528,7 @@
         "name": "Post data files",
         "info": "",
         "x": 110,
-        "y": 1240,
+        "y": 1180,
         "wires": []
     },
     {
@@ -8507,7 +8541,7 @@
         "upload": true,
         "swaggerDoc": "",
         "x": 130,
-        "y": 1320,
+        "y": 1260,
         "wires": [
             [
                 "8b0d65a9.5a5708"
@@ -8522,7 +8556,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1070,
-        "y": 1320,
+        "y": 1260,
         "wires": []
     },
     {
@@ -8535,7 +8569,7 @@
         "upload": true,
         "swaggerDoc": "",
         "x": 130,
-        "y": 1280,
+        "y": 1220,
         "wires": [
             [
                 "b27e5f05.bfdea"
@@ -8550,7 +8584,7 @@
         "statusCode": "",
         "headers": {},
         "x": 430,
-        "y": 1280,
+        "y": 1220,
         "wires": []
     },
     {
@@ -8565,7 +8599,7 @@
         "template": "<form action=\"/nodered-641\" method=\"POST\" enctype=\"multipart/form-data\">\n  <input type=\"file\" id=\"datafile\" name=\"datafile\">\n  <input type=\"submit\">\n</form>",
         "output": "str",
         "x": 300,
-        "y": 1280,
+        "y": 1220,
         "wires": [
             [
                 "c49dbbe6.5f198"
@@ -8586,7 +8620,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 370,
-        "y": 1420,
+        "y": 1360,
         "wires": []
     },
     {
@@ -8609,7 +8643,7 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 1320,
+        "y": 1260,
         "wires": [
             [
                 "6f3bb253.0cc2fc",
@@ -8624,7 +8658,7 @@
         "name": "NODERED-380",
         "info": "NODERED-380",
         "x": 120,
-        "y": 820,
+        "y": 760,
         "wires": []
     },
     {
@@ -8636,7 +8670,7 @@
         "markAsPermanent": false,
         "name": "",
         "x": 570,
-        "y": 960,
+        "y": 900,
         "wires": [
             [
                 "3b01f797.20cae",
@@ -8658,7 +8692,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 770,
-        "y": 1020,
+        "y": 960,
         "wires": []
     },
     {
@@ -8683,7 +8717,7 @@
         "onceDelay": 0.1,
         "topic": "stability\\nodered-380\\Sample Data 50.xml",
         "x": 160,
-        "y": 960,
+        "y": 900,
         "wires": [
             [
                 "fae47229.8b2d3"
@@ -8712,7 +8746,7 @@
         "onceDelay": 0.1,
         "topic": "stability\\nodered-380\\Sample Data 1k.xml",
         "x": 160,
-        "y": 1000,
+        "y": 940,
         "wires": [
             [
                 "fae47229.8b2d3"
@@ -8741,7 +8775,7 @@
         "onceDelay": 0.1,
         "topic": "stability\\nodered-380\\Sample Data 10k.xml",
         "x": 160,
-        "y": 1040,
+        "y": 980,
         "wires": [
             [
                 "fae47229.8b2d3"
@@ -8770,7 +8804,7 @@
         "onceDelay": 0.1,
         "topic": "stability\\nodered-380\\Sample Data 50k.xml",
         "x": 170,
-        "y": 1080,
+        "y": 1020,
         "wires": [
             [
                 "fae47229.8b2d3"
@@ -8786,7 +8820,7 @@
         "active": false,
         "name": "data mapping",
         "x": 760,
-        "y": 960,
+        "y": 900,
         "wires": [
             [
                 "2a1aa290.c41a16",
@@ -8808,7 +8842,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1000,
-        "y": 1020,
+        "y": 960,
         "wires": []
     },
     {
@@ -8823,7 +8857,7 @@
         "ignoredFilesType": "re",
         "name": "",
         "x": 370,
-        "y": 900,
+        "y": 840,
         "wires": [
             [
                 "fae47229.8b2d3"
@@ -8837,7 +8871,7 @@
         "name": "Inject and Watch folder for larger data files",
         "info": "NODERED-380",
         "x": 200,
-        "y": 860,
+        "y": 800,
         "wires": []
     },
     {
@@ -8851,7 +8885,7 @@
         "flattened": false,
         "name": "",
         "x": 960,
-        "y": 960,
+        "y": 900,
         "wires": [
             [
                 "b62c6d7.ed8771"
@@ -8871,7 +8905,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1130,
-        "y": 960,
+        "y": 900,
         "wires": []
     }
 ]
