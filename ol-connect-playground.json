@@ -8186,10 +8186,10 @@
         "id": "7a802e37.f6a77",
         "type": "comment",
         "z": "7e87d273.bb52c4",
-        "name": "NODERED-377",
-        "info": "",
+        "name": "NODERED-641",
+        "info": "NODERED-641",
         "x": 120,
-        "y": 780,
+        "y": 1200,
         "wires": []
     },
     {
@@ -8265,7 +8265,8 @@
         "y": 1900,
         "wires": [
             [
-                "9cf6773b.354f1"
+                "9cf6773b.354f1",
+                "bccaed32.1dc3"
             ]
         ]
     },
@@ -8467,6 +8468,410 @@
         "info": "",
         "x": 170,
         "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "bccaed32.1dc3",
+        "type": "debug",
+        "z": "1d910b2e.85ebd5",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "f138a168.fa1f68",
+        "type": "comment",
+        "z": "7e87d273.bb52c4",
+        "name": "Post data files",
+        "info": "",
+        "x": 110,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "a2764f0f.a155e8",
+        "type": "http in",
+        "z": "7e87d273.bb52c4",
+        "name": "",
+        "url": "nodered-641",
+        "method": "post",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1320,
+        "wires": [
+            [
+                "8b0d65a9.5a5708"
+            ]
+        ]
+    },
+    {
+        "id": "6f3bb253.0cc2fc",
+        "type": "http response",
+        "z": "7e87d273.bb52c4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1070,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "b1a44882.6429f",
+        "type": "http in",
+        "z": "7e87d273.bb52c4",
+        "name": "",
+        "url": "nodered-641",
+        "method": "get",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1280,
+        "wires": [
+            [
+                "b27e5f05.bfdea"
+            ]
+        ]
+    },
+    {
+        "id": "c49dbbe6.5f198",
+        "type": "http response",
+        "z": "7e87d273.bb52c4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 430,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "b27e5f05.bfdea",
+        "type": "template",
+        "z": "7e87d273.bb52c4",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<form action=\"/nodered-641\" method=\"POST\" enctype=\"multipart/form-data\">\n  <input type=\"file\" id=\"datafile\" name=\"datafile\">\n  <input type=\"submit\">\n</form>",
+        "output": "str",
+        "x": 300,
+        "y": 1280,
+        "wires": [
+            [
+                "c49dbbe6.5f198"
+            ]
+        ]
+    },
+    {
+        "id": "12e72a1.1438fd6",
+        "type": "debug",
+        "z": "7e87d273.bb52c4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "8b0d65a9.5a5708",
+        "type": "change",
+        "z": "7e87d273.bb52c4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "foo",
+                "pt": "msg",
+                "to": "req.files[0].buffer",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1320,
+        "wires": [
+            [
+                "6f3bb253.0cc2fc",
+                "12e72a1.1438fd6"
+            ]
+        ]
+    },
+    {
+        "id": "e0081da3.f33fe8",
+        "type": "comment",
+        "z": "7e87d273.bb52c4",
+        "name": "NODERED-380",
+        "info": "NODERED-380",
+        "x": 120,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "fae47229.8b2d3",
+        "type": "olcnr-file-upload",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "23c3ba7a.febabe",
+        "filename": "",
+        "markAsPermanent": false,
+        "name": "",
+        "x": 570,
+        "y": 960,
+        "wires": [
+            [
+                "3b01f797.20cae",
+                "9dd833b9.9048a"
+            ]
+        ]
+    },
+    {
+        "id": "3b01f797.20cae",
+        "type": "debug",
+        "z": "7e87d273.bb52c4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "managedFileId",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "5bd66fc.ebaff1",
+        "type": "inject",
+        "z": "7e87d273.bb52c4",
+        "name": "Sample data 50 recs (100kb)",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "filename",
+                "v": "$globalContext('tests') & topic",
+                "vt": "jsonata"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "stability\\nodered-380\\Sample Data 50.xml",
+        "x": 160,
+        "y": 960,
+        "wires": [
+            [
+                "fae47229.8b2d3"
+            ]
+        ]
+    },
+    {
+        "id": "1b376efe.a4a6f1",
+        "type": "inject",
+        "z": "7e87d273.bb52c4",
+        "name": "Sample data 1k recs  (2MB)",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "filename",
+                "v": "$globalContext('tests') & topic",
+                "vt": "jsonata"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "stability\\nodered-380\\Sample Data 1k.xml",
+        "x": 160,
+        "y": 1000,
+        "wires": [
+            [
+                "fae47229.8b2d3"
+            ]
+        ]
+    },
+    {
+        "id": "36ed2a73.f7fe8e",
+        "type": "inject",
+        "z": "7e87d273.bb52c4",
+        "name": "Sample data 10k recs (20MB)",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "filename",
+                "v": "$globalContext('tests') & topic",
+                "vt": "jsonata"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "stability\\nodered-380\\Sample Data 10k.xml",
+        "x": 160,
+        "y": 1040,
+        "wires": [
+            [
+                "fae47229.8b2d3"
+            ]
+        ]
+    },
+    {
+        "id": "cf9e60e6.59f7f8",
+        "type": "inject",
+        "z": "7e87d273.bb52c4",
+        "name": "Sample data 50k recs (100MB)",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "filename",
+                "v": "$globalContext('tests') & topic",
+                "vt": "jsonata"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "stability\\nodered-380\\Sample Data 50k.xml",
+        "x": 170,
+        "y": 1080,
+        "wires": [
+            [
+                "fae47229.8b2d3"
+            ]
+        ]
+    },
+    {
+        "id": "9dd833b9.9048a",
+        "type": "olcnr-data-mapping",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "23c3ba7a.febabe",
+        "datamapper": "printbsc-transactional xml.OL-datamapper",
+        "active": false,
+        "name": "data mapping",
+        "x": 760,
+        "y": 960,
+        "wires": [
+            [
+                "2a1aa290.c41a16",
+                "fa86d6.46949128"
+            ]
+        ]
+    },
+    {
+        "id": "2a1aa290.c41a16",
+        "type": "debug",
+        "z": "7e87d273.bb52c4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "dataSetId",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "db0d727d.fbfb9",
+        "type": "watch-directory",
+        "z": "7e87d273.bb52c4",
+        "folder": "/data/projects/OL-Connect-playground-for-Node-RED/workspace/output/stability/nodered-380/in",
+        "recursive": 0,
+        "typeEvent": "create",
+        "ignoreInitial": true,
+        "ignoredFiles": ".txt",
+        "ignoredFilesType": "re",
+        "name": "",
+        "x": 370,
+        "y": 900,
+        "wires": [
+            [
+                "fae47229.8b2d3"
+            ]
+        ]
+    },
+    {
+        "id": "a7545a9a.aa9f6",
+        "type": "comment",
+        "z": "7e87d273.bb52c4",
+        "name": "Inject and Watch folder for larger data files",
+        "info": "NODERED-380",
+        "x": 200,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "fa86d6.46949128",
+        "type": "olcnr-data-get",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "23c3ba7a.febabe",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": false,
+        "name": "",
+        "x": 960,
+        "y": 960,
+        "wires": [
+            [
+                "b62c6d7.ed8771"
+            ]
+        ]
+    },
+    {
+        "id": "b62c6d7.ed8771",
+        "type": "debug",
+        "z": "7e87d273.bb52c4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 960,
         "wires": []
     }
 ]
