@@ -116,13 +116,12 @@
             "7f3d1c8f.1558a4",
             "d87d6b3b.5ba9e",
             "22158690.d15152",
-            "ec2974df.13e19",
             "d8c4a31d.56e38"
         ],
         "x": 34,
-        "y": 379,
+        "y": 399,
         "w": 1172,
-        "h": 302
+        "h": 282
     },
     {
         "id": "23c3ba7a.febabe",
@@ -8691,7 +8690,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
+        "x": 790,
         "y": 960,
         "wires": []
     },
@@ -8819,7 +8818,7 @@
         "datamapper": "printbsc-transactional xml.OL-datamapper",
         "active": false,
         "name": "data mapping",
-        "x": 760,
+        "x": 780,
         "y": 900,
         "wires": [
             [
@@ -8884,7 +8883,7 @@
         "includeSubdetails": false,
         "flattened": false,
         "name": "",
-        "x": 960,
+        "x": 980,
         "y": 900,
         "wires": [
             [
@@ -8904,7 +8903,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1130,
+        "x": 1170,
         "y": 900,
         "wires": []
     }
