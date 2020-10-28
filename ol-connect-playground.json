@@ -145,14 +145,14 @@
         "id": "99a91ad8.1243f",
         "type": "split",
         "z": "5131a1e3.fd76d8",
-        "name": "",
+        "name": "split record set",
         "splt": "\\n",
         "spltType": "str",
         "arraySplt": 1,
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 590,
+        "x": 700,
         "y": 100,
         "wires": [
             [
@@ -164,28 +164,42 @@
         "id": "eabdcbd4.4269f",
         "type": "change",
         "z": "5131a1e3.fd76d8",
-        "name": "",
+        "name": "set runtime parameters",
         "rules": [
             {
                 "t": "set",
-                "p": "form",
+                "p": "dataRecordId",
                 "pt": "msg",
-                "to": "payload",
+                "to": "payload.id",
                 "tot": "msg"
             },
             {
                 "t": "set",
-                "p": "formEndPoint",
+                "p": "guid",
                 "pt": "msg",
-                "to": "$globalContext('host') & ':' & $globalContext('nodeRedPort')  & '/cotg/timesheets/' & form.guid",
+                "to": "payload.fields.guid",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "customer",
+                "pt": "msg",
+                "to": "payload.fields.customer",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "orderId",
+                "pt": "msg",
+                "to": "payload.fields.order_id",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "parameters.formLocation",
+                "pt": "msg",
+                "to": "$globalContext('host') & ':' & $globalContext('nodeRedPort')  & '/cotg/timesheets/' & msg.guid",
                 "tot": "jsonata"
-            },
-            {
-                "t": "set",
-                "p": "payload.form_action",
-                "pt": "msg",
-                "to": "formEndPoint",
-                "tot": "msg"
             }
         ],
         "action": "",
@@ -193,8 +207,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 740,
-        "y": 100,
+        "x": 410,
+        "y": 180,
         "wires": [
             [
                 "76a9c5b0.0be64c"
@@ -206,14 +220,14 @@
         "id": "bce65c73.8c08e",
         "type": "file",
         "z": "5131a1e3.fd76d8",
-        "name": "",
+        "name": "write file",
         "filename": "",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 670,
-        "y": 160,
+        "x": 1000,
+        "y": 180,
         "wires": [
             [
                 "83dd91c2.d3d078"
@@ -233,7 +247,7 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 910,
+        "x": 970,
         "y": 240,
         "wires": [
             [
@@ -263,9 +277,9 @@
         "id": "1cf7c2c0.22249d",
         "type": "comment",
         "z": "5131a1e3.fd76d8",
-        "name": "Render the COTG forms",
+        "name": "Render COTG forms",
         "info": "",
-        "x": 150,
+        "x": 140,
         "y": 60,
         "wires": []
     },
@@ -284,12 +298,12 @@
         "type": "function",
         "z": "5131a1e3.fd76d8",
         "name": "Set Destination",
-        "func": "msg.payload = {\n    'StoreID' : 'oltest',\n    'Password' : 'qpalzm',\n    'FileToPublishURL' :  msg.formEndPoint,\n    'FileType' : 'HTML',\n    'Title' : 'Timesheet for ' + msg.form.customer + ' ' + msg.form.order_id,\n    'Author' : 'Node-RED',\n    'Apollo-Dest' : global.get('email'),\n    'Apollo-Categ': 'RandD',\n}\nmsg.headers = {\n    'Content-Type': 'multipart/form-data'\n}\n\nreturn msg;",
+        "func": "msg.payload = {\n    'StoreID' : 'oltest',\n    'Password' : 'qpalzm',\n    'FileToPublishURL' :  msg.parameters.formLocation,\n    'FileType' : 'HTML',\n    'Title' : 'Timesheet for ' + msg.customer + ' ' + msg.orderId,\n    'Author' : 'Node-RED',\n    'Apollo-Dest' : global.get('email'),\n    'Apollo-Categ': 'RandD',\n}\nmsg.headers = {\n    'Content-Type': 'multipart/form-data'\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 720,
+        "x": 780,
         "y": 240,
         "wires": [
             [
@@ -301,13 +315,13 @@
         "id": "9049355e.57396",
         "type": "file in",
         "z": "5131a1e3.fd76d8",
-        "name": "Load form from disk",
+        "name": "load the form from disk",
         "filename": "",
         "format": "utf8",
         "chunk": false,
         "sendError": false,
         "encoding": "none",
-        "x": 660,
+        "x": 610,
         "y": 380,
         "wires": [
             [
@@ -322,7 +336,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1110,
+        "x": 890,
         "y": 380,
         "wires": []
     },
@@ -353,7 +367,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 690,
+        "x": 670,
         "y": 620,
         "wires": [
             [
@@ -370,7 +384,7 @@
         "name": "",
         "statusCode": "291",
         "headers": {},
-        "x": 1100,
+        "x": 920,
         "y": 620,
         "wires": []
     },
@@ -395,7 +409,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 1110,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "62c32018.58a428"
@@ -773,7 +787,7 @@
         "to": "",
         "reg": false,
         "x": 950,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "6e35a321.732cbc"
@@ -788,7 +802,7 @@
         "property": "payload",
         "attr": "",
         "chr": "",
-        "x": 570,
+        "x": 550,
         "y": 620,
         "wires": [
             [
@@ -800,7 +814,7 @@
         "id": "cb1bb431.4fcfc8",
         "type": "change",
         "z": "5131a1e3.fd76d8",
-        "name": "",
+        "name": "set the file location",
         "rules": [
             {
                 "t": "set",
@@ -815,7 +829,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
+        "x": 390,
         "y": 620,
         "wires": [
             [
@@ -956,13 +970,13 @@
         "id": "c6fba065.01061",
         "type": "change",
         "z": "5131a1e3.fd76d8",
-        "name": "",
+        "name": "set the file location",
         "rules": [
             {
                 "t": "set",
                 "p": "filename",
                 "pt": "msg",
-                "to": "$globalContext('output') & 'cotg/timesheets/forms/' & msg.form.guid & '.html'",
+                "to": "$globalContext('output') & 'cotg/timesheets/forms/' & msg.guid & '.html'",
                 "tot": "jsonata"
             }
         ],
@@ -971,8 +985,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 160,
+        "x": 830,
+        "y": 180,
         "wires": [
             [
                 "bce65c73.8c08e"
@@ -992,7 +1006,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1090,
+        "x": 1150,
         "y": 240,
         "wires": []
     },
@@ -1000,7 +1014,7 @@
         "id": "87191c03.4f6868",
         "type": "change",
         "z": "5131a1e3.fd76d8",
-        "name": "",
+        "name": "set the file location",
         "rules": [
             {
                 "t": "set",
@@ -1015,7 +1029,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
+        "x": 390,
         "y": 380,
         "wires": [
             [
@@ -2747,7 +2761,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "cotg\\timesheets\\sample-2.xml",
+        "topic": "cotg/timesheets/sample-2.xml",
+        "payloadType": "str",
         "x": 130,
         "y": 100,
         "wires": [
@@ -2757,25 +2772,15 @@
         ]
     },
     {
-        "id": "6730e919.acc5b",
-        "type": "comment",
-        "z": "5131a1e3.fd76d8",
-        "name": "Notes!",
-        "info": "Park the form data in msg.form as the msg.payload will be overwritten downstream with the HTML form.",
-        "x": 910,
-        "y": 100,
-        "wires": []
-    },
-    {
         "id": "e16f12b9.4d005",
         "type": "catch",
         "z": "5131a1e3.fd76d8",
-        "name": "Form not found",
+        "name": "form not found",
         "scope": [
             "9049355e.57396"
         ],
         "uncaught": false,
-        "x": 640,
+        "x": 500,
         "y": 440,
         "wires": [
             [
@@ -2802,7 +2807,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 840,
+        "x": 700,
         "y": 440,
         "wires": [
             [
@@ -2827,7 +2832,7 @@
         "name": "Note! We could use the JSON data here but lets try dataRecordId",
         "info": "Being lazy here... let the datamapper handle the nested data for the details rather than us having to write that data in a function node.",
         "x": 400,
-        "y": 780,
+        "y": 740,
         "wires": []
     },
     {
@@ -2836,7 +2841,7 @@
         "z": "5131a1e3.fd76d8",
         "name": "Respond early & delete",
         "info": "We are responding early here so the app does not need to wait till the PDF has created.\n\nstatusCode 291 triggers the deletion of the form in the COTG/Connect Mobile app.",
-        "x": 1160,
+        "x": 960,
         "y": 580,
         "wires": []
     },
@@ -2852,7 +2857,7 @@
         "complete": "filename",
         "targetType": "msg",
         "x": 1250,
-        "y": 820,
+        "y": 780,
         "wires": []
     },
     {
@@ -2875,7 +2880,7 @@
         "to": "",
         "reg": false,
         "x": 580,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "31cc22a5.669836"
@@ -2893,7 +2898,7 @@
         "overwriteFile": "delete",
         "encoding": "none",
         "x": 1110,
-        "y": 760,
+        "y": 720,
         "wires": [
             [
                 "4f8f96f.4b51e68"
@@ -2920,7 +2925,7 @@
         "to": "",
         "reg": false,
         "x": 950,
-        "y": 760,
+        "y": 720,
         "wires": [
             [
                 "863b7fa5.fa235"
@@ -2939,7 +2944,7 @@
         "complete": "filename",
         "targetType": "msg",
         "x": 1250,
-        "y": 760,
+        "y": 720,
         "wires": []
     },
     {
@@ -2949,7 +2954,7 @@
         "name": "Delete the form",
         "info": "",
         "x": 940,
-        "y": 720,
+        "y": 680,
         "wires": []
     },
     {
@@ -4570,9 +4575,9 @@
         "section": "",
         "cssSelector": "",
         "embedResources": true,
-        "name": "Render form",
-        "x": 330,
-        "y": 160,
+        "name": "render cotg form",
+        "x": 630,
+        "y": 180,
         "wires": [
             [
                 "c6fba065.01061"
@@ -4723,7 +4728,7 @@
         "template": "COTG Timesheet Report.OL-template",
         "name": "preview pdf",
         "x": 770,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "2d881c35.6f5894"
@@ -4849,8 +4854,8 @@
         "connect_server": "23c3ba7a.febabe",
         "datamapper": "COTG Timesheet Form.OL-datamapper",
         "active": false,
-        "name": "Map data",
-        "x": 320,
+        "name": "data mapping",
+        "x": 380,
         "y": 100,
         "wires": [
             [
@@ -4933,7 +4938,7 @@
         "active": false,
         "name": "data mapping",
         "x": 240,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "2ee36853.06e5a"
@@ -5100,9 +5105,9 @@
         "input": "set",
         "output": "values",
         "includeSubdetails": false,
-        "flattened": true,
-        "name": "Get data",
-        "x": 460,
+        "flattened": false,
+        "name": "get data",
+        "x": 540,
         "y": 100,
         "wires": [
             [
@@ -5230,7 +5235,7 @@
         "flattened": false,
         "name": "",
         "x": 400,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "df89937b.1047"
