@@ -410,7 +410,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 1110,
-        "y": 860,
+        "y": 940,
         "wires": [
             [
                 "62c32018.58a428"
@@ -427,7 +427,7 @@
         "chunk": false,
         "sendError": false,
         "encoding": "none",
-        "x": 520,
+        "x": 420,
         "y": 640,
         "wires": [
             [
@@ -445,8 +445,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 780,
-        "y": 700,
+        "x": 1120,
+        "y": 640,
         "wires": [
             [
                 "4bcb46de.b9a678"
@@ -464,8 +464,8 @@
         "tostatus": false,
         "complete": "filename",
         "targetType": "msg",
-        "x": 930,
-        "y": 700,
+        "x": 1270,
+        "y": 640,
         "wires": []
     },
     {
@@ -492,7 +492,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 650,
+        "x": 570,
         "y": 140,
         "wires": []
     },
@@ -566,7 +566,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1020,
+        "x": 1000,
         "y": 100,
         "wires": [
             [
@@ -612,7 +612,7 @@
         "tostatus": false,
         "complete": "filename",
         "targetType": "msg",
-        "x": 1190,
+        "x": 1150,
         "y": 100,
         "wires": []
     },
@@ -652,8 +652,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 630,
-        "y": 700,
+        "x": 970,
+        "y": 640,
         "wires": [
             [
                 "c4ea46a7.09b41"
@@ -788,7 +788,7 @@
         "to": "",
         "reg": false,
         "x": 950,
-        "y": 860,
+        "y": 940,
         "wires": [
             [
                 "6e35a321.732cbc"
@@ -919,7 +919,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 830,
+        "x": 870,
         "y": 100,
         "wires": []
     },
@@ -959,7 +959,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
+        "x": 550,
         "y": 640,
         "wires": [
             [
@@ -1090,7 +1090,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 830,
+        "x": 870,
         "y": 240,
         "wires": []
     },
@@ -1113,7 +1113,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
+        "x": 380,
         "y": 240,
         "wires": [
             [
@@ -1418,7 +1418,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 830,
+        "x": 850,
         "y": 380,
         "wires": []
     },
@@ -1441,7 +1441,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 340,
+        "x": 400,
         "y": 380,
         "wires": [
             [
@@ -1484,7 +1484,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 830,
+        "x": 850,
         "y": 520,
         "wires": []
     },
@@ -1507,7 +1507,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
+        "x": 380,
         "y": 520,
         "wires": [
             [
@@ -1925,7 +1925,7 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 430,
+        "x": 410,
         "y": 1060,
         "wires": [
             [
@@ -2217,7 +2217,7 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 430,
+        "x": 410,
         "y": 1420,
         "wires": [
             [
@@ -2679,7 +2679,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1090,
+        "x": 1070,
         "y": 60,
         "wires": []
     },
@@ -2833,7 +2833,7 @@
         "name": "Note! We could use the JSON data here but lets try dataRecordId",
         "info": "Being lazy here... let the datamapper handle the nested data for the details rather than us having to write that data in a function node.",
         "x": 400,
-        "y": 820,
+        "y": 900,
         "wires": []
     },
     {
@@ -2858,7 +2858,7 @@
         "complete": "filename",
         "targetType": "msg",
         "x": 1250,
-        "y": 860,
+        "y": 940,
         "wires": []
     },
     {
@@ -2881,7 +2881,7 @@
         "to": "",
         "reg": false,
         "x": 580,
-        "y": 860,
+        "y": 940,
         "wires": [
             [
                 "31cc22a5.669836"
@@ -2898,8 +2898,8 @@
         "createDir": true,
         "overwriteFile": "delete",
         "encoding": "none",
-        "x": 1110,
-        "y": 800,
+        "x": 410,
+        "y": 820,
         "wires": [
             [
                 "4f8f96f.4b51e68"
@@ -2925,8 +2925,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
-        "y": 800,
+        "x": 250,
+        "y": 820,
         "wires": [
             [
                 "863b7fa5.fa235"
@@ -2944,8 +2944,8 @@
         "tostatus": false,
         "complete": "filename",
         "targetType": "msg",
-        "x": 1250,
-        "y": 800,
+        "x": 550,
+        "y": 820,
         "wires": []
     },
     {
@@ -2954,8 +2954,8 @@
         "z": "5131a1e3.fd76d8",
         "name": "Delete the form",
         "info": "",
-        "x": 940,
-        "y": 760,
+        "x": 240,
+        "y": 780,
         "wires": []
     },
     {
@@ -3083,7 +3083,7 @@
         "name": "Runtime parameters - Data Record ID",
         "info": "",
         "x": 190,
-        "y": 800,
+        "y": 780,
         "wires": []
     },
     {
@@ -3108,7 +3108,7 @@
         "onceDelay": 0.1,
         "topic": "previewpdf\\runtime parameters\\Sample Data.xml",
         "x": 120,
-        "y": 840,
+        "y": 820,
         "wires": [
             [
                 "a0a7ab6d.3192b8"
@@ -3135,7 +3135,7 @@
         "to": "",
         "reg": false,
         "x": 880,
-        "y": 840,
+        "y": 820,
         "wires": [
             [
                 "fb17407.e8578c"
@@ -3162,7 +3162,7 @@
         "to": "",
         "reg": false,
         "x": 710,
-        "y": 900,
+        "y": 880,
         "wires": [
             [
                 "80c48cf2.3b991"
@@ -3180,7 +3180,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 850,
-        "y": 900,
+        "y": 880,
         "wires": [
             [
                 "c3d5750d.b0fc7"
@@ -3199,7 +3199,7 @@
         "complete": "filename",
         "targetType": "msg",
         "x": 990,
-        "y": 900,
+        "y": 880,
         "wires": []
     },
     {
@@ -3379,7 +3379,7 @@
         "name": "Set Parameters",
         "env": [],
         "x": 1080,
-        "y": 840,
+        "y": 820,
         "wires": [
             [
                 "f9c227cb.dc1278"
@@ -3627,6 +3627,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "htmlcontent\\runtime parameters\\Sample Data.xml",
+        "payloadType": "str",
         "x": 120,
         "y": 660,
         "wires": [
@@ -3721,7 +3722,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
+        "x": 290,
         "y": 1060,
         "wires": [
             [
@@ -3827,7 +3828,7 @@
         "createDir": false,
         "overwriteFile": "delete",
         "encoding": "none",
-        "x": 900,
+        "x": 920,
         "y": 300,
         "wires": [
             [
@@ -3999,7 +4000,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 730,
         "y": 300,
         "wires": [
             [
@@ -4298,7 +4299,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1000,
+        "x": 900,
         "y": 440,
         "wires": [
             [
@@ -4459,7 +4460,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1030,
+        "x": 830,
         "y": 900,
         "wires": []
     },
@@ -4500,7 +4501,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
+        "x": 850,
         "y": 940,
         "wires": []
     },
@@ -4541,7 +4542,7 @@
         "cssSelector": "",
         "embedResources": false,
         "name": "",
-        "x": 630,
+        "x": 430,
         "y": 100,
         "wires": [
             [
@@ -4559,7 +4560,7 @@
         "cssSelector": "",
         "embedResources": false,
         "name": "",
-        "x": 630,
+        "x": 610,
         "y": 240,
         "wires": [
             [
@@ -4595,7 +4596,7 @@
         "cssSelector": "",
         "embedResources": false,
         "name": "",
-        "x": 630,
+        "x": 650,
         "y": 380,
         "wires": [
             [
@@ -4613,7 +4614,7 @@
         "cssSelector": "",
         "embedResources": false,
         "name": "",
-        "x": 630,
+        "x": 650,
         "y": 520,
         "wires": [
             [
@@ -4682,7 +4683,7 @@
         "connect_server": "23c3ba7a.febabe",
         "template": "pdfprev-superhero.OL-template",
         "name": "",
-        "x": 410,
+        "x": 370,
         "y": 140,
         "wires": [
             [
@@ -4713,7 +4714,7 @@
         "connect_server": "23c3ba7a.febabe",
         "template": "pdfprev-superhero.OL-template",
         "name": "",
-        "x": 850,
+        "x": 750,
         "y": 640,
         "wires": [
             [
@@ -4729,7 +4730,7 @@
         "template": "COTG Timesheet Report.OL-template",
         "name": "preview pdf",
         "x": 770,
-        "y": 860,
+        "y": 940,
         "wires": [
             [
                 "2d881c35.6f5894"
@@ -4759,7 +4760,7 @@
         "template": "pdfprevrun-basic.OL-template",
         "name": "",
         "x": 490,
-        "y": 900,
+        "y": 880,
         "wires": [
             [
                 "5e2300bc.fc78"
@@ -4801,7 +4802,6 @@
         "type": "olcnr-data-mapping",
         "z": "65f6e63.e225a18",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "dmxml-basic xml data.OL-datamapper",
         "active": false,
         "name": "basic xml data.OL-datamapper",
         "x": 490,
@@ -4820,7 +4820,6 @@
         "type": "olcnr-data-mapping",
         "z": "65f6e63.e225a18",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "dmxml-basic xml data.OL-datamapper",
         "active": false,
         "name": "basic xml data.OL-datamapper",
         "x": 650,
@@ -4836,7 +4835,7 @@
         "type": "olcnr-data-mapping",
         "z": "1d910b2e.85ebd5",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "printbsc-transactional xml.OL-datamapper",
+        "dataMapper": "printbsc-transactional xml.OL-datamapper",
         "active": false,
         "name": "data mapping",
         "x": 440,
@@ -4853,7 +4852,7 @@
         "type": "olcnr-data-mapping",
         "z": "5131a1e3.fd76d8",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "COTG Timesheet Form.OL-datamapper",
+        "dataMapper": "COTG Timesheet Form.OL-datamapper",
         "active": false,
         "name": "",
         "x": 460,
@@ -4869,7 +4868,6 @@
         "type": "olcnr-data-mapping",
         "z": "65f6e63.e225a18",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "dmupd-update values.OL-datamapper",
         "active": false,
         "name": "update values.OL-datamapper",
         "x": 390,
@@ -4885,7 +4883,6 @@
         "type": "olcnr-data-mapping",
         "z": "65f6e63.e225a18",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "dmrun-runtime parameters.OL-datamapper",
         "active": false,
         "name": "runtime parameters.OL-datamapper",
         "x": 670,
@@ -4902,7 +4899,6 @@
         "type": "olcnr-data-mapping",
         "z": "65f6e63.e225a18",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "dmfull-multicontext.OL-datamapper",
         "active": false,
         "name": "multicontext.OL-datamapper",
         "x": 460,
@@ -4919,7 +4915,7 @@
         "type": "olcnr-data-mapping",
         "z": "217b4fe9.13176",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "emailbsc-xml.OL-datamapper",
+        "dataMapper": "emailbsc-xml.OL-datamapper",
         "active": false,
         "name": "",
         "x": 490,
@@ -4935,11 +4931,11 @@
         "type": "olcnr-data-mapping",
         "z": "5131a1e3.fd76d8",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "COTG Timesheet Report.OL-datamapper",
+        "dataMapper": "COTG Timesheet Report.OL-datamapper",
         "active": false,
         "name": "data mapping",
         "x": 240,
-        "y": 860,
+        "y": 940,
         "wires": [
             [
                 "2ee36853.06e5a"
@@ -4951,11 +4947,11 @@
         "type": "olcnr-data-mapping",
         "z": "7d5be68c.52e92",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "pdfprevrun-xml.OL-datamapper",
+        "dataMapper": "pdfprevrun-xml.OL-datamapper",
         "active": false,
         "name": "",
         "x": 490,
-        "y": 840,
+        "y": 820,
         "wires": [
             [
                 "fd11008a.1ab49"
@@ -4967,7 +4963,7 @@
         "type": "olcnr-data-mapping",
         "z": "7d5be68c.52e92",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "pdfprevrun-xml.OL-datamapper",
+        "dataMapper": "pdfprevrun-xml.OL-datamapper",
         "active": false,
         "name": "",
         "x": 490,
@@ -4983,7 +4979,7 @@
         "type": "olcnr-data-mapping",
         "z": "a7446b3d.e40398",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "htmlrun-xml.OL-datamapper",
+        "dataMapper": "htmlrun-xml.OL-datamapper",
         "active": false,
         "name": "data mapping",
         "x": 380,
@@ -4999,7 +4995,7 @@
         "type": "olcnr-data-mapping",
         "z": "a7446b3d.e40398",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "htmlrun-xml.OL-datamapper",
+        "dataMapper": "htmlrun-xml.OL-datamapper",
         "active": false,
         "name": "data mapping",
         "x": 380,
@@ -5015,7 +5011,7 @@
         "type": "olcnr-data-mapping",
         "z": "7e87d273.bb52c4",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "nodered-377-invoice.OL-datamapper",
+        "dataMapper": "nodered-377-invoice.OL-datamapper",
         "active": false,
         "name": "Data mapping",
         "x": 120,
@@ -5048,7 +5044,6 @@
         "id": "68a9888d.b07f68",
         "type": "olcnr-data-get",
         "z": "65f6e63.e225a18",
-        "d": true,
         "connect_server": "23c3ba7a.febabe",
         "input": "set",
         "output": "values",
@@ -5121,7 +5116,6 @@
         "id": "ca219283.f84958",
         "type": "olcnr-data-get",
         "z": "65f6e63.e225a18",
-        "d": true,
         "connect_server": "23c3ba7a.febabe",
         "input": "set",
         "output": "values",
@@ -5238,7 +5232,7 @@
         "flattened": false,
         "name": "",
         "x": 400,
-        "y": 860,
+        "y": 940,
         "wires": [
             [
                 "df89937b.1047"
@@ -5256,7 +5250,7 @@
         "flattened": true,
         "name": "",
         "x": 700,
-        "y": 840,
+        "y": 820,
         "wires": [
             [
                 "b4680534.e9523"
@@ -5360,7 +5354,7 @@
         "connect_server": "23c3ba7a.febabe",
         "template": "printbsc-invoice.OL-template",
         "name": "print content",
-        "x": 670,
+        "x": 650,
         "y": 120,
         "wires": [
             [
@@ -5391,7 +5385,7 @@
         "connect_server": "23c3ba7a.febabe",
         "jobPreset": "printbsc-group customers.OL-jobpreset",
         "name": "print job",
-        "x": 900,
+        "x": 840,
         "y": 120,
         "wires": [
             [
@@ -5422,7 +5416,7 @@
         "connect_server": "23c3ba7a.febabe",
         "outputPreset": "printbsc-full job.OL-outputpreset",
         "name": "output: full job",
-        "x": 680,
+        "x": 660,
         "y": 200,
         "wires": [
             [
@@ -5437,7 +5431,7 @@
         "connect_server": "23c3ba7a.febabe",
         "outputPreset": "printbsc-per customer.OL-outputpreset",
         "name": "output: per customer",
-        "x": 700,
+        "x": 680,
         "y": 260,
         "wires": [
             [
@@ -5452,7 +5446,7 @@
         "connect_server": "23c3ba7a.febabe",
         "outputPreset": "printbsc-per invoice.OL-outputpreset",
         "name": "output: individual invoices",
-        "x": 710,
+        "x": 690,
         "y": 320,
         "wires": [
             [
@@ -5615,7 +5609,7 @@
         "type": "olcnr-file-download",
         "z": "d9a4e9bb.013ae",
         "connect_server": "23c3ba7a.febabe",
-        "x": 670,
+        "x": 690,
         "y": 100,
         "wires": [
             [
@@ -5705,13 +5699,13 @@
         "type": "olcnr-all-in-one",
         "z": "1d910b2e.85ebd5",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "",
+        "dataMapper": "printbsc-transactional xml.OL-datamapper",
         "template": "",
         "jobPreset": "",
         "outputPreset": "",
         "persistData": false,
         "name": "all in one - full",
-        "x": 640,
+        "x": 620,
         "y": 900,
         "wires": [
             [
@@ -5725,7 +5719,7 @@
         "type": "olcnr-all-in-one",
         "z": "1d910b2e.85ebd5",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "printbsc-transactional xml.OL-datamapper",
+        "dataMapper": "printbsc-transactional xml.OL-datamapper",
         "template": "printbsc-invoice.OL-template",
         "jobPreset": "printbsc-group customers.OL-jobpreset",
         "outputPreset": "printbsc-per invoice.OL-outputpreset",
@@ -6223,30 +6217,6 @@
         ]
     },
     {
-        "id": "fee923d.145eae",
-        "type": "inject",
-        "z": "52e2b2e.d0444cc",
-        "name": "",
-        "props": [
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 110,
-        "y": 240,
-        "wires": [
-            [
-                "e20f88f.03dddf8"
-            ]
-        ]
-    },
-    {
         "id": "501c05fb.bffbac",
         "type": "change",
         "z": "52e2b2e.d0444cc",
@@ -6266,7 +6236,7 @@
         "to": "",
         "reg": false,
         "x": 290,
-        "y": 340,
+        "y": 360,
         "wires": [
             [
                 "230c053a.4e3b5a"
@@ -6285,7 +6255,7 @@
         "stream": false,
         "addname": "",
         "x": 450,
-        "y": 340,
+        "y": 360,
         "wires": [
             [
                 "d455b48c.4a4a8"
@@ -6312,7 +6282,7 @@
         "to": "",
         "reg": false,
         "x": 600,
-        "y": 340,
+        "y": 360,
         "wires": [
             [
                 "270e19fa.1e64f6"
@@ -6356,7 +6326,7 @@
         "chunk": false,
         "sendError": false,
         "encoding": "none",
-        "x": 450,
+        "x": 430,
         "y": 240,
         "wires": [
             [
@@ -6372,7 +6342,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 570,
+        "x": 550,
         "y": 240,
         "wires": [
             [
@@ -6399,7 +6369,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 720,
+        "x": 680,
         "y": 240,
         "wires": [
             [
@@ -6413,7 +6383,7 @@
         "z": "52e2b2e.d0444cc",
         "name": "Important notes!",
         "info": "Setup globals for the various flows, it is triggered on each deploy. You may want to disable this when developing new tests. This is done by unchecking the ddd option in the Inject node.\n\n## Global variables\n - The **workspace** folder contains sample data and configurations. \n - The **email** address is used to send all email communication to the specified email address.\n - \n\n## Connect resources\nThe workspace folder contains a manifest.json file. The resources section references Connect resources in the workspace folder. These resources are automatically uploaded to the OL Connect Server (file store) on each deployment. The resources are marked as permanent so they are not deleted by the Connect's cleanup service.",
-        "x": 140,
+        "x": 280,
         "y": 200,
         "wires": []
     },
@@ -6426,7 +6396,7 @@
         "markAsPermanent": true,
         "name": "",
         "x": 770,
-        "y": 340,
+        "y": 360,
         "wires": [
             [
                 "f31a8c34.77f1f8"
@@ -6447,7 +6417,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 990,
-        "y": 340,
+        "y": 360,
         "wires": []
     },
     {
@@ -6508,7 +6478,8 @@
         "y": 120,
         "wires": [
             [
-                "253c3200.a44e0e"
+                "253c3200.a44e0e",
+                "e20f88f.03dddf8"
             ]
         ]
     },
@@ -6582,7 +6553,7 @@
         "connect_server": "23c3ba7a.febabe",
         "jobPreset": "printchunk-default.OL-jobpreset",
         "name": "print job",
-        "x": 860,
+        "x": 820,
         "y": 1200,
         "wires": [
             [
@@ -6597,7 +6568,7 @@
         "connect_server": "23c3ba7a.febabe",
         "outputPreset": "printchunk-full job.OL-outputpreset",
         "name": "output: full job",
-        "x": 1020,
+        "x": 960,
         "y": 1200,
         "wires": [
             [
@@ -6767,8 +6738,7 @@
         "y": 1200,
         "wires": [
             [
-                "c8facfda.8f0878",
-                "c2015ee8.ce82a"
+                "c8facfda.8f0878"
             ]
         ]
     },
@@ -6877,7 +6847,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1150,
-        "y": 1660,
+        "y": 1640,
         "wires": []
     },
     {
@@ -6939,7 +6909,7 @@
         "y": 1440,
         "wires": [
             [
-                "596c2fb5.dafbc8"
+                "2d979dfc.879dca"
             ]
         ]
     },
@@ -6948,10 +6918,10 @@
         "type": "olcnr-data-mapping",
         "z": "1d910b2e.85ebd5",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "printbatch-csv.OL-datamapper",
+        "dataMapper": "printbatch-csv.OL-datamapper",
         "active": false,
         "name": "",
-        "x": 1070,
+        "x": 790,
         "y": 1440,
         "wires": [
             [
@@ -6980,10 +6950,9 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 410,
-        "y": 1560,
+        "y": 1540,
         "wires": [
             [
-                "f130aeb4.9ffac",
                 "b50690a8.e8efb8"
             ]
         ]
@@ -6995,7 +6964,7 @@
         "connect_server": "23c3ba7a.febabe",
         "template": "printbatch-letter.OL-template",
         "name": "print content",
-        "x": 1290,
+        "x": 1010,
         "y": 1440,
         "wires": [
             [
@@ -7010,8 +6979,8 @@
         "connect_server": "23c3ba7a.febabe",
         "outputPreset": "printbatch-full-job.OL-outputpreset",
         "name": "output: full job",
-        "x": 820,
-        "y": 1560,
+        "x": 780,
+        "y": 1540,
         "wires": [
             [
                 "9ecf387a.033098"
@@ -7038,7 +7007,7 @@
         "to": "",
         "reg": false,
         "x": 470,
-        "y": 1660,
+        "y": 1640,
         "wires": [
             [
                 "53582248.78652c"
@@ -7053,7 +7022,7 @@
         "managedFileId": "",
         "name": "",
         "x": 670,
-        "y": 1660,
+        "y": 1640,
         "wires": [
             [
                 "bb5e4789.de1878"
@@ -7080,7 +7049,7 @@
         "to": "",
         "reg": false,
         "x": 850,
-        "y": 1660,
+        "y": 1640,
         "wires": [
             [
                 "487e15e9.766ecc"
@@ -7098,7 +7067,7 @@
         "overwriteFile": "false",
         "encoding": "none",
         "x": 1010,
-        "y": 1660,
+        "y": 1640,
         "wires": [
             [
                 "4ac61f2d.7d215"
@@ -7113,7 +7082,7 @@
         "links": [
             "8bcbee3c.00e5"
         ],
-        "x": 535,
+        "x": 515,
         "y": 200,
         "wires": [
             [
@@ -7131,70 +7100,9 @@
         "links": [
             "20914078.aa3da8"
         ],
-        "x": 1075,
+        "x": 975,
         "y": 120,
         "wires": []
-    },
-    {
-        "id": "c2015ee8.ce82a",
-        "type": "debug",
-        "z": "1d910b2e.85ebd5",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "contentSetId",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 890,
-        "y": 1140,
-        "wires": []
-    },
-    {
-        "id": "f130aeb4.9ffac",
-        "type": "debug",
-        "z": "1d910b2e.85ebd5",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "contentSetId",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 610,
-        "y": 1500,
-        "wires": []
-    },
-    {
-        "id": "596c2fb5.dafbc8",
-        "type": "change",
-        "z": "1d910b2e.85ebd5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "datamapper",
-                "pt": "msg",
-                "to": "printbatch-csv.OL-datamapper",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 790,
-        "y": 1440,
-        "wires": [
-            [
-                "2d979dfc.879dca"
-            ]
-        ]
     },
     {
         "id": "b50690a8.e8efb8",
@@ -7203,8 +7111,8 @@
         "connect_server": "23c3ba7a.febabe",
         "jobPreset": "printbatch-group-rep.OL-jobpreset",
         "name": "printbatch-group-rep",
-        "x": 620,
-        "y": 1560,
+        "x": 580,
+        "y": 1540,
         "wires": [
             [
                 "1711b666.81ba02"
@@ -7219,7 +7127,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "datamapper",
+                "p": "dataMapper",
                 "pt": "msg",
                 "to": "printbsc-transactional xml.OL-datamapper",
                 "tot": "str"
@@ -7265,7 +7173,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1030,
+        "x": 830,
         "y": 720,
         "wires": []
     },
@@ -7370,7 +7278,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
+        "x": 850,
         "y": 760,
         "wires": []
     },
@@ -7380,7 +7288,7 @@
         "z": "a7446b3d.e40398",
         "name": "Runtime parameters - Data Record ID",
         "info": "",
-        "x": 170,
+        "x": 190,
         "y": 1060,
         "wires": []
     },
@@ -7405,7 +7313,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "htmlcontent\\runtime parameters\\Sample Data.xml",
-        "x": 100,
+        "x": 120,
         "y": 1100,
         "wires": [
             [
@@ -7432,7 +7340,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
+        "x": 720,
         "y": 1100,
         "wires": [
             [
@@ -7446,7 +7354,7 @@
         "z": "a7446b3d.e40398",
         "name": "Set Parameters",
         "env": [],
-        "x": 960,
+        "x": 920,
         "y": 1100,
         "wires": [
             [
@@ -7460,10 +7368,10 @@
         "type": "olcnr-data-mapping",
         "z": "a7446b3d.e40398",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "htmlrun-xml.OL-datamapper",
+        "dataMapper": "htmlrun-xml.OL-datamapper",
         "active": false,
         "name": "data mapping",
-        "x": 360,
+        "x": 380,
         "y": 1100,
         "wires": [
             [
@@ -7481,7 +7389,7 @@
         "includeSubdetails": false,
         "flattened": true,
         "name": "",
-        "x": 520,
+        "x": 540,
         "y": 1100,
         "wires": [
             [
@@ -7499,7 +7407,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 810,
+        "x": 790,
         "y": 1180,
         "wires": [
             [
@@ -7518,7 +7426,7 @@
         "tostatus": false,
         "complete": "filename",
         "targetType": "msg",
-        "x": 950,
+        "x": 930,
         "y": 1180,
         "wires": []
     },
@@ -7532,7 +7440,7 @@
         "cssSelector": "",
         "embedResources": true,
         "name": "",
-        "x": 410,
+        "x": 430,
         "y": 1180,
         "wires": [
             [
@@ -7559,7 +7467,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 670,
+        "x": 650,
         "y": 1180,
         "wires": [
             [
@@ -7580,7 +7488,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1170,
+        "x": 1110,
         "y": 1100,
         "wires": []
     },
@@ -7664,7 +7572,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
+        "x": 910,
         "y": 520,
         "wires": []
     },
@@ -7679,7 +7587,7 @@
         "content": "html",
         "templateId": "",
         "templateData": "",
-        "x": 980,
+        "x": 920,
         "y": 460,
         "wires": []
     },
@@ -7780,7 +7688,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
+        "x": 910,
         "y": 260,
         "wires": []
     },
@@ -7795,7 +7703,7 @@
         "content": "html",
         "templateId": "",
         "templateData": "",
-        "x": 980,
+        "x": 920,
         "y": 200,
         "wires": []
     },
@@ -7829,7 +7737,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
+        "x": 710,
         "y": 160,
         "wires": []
     },
@@ -7838,7 +7746,7 @@
         "type": "olcnr-data-mapping",
         "z": "1d910b2e.85ebd5",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "printbsc-transactional xml.OL-datamapper",
+        "dataMapper": "printbsc-transactional xml.OL-datamapper",
         "active": false,
         "name": "data mapping",
         "x": 500,
@@ -8238,10 +8146,10 @@
         "type": "olcnr-data-mapping",
         "z": "1d910b2e.85ebd5",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "printbsc-transactional xml.OL-datamapper",
+        "dataMapper": "printbsc-transactional xml.OL-datamapper",
         "active": false,
         "name": "data mapping",
-        "x": 500,
+        "x": 600,
         "y": 1820,
         "wires": [
             [
@@ -8256,7 +8164,7 @@
         "connect_server": "23c3ba7a.febabe",
         "template": "printbsc-invoice.OL-template",
         "name": "print content",
-        "x": 690,
+        "x": 770,
         "y": 1820,
         "wires": [
             [
@@ -8271,7 +8179,7 @@
         "connect_server": "23c3ba7a.febabe",
         "jobPreset": "printbsc-group customers.OL-jobpreset",
         "name": "print job",
-        "x": 860,
+        "x": 920,
         "y": 1820,
         "wires": [
             [
@@ -8286,7 +8194,7 @@
         "connect_server": "23c3ba7a.febabe",
         "outputPreset": "printbsc-per invoice.OL-outputpreset",
         "name": "output individual invoices",
-        "x": 1070,
+        "x": 1110,
         "y": 1820,
         "wires": [
             [
@@ -8302,12 +8210,11 @@
         "managedFileId": "",
         "name": "",
         "outputas": "",
-        "x": 650,
-        "y": 1900,
+        "x": 730,
+        "y": 1920,
         "wires": [
             [
-                "9cf6773b.354f1",
-                "bccaed32.1dc3"
+                "9cf6773b.354f1"
             ]
         ]
     },
@@ -8332,7 +8239,6 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "printcontent\\basic\\Sample Data-5recs.xml",
-        "payloadType": "str",
         "x": 130,
         "y": 1820,
         "wires": [
@@ -8360,8 +8266,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
-        "y": 1900,
+        "x": 910,
+        "y": 1920,
         "wires": [
             [
                 "b3cf9e90.be04c"
@@ -8378,8 +8284,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1030,
-        "y": 1900,
+        "x": 1070,
+        "y": 1920,
         "wires": [
             [
                 "e7d8682a.54a1e"
@@ -8405,7 +8311,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
+        "x": 430,
         "y": 1820,
         "wires": [
             [
@@ -8424,8 +8330,8 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 290,
-        "y": 1900,
+        "x": 410,
+        "y": 1920,
         "wires": [
             [
                 "eaed44a5.4bc5c8"
@@ -8458,31 +8364,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 1900,
+        "x": 560,
+        "y": 1920,
         "wires": [
             [
-                "6a4b49d5.d058e8",
                 "c30f99c1.39ff08"
             ]
         ]
-    },
-    {
-        "id": "6a4b49d5.d058e8",
-        "type": "debug",
-        "z": "1d910b2e.85ebd5",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "managedFileId",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 670,
-        "y": 1960,
-        "wires": []
     },
     {
         "id": "e7d8682a.54a1e",
@@ -8497,8 +8385,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1190,
-        "y": 1900,
+        "x": 1210,
+        "y": 1920,
         "wires": []
     },
     {
@@ -8509,23 +8397,6 @@
         "info": "",
         "x": 170,
         "y": 1780,
-        "wires": []
-    },
-    {
-        "id": "bccaed32.1dc3",
-        "type": "debug",
-        "z": "1d910b2e.85ebd5",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 850,
-        "y": 2000,
         "wires": []
     },
     {
@@ -8823,7 +8694,7 @@
         "type": "olcnr-data-mapping",
         "z": "7e87d273.bb52c4",
         "connect_server": "23c3ba7a.febabe",
-        "datamapper": "printbsc-transactional xml.OL-datamapper",
+        "dataMapper": "nodered-377-invoice.OL-datamapper",
         "active": false,
         "name": "data mapping",
         "x": 780,
