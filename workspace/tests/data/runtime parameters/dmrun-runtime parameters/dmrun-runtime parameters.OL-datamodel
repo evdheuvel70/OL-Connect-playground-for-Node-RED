@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel schemaVersion="1.0.0.6" name="dmrun-runtime parameters" version="1" xmlns="http://www.objectiflune.com/connectschemas/DataModelConfig" xsi:schemaLocation="http://www.objectiflune.com/connectschemas/DataModelConfig http://www.objectiflune.com/connectschemas/DataModelConfig/1_0_0_6.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <configs>
+        <field type="string" name="ExtraData" required="true"/>
+        <field type="string" name="OrderNumber" required="false"/>
+        <field type="string" name="CustomerPO" required="false"/>
+        <field type="string" name="CustomerNumber" required="false"/>
+        <field type="string" name="host" required="false"/>
+        <field type="string" name="jobUid" required="false"/>
+        <field type="string" name="siteHash" required="false"/>
+        <field type="string" name="workSpace" required="false"/>
+        <field type="string" name="boundarySettings" required="false"/>
+        <field type="string" name="today" required="false"/>
+        <field type="string" name="someId" required="false"/>
+        <field type="string" name="previewMode" required="false"/>
+    </configs>
+</datamodel>
