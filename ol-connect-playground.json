@@ -6286,10 +6286,17 @@
         "rules": [
             {
                 "t": "set",
+                "p": "project",
+                "pt": "global",
+                "to": "/data/projects/OL-Connect-playground-for-Node-RED",
+                "tot": "str"
+            },
+            {
+                "t": "set",
                 "p": "workspace",
                 "pt": "global",
-                "to": "/data/projects/OL-Connect-playground-for-Node-RED/workspace",
-                "tot": "str"
+                "to": "project & '/workspace'",
+                "tot": "jsonata"
             },
             {
                 "t": "set",
@@ -6336,7 +6343,7 @@
         "y": 120,
         "wires": [
             [
-                "e20f88f.03dddf8"
+                "48d94b25.aa4564"
             ]
         ]
     },
@@ -8655,5 +8662,22 @@
                 "954e05d6.52418"
             ]
         ]
+    },
+    {
+        "id": "48d94b25.aa4564",
+        "type": "debug",
+        "z": "52e2b2e.d0444cc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 100,
+        "wires": []
     }
 ]
