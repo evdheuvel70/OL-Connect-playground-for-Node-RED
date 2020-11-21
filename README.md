@@ -12,7 +12,7 @@ This project contains various flows to illustrate and test the integration of OL
         * When running a Node-RED in a container this could be something like: /data/projects/OL-Connect-playground-for-Node-RED/workspace
         * Running on a local machine this may look like: C:\Users\{username}\.node-red/projects/OL-Connect-playground-for-Node-RED/workspace
     * Set the **email** global to your email address
- * Open the properties of the **File upload** step
-    * Click the **Edit** button of the Server option and enter the location and credentials of your OL Connect Server. Th
+ * Open the properties of the **File upload** step in the Startup tab
+    * Click the **Edit** button of the Server option and enter the location and credentials of your OL Connect Server. This will update the Connect Server configuration for all flows.
 
 Deploy the flow.
