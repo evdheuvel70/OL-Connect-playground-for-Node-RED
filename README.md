@@ -19,7 +19,7 @@ To change the base parameters of the project:
         * Running on a local machine this may look like: C:\Users\{username}\.node-red/projects/OL-Connect-playground-for-Node-RED
     * Set the **email** global to your email address
  * Open the properties of the **File upload** step
-    * Click the **Edit** button of the Server option and enter the location and credentials of your OL Connect Server. This will update the Connect Server configuration for all flows.
+    * Click the **Edit** button of the Server option and enter the location and credentials of your OL Connect Server. This will update the **Connect Server configuration** for all flows.
     * The same can be done via the Configuration Nodes option located in the Node-RED menu (hamburger icon in the upper right corner of the editor).
 
 Deploy the flow.

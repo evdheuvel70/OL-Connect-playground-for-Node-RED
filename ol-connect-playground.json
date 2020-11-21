@@ -6253,7 +6253,7 @@
         "filename": "",
         "markAsPermanent": true,
         "name": "",
-        "x": 770,
+        "x": 750,
         "y": 360,
         "wires": [
             [
@@ -6274,7 +6274,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 990,
+        "x": 910,
         "y": 360,
         "wires": []
     },
@@ -6339,7 +6339,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
+        "x": 270,
         "y": 120,
         "wires": [
             [
