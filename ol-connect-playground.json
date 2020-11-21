@@ -695,9 +695,9 @@
         "id": "df07729f.9bb49",
         "type": "comment",
         "z": "65f6e63.e225a18",
-        "name": "Data full",
+        "name": "Data full test",
         "info": "basic-email.OL-template",
-        "x": 100,
+        "x": 110,
         "y": 860,
         "wires": []
     },
