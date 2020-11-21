@@ -8672,12 +8672,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "$globalContext('workspace')",
+        "targetType": "jsonata",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
-        "y": 100,
+        "x": 600,
+        "y": 120,
         "wires": []
     }
 ]
