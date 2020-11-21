@@ -6295,7 +6295,7 @@
                 "t": "set",
                 "p": "workspace",
                 "pt": "global",
-                "to": "project & '/workspace'",
+                "to": "$globalContext('workspace') & '/workspace' ",
                 "tot": "jsonata"
             },
             {
