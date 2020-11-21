@@ -6293,6 +6293,13 @@
             },
             {
                 "t": "set",
+                "p": "email",
+                "pt": "global",
+                "to": "user@localhost.com",
+                "tot": "str"
+            },
+            {
+                "t": "set",
                 "p": "workspace",
                 "pt": "global",
                 "to": "$globalContext('project') & '/workspace' ",
@@ -6314,16 +6321,9 @@
             },
             {
                 "t": "set",
-                "p": "email",
-                "pt": "global",
-                "to": "vandenheuvele@eu.objectiflune.com",
-                "tot": "str"
-            },
-            {
-                "t": "set",
                 "p": "host",
                 "pt": "global",
-                "to": "http://172.21.108.17",
+                "to": "http://localhost",
                 "tot": "str"
             },
             {
@@ -6343,7 +6343,7 @@
         "y": 120,
         "wires": [
             [
-                "48d94b25.aa4564"
+                "e20f88f.03dddf8"
             ]
         ]
     },
@@ -8662,22 +8662,5 @@
                 "954e05d6.52418"
             ]
         ]
-    },
-    {
-        "id": "48d94b25.aa4564",
-        "type": "debug",
-        "z": "52e2b2e.d0444cc",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "$globalContext('workspace')",
-        "targetType": "jsonata",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 600,
-        "y": 120,
-        "wires": []
     }
 ]
