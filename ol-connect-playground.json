@@ -63,6 +63,20 @@
         "info": ""
     },
     {
+        "id": "5c61743a.bb9a0c",
+        "type": "tab",
+        "label": "Recovered Nodes",
+        "disabled": false,
+        "info": "The nodes on this flow were missing a valid flow id when they were imported. They have been added to this flow so you can either restore or delete them."
+    },
+    {
+        "id": "4d4aab0b.91b6a4",
+        "type": "tab",
+        "label": "Recovered Nodes",
+        "disabled": false,
+        "info": "The nodes on this flow were missing a valid flow id when they were imported. They have been added to this flow so you can either restore or delete them."
+    },
+    {
         "id": "c3595fe9.6f8168",
         "type": "subflow",
         "name": "Create Runtime Parameters",
@@ -124,14 +138,125 @@
         "h": 282
     },
     {
+        "id": "1a9d1481.5387cb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
         "id": "23c3ba7a.febabe",
+        "type": "OL Connect Server",
+        "z": "5c61743a.bb9a0c",
+        "url": "http://192.168.2.245:9340",
+        "name": ""
+    },
+    {
+        "id": "ce432802.f887c",
+        "type": "OL COTG Server",
+        "z": "4d4aab0b.91b6a4",
+        "server": "nubook",
+        "privateURL": "https://localhost/cotg/wp-json/cotg/v1/documents",
+        "name": ""
+    },
+    {
+        "id": "c1987ef9.d65568",
         "type": "OL Connect Server",
         "z": "",
         "url": "http://192.168.2.245:9340",
         "name": ""
     },
     {
-        "id": "ce432802.f887c",
+        "id": "8fac3107.fd6688",
         "type": "OL COTG Server",
         "z": "",
         "server": "nubook",
@@ -283,7 +408,7 @@
         "type": "function",
         "z": "5131a1e3.fd76d8",
         "name": "Set Destination",
-        "func": "msg.url               = msg.parameters.formLocation\nmsg.title             = 'Order: ' + msg.orderId\nmsg.description       = 'Timesheet form deployed from Node-RED'\nmsg.author            = 'Node-RED'\nmsg.recipients        = global.get('email')\nmsg.categories        = 'Node-RED'\nmsg.filetype          = 'HTML'\n\nvar tomorrow = new Date();\ntomorrow.setDate(tomorrow.getDate() + 1);\nmsg.keepOnServerUntil = tomorrow.toISOString().split('T')[0]\n\nreturn msg;",
+        "func": "msg.url               = msg.parameters.formLocation\nmsg.title             = 'Order: ' + msg.orderId\nmsg.description       = 'Timesheet form deployed from Node-RED'\nmsg.author            = 'Node-RED'\nmsg.recipients        = global.get('email')\nmsg.categories        = 'Timesheets'\nmsg.filetype          = 'HTML'\nmsg.keepOnServerFor = 2\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -306,7 +431,7 @@
         "chunk": false,
         "sendError": false,
         "encoding": "none",
-        "x": 610,
+        "x": 590,
         "y": 440,
         "wires": [
             [
@@ -1014,7 +1139,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 390,
+        "x": 370,
         "y": 440,
         "wires": [
             [
@@ -4398,1211 +4523,6 @@
         ]
     },
     {
-        "id": "ff90fde3.32c258",
-        "type": "olcnr-html-content",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "htmlbsc-web page.OL-template",
-        "section": "",
-        "cssSelector": "",
-        "embedResources": false,
-        "name": "",
-        "x": 430,
-        "y": 100,
-        "wires": [
-            [
-                "1fbb7e31.e338a2"
-            ]
-        ]
-    },
-    {
-        "id": "26f856e0.bb087a",
-        "type": "olcnr-html-content",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "htmlbsc-web page.OL-template",
-        "section": "",
-        "cssSelector": "",
-        "embedResources": false,
-        "name": "",
-        "x": 610,
-        "y": 240,
-        "wires": [
-            [
-                "3927e240.87ecee"
-            ]
-        ]
-    },
-    {
-        "id": "76a9c5b0.0be64c",
-        "type": "olcnr-html-content",
-        "z": "5131a1e3.fd76d8",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "COTG Timesheet Form.OL-template",
-        "section": "",
-        "cssSelector": "",
-        "embedResources": true,
-        "name": "",
-        "x": 690,
-        "y": 180,
-        "wires": [
-            [
-                "c6fba065.01061"
-            ]
-        ]
-    },
-    {
-        "id": "677279bc.7fb04",
-        "type": "olcnr-html-content",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "htmlbsc-web page.OL-template",
-        "section": "",
-        "cssSelector": "",
-        "embedResources": false,
-        "name": "",
-        "x": 650,
-        "y": 380,
-        "wires": [
-            [
-                "5de5e230.dc95d4"
-            ]
-        ]
-    },
-    {
-        "id": "b5749849.3df4a",
-        "type": "olcnr-html-content",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "htmlbsc-web page.OL-template",
-        "section": "",
-        "cssSelector": "",
-        "embedResources": false,
-        "name": "",
-        "x": 610,
-        "y": 520,
-        "wires": [
-            [
-                "b1740f14.f4f57"
-            ]
-        ]
-    },
-    {
-        "id": "62d3412c.d1cd",
-        "type": "olcnr-html-content",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "dmfull-multicontext.OL-template",
-        "section": "",
-        "cssSelector": "",
-        "embedResources": false,
-        "name": "html content",
-        "x": 590,
-        "y": 1080,
-        "wires": [
-            [
-                "58962d0d.f19abc"
-            ]
-        ]
-    },
-    {
-        "id": "ec2b41ee.9c61b8",
-        "type": "olcnr-html-content",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "dmfull-multicontext.OL-template",
-        "section": "",
-        "cssSelector": "",
-        "embedResources": false,
-        "name": "html content",
-        "x": 590,
-        "y": 1440,
-        "wires": [
-            [
-                "a0df1a3c.a7fd98"
-            ]
-        ]
-    },
-    {
-        "id": "42699214.6cad54",
-        "type": "olcnr-html-content",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "htmlrun-web page.OL-template",
-        "section": "",
-        "cssSelector": "",
-        "embedResources": true,
-        "name": "",
-        "x": 430,
-        "y": 740,
-        "wires": [
-            [
-                "b39365c1.7a7ce"
-            ]
-        ]
-    },
-    {
-        "id": "ccbf5ccb.f6621",
-        "type": "olcnr-preview-pdf",
-        "z": "7d5be68c.52e92",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "pdfprev-superhero.OL-template",
-        "name": "",
-        "x": 370,
-        "y": 140,
-        "wires": [
-            [
-                "3ca95948.5df43e"
-            ]
-        ]
-    },
-    {
-        "id": "16f2930f.63af5d",
-        "type": "olcnr-preview-pdf",
-        "z": "7d5be68c.52e92",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "",
-        "name": "",
-        "x": 770,
-        "y": 360,
-        "wires": [
-            [
-                "4b930168.6c0488",
-                "afc0d66b.a475b"
-            ]
-        ]
-    },
-    {
-        "id": "f73d2e89.3360e8",
-        "type": "olcnr-preview-pdf",
-        "z": "7d5be68c.52e92",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "pdfprev-superhero.OL-template",
-        "name": "",
-        "x": 750,
-        "y": 640,
-        "wires": [
-            [
-                "f20b0f6.a7a63f"
-            ]
-        ]
-    },
-    {
-        "id": "31cc22a5.669836",
-        "type": "olcnr-preview-pdf",
-        "z": "5131a1e3.fd76d8",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "COTG Timesheet Report.OL-template",
-        "name": "preview pdf",
-        "x": 770,
-        "y": 940,
-        "wires": [
-            [
-                "2d881c35.6f5894"
-            ]
-        ]
-    },
-    {
-        "id": "bb08d3de.85dc3",
-        "type": "olcnr-preview-pdf",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "dmfull-multicontext.OL-template",
-        "name": "preview pdf",
-        "x": 590,
-        "y": 1020,
-        "wires": [
-            [
-                "ffe95c10.4287c8"
-            ]
-        ]
-    },
-    {
-        "id": "f9c227cb.dc1278",
-        "type": "olcnr-preview-pdf",
-        "z": "7d5be68c.52e92",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "pdfprevrun-basic.OL-template",
-        "name": "",
-        "x": 490,
-        "y": 880,
-        "wires": [
-            [
-                "5e2300bc.fc78"
-            ]
-        ]
-    },
-    {
-        "id": "83fa15cc.1a071",
-        "type": "olcnr-preview-pdf",
-        "z": "7d5be68c.52e92",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "pdfprevrun-basic.OL-template",
-        "name": "",
-        "x": 490,
-        "y": 1080,
-        "wires": [
-            [
-                "37f354a0.3be40c"
-            ]
-        ]
-    },
-    {
-        "id": "f26e480f.1b07e",
-        "type": "olcnr-preview-pdf",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "dmfull-multicontext.OL-template",
-        "name": "preview pdf",
-        "x": 590,
-        "y": 1380,
-        "wires": [
-            [
-                "be386ab2.725718"
-            ]
-        ]
-    },
-    {
-        "id": "563fa77e.2e417",
-        "type": "olcnr-data-mapping",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "basic xml data.OL-datamapper",
-        "active": false,
-        "name": "",
-        "x": 490,
-        "y": 100,
-        "wires": [
-            [
-                "804cca44.e633a",
-                "68a9888d.b07f68",
-                "9584d085.462b9",
-                "ca219283.f84958"
-            ]
-        ]
-    },
-    {
-        "id": "8ba33a0.8b87848",
-        "type": "olcnr-data-mapping",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "basic xml data.OL-datamapper",
-        "active": false,
-        "name": "",
-        "x": 650,
-        "y": 360,
-        "wires": [
-            [
-                "43767473.f0dc84"
-            ]
-        ]
-    },
-    {
-        "id": "9cd4b1a3.29756",
-        "type": "olcnr-data-mapping",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "printbsc-transactional xml.OL-datamapper",
-        "active": false,
-        "name": "data mapping",
-        "x": 440,
-        "y": 120,
-        "wires": [
-            [
-                "1e468549.373fe3",
-                "ca7d5e4b.6d09c8"
-            ]
-        ]
-    },
-    {
-        "id": "b0a07af1.7b5a",
-        "type": "olcnr-data-mapping",
-        "z": "5131a1e3.fd76d8",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "COTG Timesheet Form.OL-datamapper",
-        "active": false,
-        "name": "",
-        "x": 460,
-        "y": 100,
-        "wires": [
-            [
-                "de5e3e7f.76446"
-            ]
-        ]
-    },
-    {
-        "id": "3e327c70.bac804",
-        "type": "olcnr-data-mapping",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "update values.OL-datamapper",
-        "active": false,
-        "name": "",
-        "x": 490,
-        "y": 680,
-        "wires": [
-            [
-                "ff358f71.1aad5"
-            ]
-        ]
-    },
-    {
-        "id": "4e106048.e869",
-        "type": "olcnr-data-mapping",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "runtime parameters.OL-datamapper",
-        "active": false,
-        "name": "",
-        "x": 770,
-        "y": 540,
-        "wires": [
-            [
-                "64fe05fd.8e2dd4"
-            ]
-        ]
-    },
-    {
-        "id": "71ff9e96.a89b9",
-        "type": "olcnr-data-mapping",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "dmfull-multicontext.OL-datamapper",
-        "active": false,
-        "name": "",
-        "x": 500,
-        "y": 900,
-        "wires": [
-            [
-                "154418ba.7fbf6f",
-                "c434b2fb.f26ae"
-            ]
-        ]
-    },
-    {
-        "id": "83be265b.bcfd5",
-        "type": "olcnr-data-mapping",
-        "z": "217b4fe9.13176",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "emailbsc-xml.OL-datamapper",
-        "active": false,
-        "name": "",
-        "x": 490,
-        "y": 100,
-        "wires": [
-            [
-                "a81b2fac.a70e28"
-            ]
-        ]
-    },
-    {
-        "id": "433705d7.05559c",
-        "type": "olcnr-data-mapping",
-        "z": "5131a1e3.fd76d8",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "COTG Timesheet Report.OL-datamapper",
-        "active": false,
-        "name": "data mapping",
-        "x": 240,
-        "y": 940,
-        "wires": [
-            [
-                "2ee36853.06e5a"
-            ]
-        ]
-    },
-    {
-        "id": "a0a7ab6d.3192b8",
-        "type": "olcnr-data-mapping",
-        "z": "7d5be68c.52e92",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "pdfprevrun-xml.OL-datamapper",
-        "active": false,
-        "name": "",
-        "x": 490,
-        "y": 820,
-        "wires": [
-            [
-                "fd11008a.1ab49"
-            ]
-        ]
-    },
-    {
-        "id": "bdeccd22.486e48",
-        "type": "olcnr-data-mapping",
-        "z": "7d5be68c.52e92",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "pdfprevrun-xml.OL-datamapper",
-        "active": false,
-        "name": "",
-        "x": 490,
-        "y": 1020,
-        "wires": [
-            [
-                "e9275017.157748"
-            ]
-        ]
-    },
-    {
-        "id": "65a6145b.158334",
-        "type": "olcnr-data-mapping",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "htmlrun-xml.OL-datamapper",
-        "active": false,
-        "name": "data mapping",
-        "x": 380,
-        "y": 880,
-        "wires": [
-            [
-                "2f9dfc7b.21930c"
-            ]
-        ]
-    },
-    {
-        "id": "2ae4eb02.dde834",
-        "type": "olcnr-data-mapping",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "htmlrun-xml.OL-datamapper",
-        "active": false,
-        "name": "data mapping",
-        "x": 380,
-        "y": 660,
-        "wires": [
-            [
-                "5d5cbedb.3457d"
-            ]
-        ]
-    },
-    {
-        "id": "453eaaa7.8f8c8c",
-        "type": "olcnr-data-mapping",
-        "z": "7e87d273.bb52c4",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "nodered-377-invoice.OL-datamapper",
-        "active": false,
-        "name": "Data mapping",
-        "x": 120,
-        "y": 220,
-        "wires": [
-            [
-                "352de1ea.a2552e"
-            ]
-        ]
-    },
-    {
-        "id": "804cca44.e633a",
-        "type": "olcnr-data-get",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "IDs",
-        "includeSubdetails": false,
-        "flattened": false,
-        "name": "",
-        "x": 740,
-        "y": 100,
-        "wires": [
-            [
-                "3cf4ea56.75283e"
-            ]
-        ]
-    },
-    {
-        "id": "68a9888d.b07f68",
-        "type": "olcnr-data-get",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "values",
-        "includeSubdetails": true,
-        "flattened": false,
-        "name": "",
-        "x": 740,
-        "y": 160,
-        "wires": [
-            [
-                "3cf4ea56.75283e"
-            ]
-        ]
-    },
-    {
-        "id": "5ea5147a.94c9bc",
-        "type": "olcnr-data-get",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "record",
-        "output": "values",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "",
-        "x": 1120,
-        "y": 360,
-        "wires": [
-            [
-                "aa47d04a.cb34b8"
-            ]
-        ]
-    },
-    {
-        "id": "43767473.f0dc84",
-        "type": "olcnr-data-get",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "IDs",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "",
-        "x": 860,
-        "y": 360,
-        "wires": [
-            [
-                "2900bdea.9a6d0a"
-            ]
-        ]
-    },
-    {
-        "id": "de5e3e7f.76446",
-        "type": "olcnr-data-get",
-        "z": "5131a1e3.fd76d8",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "values",
-        "includeSubdetails": false,
-        "flattened": false,
-        "name": "get data",
-        "x": 700,
-        "y": 100,
-        "wires": [
-            [
-                "99a91ad8.1243f"
-            ]
-        ]
-    },
-    {
-        "id": "ca219283.f84958",
-        "type": "olcnr-data-get",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "values",
-        "includeSubdetails": true,
-        "flattened": true,
-        "name": "",
-        "x": 740,
-        "y": 220,
-        "wires": [
-            [
-                "3cf4ea56.75283e"
-            ]
-        ]
-    },
-    {
-        "id": "54104995.906488",
-        "type": "olcnr-data-get",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "values",
-        "includeSubdetails": false,
-        "flattened": false,
-        "name": "",
-        "x": 900,
-        "y": 680,
-        "wires": [
-            [
-                "413a2c10.f2fd1c"
-            ]
-        ]
-    },
-    {
-        "id": "ddbfe8ae.4358c8",
-        "type": "olcnr-data-get",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "values",
-        "includeSubdetails": false,
-        "flattened": false,
-        "name": "",
-        "x": 1040,
-        "y": 760,
-        "wires": [
-            [
-                "ca21cbe6.c656d"
-            ]
-        ]
-    },
-    {
-        "id": "64fe05fd.8e2dd4",
-        "type": "olcnr-data-get",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "values",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "",
-        "x": 1000,
-        "y": 540,
-        "wires": [
-            [
-                "f82c409d.79cf28"
-            ]
-        ]
-    },
-    {
-        "id": "70716dca.23028c",
-        "type": "olcnr-data-get",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "values",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "",
-        "x": 160,
-        "y": 1020,
-        "wires": [
-            [
-                "d2340d33.f503e"
-            ]
-        ]
-    },
-    {
-        "id": "ade68750.4c0638",
-        "type": "olcnr-data-get",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "IDs",
-        "includeSubdetails": false,
-        "flattened": false,
-        "name": "",
-        "x": 160,
-        "y": 1380,
-        "wires": [
-            [
-                "b9676b6c.4ea8f8"
-            ]
-        ]
-    },
-    {
-        "id": "2ee36853.06e5a",
-        "type": "olcnr-data-get",
-        "z": "5131a1e3.fd76d8",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "IDs",
-        "includeSubdetails": false,
-        "flattened": false,
-        "name": "",
-        "x": 400,
-        "y": 940,
-        "wires": [
-            [
-                "df89937b.1047"
-            ]
-        ]
-    },
-    {
-        "id": "fd11008a.1ab49",
-        "type": "olcnr-data-get",
-        "z": "7d5be68c.52e92",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "IDs",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "",
-        "x": 700,
-        "y": 820,
-        "wires": [
-            [
-                "b4680534.e9523"
-            ]
-        ]
-    },
-    {
-        "id": "c436b96e.c6a6c8",
-        "type": "olcnr-data-get",
-        "z": "7d5be68c.52e92",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "record",
-        "output": "values",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "data values",
-        "x": 1070,
-        "y": 1020,
-        "wires": [
-            [
-                "8e9fb13a.c90e58"
-            ]
-        ]
-    },
-    {
-        "id": "e9275017.157748",
-        "type": "olcnr-data-get",
-        "z": "7d5be68c.52e92",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "IDs",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "",
-        "x": 700,
-        "y": 1020,
-        "wires": [
-            [
-                "e5d9d3a6.7a4928"
-            ]
-        ]
-    },
-    {
-        "id": "2f9dfc7b.21930c",
-        "type": "olcnr-data-get",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "IDs",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "",
-        "x": 540,
-        "y": 880,
-        "wires": [
-            [
-                "db0e69.08aa8198"
-            ]
-        ]
-    },
-    {
-        "id": "c065355c.d6dd68",
-        "type": "olcnr-data-get",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "record",
-        "output": "values",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "data values",
-        "x": 910,
-        "y": 660,
-        "wires": [
-            [
-                "757b2ea4.5fb298"
-            ]
-        ]
-    },
-    {
-        "id": "5d5cbedb.3457d",
-        "type": "olcnr-data-get",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "IDs",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "",
-        "x": 540,
-        "y": 660,
-        "wires": [
-            [
-                "ae52f15.0e6231"
-            ]
-        ]
-    },
-    {
-        "id": "1e468549.373fe3",
-        "type": "olcnr-print-content",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "printbsc-invoice.OL-template",
-        "name": "print content",
-        "x": 650,
-        "y": 120,
-        "wires": [
-            [
-                "7cc2b95d.0b8f6",
-                "471a9f2c.18c1b"
-            ]
-        ]
-    },
-    {
-        "id": "352de1ea.a2552e",
-        "type": "olcnr-print-content",
-        "z": "7e87d273.bb52c4",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "nodered-377-invoice.OL-template",
-        "name": "Print content",
-        "x": 290,
-        "y": 220,
-        "wires": [
-            [
-                "553c4dca.a0ca0c"
-            ]
-        ]
-    },
-    {
-        "id": "7cc2b95d.0b8f6",
-        "type": "olcnr-print-job",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "jobPreset": "printbsc-group customers.OL-jobpreset",
-        "name": "print job",
-        "x": 840,
-        "y": 120,
-        "wires": [
-            [
-                "68c8eb5a.67066c",
-                "8bcbee3c.00e5"
-            ]
-        ]
-    },
-    {
-        "id": "553c4dca.a0ca0c",
-        "type": "olcnr-print-job",
-        "z": "7e87d273.bb52c4",
-        "connect_server": "23c3ba7a.febabe",
-        "jobPreset": "nodered-377-no-grouping.OL-jobpreset",
-        "name": "Print job",
-        "x": 440,
-        "y": 220,
-        "wires": [
-            [
-                "d2d88a13.e07658"
-            ]
-        ]
-    },
-    {
-        "id": "f4552abd.5877",
-        "type": "olcnr-print-output",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "printbsc-full job.OL-outputpreset",
-        "name": "output: full job",
-        "x": 660,
-        "y": 200,
-        "wires": [
-            [
-                "a666a1ae.998a2"
-            ]
-        ]
-    },
-    {
-        "id": "99e66daf.de3cd",
-        "type": "olcnr-print-output",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "printbsc-per customer.OL-outputpreset",
-        "name": "output: per customer",
-        "x": 680,
-        "y": 260,
-        "wires": [
-            [
-                "a666a1ae.998a2"
-            ]
-        ]
-    },
-    {
-        "id": "5fc54d0c.0af8f4",
-        "type": "olcnr-print-output",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "printbsc-per invoice.OL-outputpreset",
-        "name": "output: individual invoices",
-        "x": 690,
-        "y": 320,
-        "wires": [
-            [
-                "a666a1ae.998a2"
-            ]
-        ]
-    },
-    {
-        "id": "d2d88a13.e07658",
-        "type": "olcnr-print-output",
-        "z": "7e87d273.bb52c4",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "nodered-377-pdf-stationery.OL-outputpreset",
-        "name": "Print output",
-        "x": 590,
-        "y": 220,
-        "wires": [
-            [
-                "de6e7508.d71c8"
-            ]
-        ]
-    },
-    {
-        "id": "8f97fb27.ab77a",
-        "type": "olcnr-file-upload",
-        "z": "d9a4e9bb.013ae",
-        "connect_server": "23c3ba7a.febabe",
-        "filename": "",
-        "markAsPermanent": false,
-        "name": "",
-        "x": 490,
-        "y": 100,
-        "wires": [
-            [
-                "ba86a73.14a88d8",
-                "d695feb5.6f3ce"
-            ]
-        ]
-    },
-    {
-        "id": "b012747.0351588",
-        "type": "olcnr-file-upload",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "filename": "",
-        "markAsPermanent": false,
-        "name": "",
-        "x": 430,
-        "y": 360,
-        "wires": [
-            [
-                "8ba33a0.8b87848"
-            ]
-        ]
-    },
-    {
-        "id": "dfe7a025.60c98",
-        "type": "olcnr-email-content",
-        "z": "217b4fe9.13176",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "emailrun-message.OL-template",
-        "section": "",
-        "renderEml": false,
-        "name": "",
-        "x": 950,
-        "y": 360,
-        "wires": [
-            [
-                "f9e68603.4c3f7"
-            ]
-        ]
-    },
-    {
-        "id": "8573eb03.8c1568",
-        "type": "olcnr-email-content",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "dmfull-multicontext.OL-template",
-        "section": "",
-        "renderEml": true,
-        "name": "email content",
-        "x": 600,
-        "y": 1140,
-        "wires": [
-            [
-                "9a4098b4.2d418"
-            ]
-        ]
-    },
-    {
-        "id": "83b978eb.aec998",
-        "type": "olcnr-email-content",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "dmfull-multicontext.OL-template",
-        "section": "",
-        "renderEml": true,
-        "name": "email content",
-        "x": 300,
-        "y": 1200,
-        "wires": [
-            [
-                "f7fc1f4b.2e5548"
-            ]
-        ]
-    },
-    {
-        "id": "affa7c75.93d7b",
-        "type": "olcnr-email-content",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "dmfull-multicontext.OL-template",
-        "section": "",
-        "renderEml": true,
-        "name": "email content",
-        "x": 600,
-        "y": 1500,
-        "wires": [
-            [
-                "6f8f66e0.4e75"
-            ]
-        ]
-    },
-    {
-        "id": "3091636b.227acc",
-        "type": "olcnr-email-content",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "dmfull-multicontext.OL-template",
-        "section": "",
-        "renderEml": true,
-        "name": "email content",
-        "x": 300,
-        "y": 1560,
-        "wires": [
-            [
-                "c32b4567.4c71d"
-            ]
-        ]
-    },
-    {
-        "id": "a81b2fac.a70e28",
-        "type": "olcnr-email-content",
-        "z": "217b4fe9.13176",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "emailbsc-message.OL-template",
-        "section": "",
-        "renderEml": false,
-        "name": "",
-        "x": 770,
-        "y": 100,
-        "wires": [
-            [
-                "d9ad1deb.2bd9b"
-            ]
-        ]
-    },
-    {
-        "id": "ba86a73.14a88d8",
-        "type": "olcnr-file-download",
-        "z": "d9a4e9bb.013ae",
-        "connect_server": "23c3ba7a.febabe",
-        "x": 690,
-        "y": 100,
-        "wires": [
-            [
-                "429a0717.d686d8"
-            ]
-        ]
-    },
-    {
-        "id": "a02cfeda.99aff",
-        "type": "olcnr-file-download",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "x": 890,
-        "y": 1140,
-        "wires": [
-            [
-                "93f3daa7.fa86f8"
-            ]
-        ]
-    },
-    {
-        "id": "7650b2f6.8de02c",
-        "type": "olcnr-file-download",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "outputas": "",
-        "x": 890,
-        "y": 1200,
-        "wires": [
-            [
-                "fb82f568.f49b9"
-            ]
-        ]
-    },
-    {
-        "id": "f96c49b2.fac29",
-        "type": "olcnr-file-download",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "x": 890,
-        "y": 1500,
-        "wires": [
-            [
-                "fcdd3b01.47d3e8"
-            ]
-        ]
-    },
-    {
-        "id": "29084b0f.1e8fbc",
-        "type": "olcnr-file-download",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "x": 890,
-        "y": 1560,
-        "wires": [
-            [
-                "7663a907.4d8c88"
-            ]
-        ]
-    },
-    {
-        "id": "de6e7508.d71c8",
-        "type": "olcnr-file-download",
-        "z": "7e87d273.bb52c4",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "outputas": "",
-        "x": 750,
-        "y": 220,
-        "wires": [
-            [
-                "6b57d000.231228"
-            ]
-        ]
-    },
-    {
-        "id": "ea668aa1.990eb8",
-        "type": "olcnr-all-in-one",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "printbsc-transactional xml.OL-datamapper",
-        "template": "",
-        "jobPreset": "",
-        "outputPreset": "",
-        "persistData": false,
-        "name": "all in one - full",
-        "x": 620,
-        "y": 940,
-        "wires": [
-            [
-                "bcdac458.f7e99",
-                "7c356ed5.03e74"
-            ]
-        ]
-    },
-    {
-        "id": "e0f48daa.353608",
-        "type": "olcnr-all-in-one",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "printbsc-transactional xml.OL-datamapper",
-        "template": "printbsc-invoice.OL-template",
-        "jobPreset": "printbsc-group customers.OL-jobpreset",
-        "outputPreset": "printbsc-per invoice.OL-outputpreset",
-        "persistData": true,
-        "name": "all in one - group customers",
-        "x": 480,
-        "y": 760,
-        "wires": [
-            [
-                "c12c7b33.112c3",
-                "521ed59b.625d64"
-            ]
-        ]
-    },
-    {
         "id": "757b2ea4.5fb298",
         "type": "change",
         "z": "a7446b3d.e40398",
@@ -5688,24 +4608,6 @@
         "wires": []
     },
     {
-        "id": "e48a822e.b495d",
-        "type": "olcnr-html-content",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "htmlrun-web page.OL-template",
-        "section": "",
-        "cssSelector": "",
-        "embedResources": true,
-        "name": "",
-        "x": 430,
-        "y": 960,
-        "wires": [
-            [
-                "ec6428ae.90a1a8"
-            ]
-        ]
-    },
-    {
         "id": "ec6428ae.90a1a8",
         "type": "change",
         "z": "a7446b3d.e40398",
@@ -5752,52 +4654,6 @@
         ]
     },
     {
-        "id": "330776f0.afe11a",
-        "type": "olcnr-print-content",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "dmfull-multicontext.OL-template",
-        "name": "print content",
-        "x": 290,
-        "y": 1260,
-        "wires": [
-            [
-                "c44a81b.f106a"
-            ]
-        ]
-    },
-    {
-        "id": "c44a81b.f106a",
-        "type": "olcnr-print-job",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "jobPreset": "dmfull-default.OL-jobpreset",
-        "name": "print job",
-        "x": 440,
-        "y": 1260,
-        "wires": [
-            [
-                "c5e5a958.131c4"
-            ]
-        ]
-    },
-    {
-        "id": "c5e5a958.131c4",
-        "type": "olcnr-print-output",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "dmfull-full job.OL-outputpreset",
-        "name": "output: full job",
-        "x": 600,
-        "y": 1260,
-        "wires": [
-            [
-                "8169b9c5.0c4e78",
-                "de3008c9.e94b7"
-            ]
-        ]
-    },
-    {
         "id": "7f790aa.954b074",
         "type": "change",
         "z": "65f6e63.e225a18",
@@ -5821,21 +4677,6 @@
         "wires": [
             [
                 "72db9cb2.c0c2f4"
-            ]
-        ]
-    },
-    {
-        "id": "b8b1e175.044c6",
-        "type": "olcnr-file-download",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "x": 890,
-        "y": 1260,
-        "wires": [
-            [
-                "7f790aa.954b074"
             ]
         ]
     },
@@ -5867,21 +4708,6 @@
         ]
     },
     {
-        "id": "de3008c9.e94b7",
-        "type": "olcnr-file-download",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "x": 890,
-        "y": 1320,
-        "wires": [
-            [
-                "1340a8d2.998c6f"
-            ]
-        ]
-    },
-    {
         "id": "1340a8d2.998c6f",
         "type": "change",
         "z": "65f6e63.e225a18",
@@ -5909,52 +4735,6 @@
         ]
     },
     {
-        "id": "d7a51875.487f18",
-        "type": "olcnr-print-content",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "dmfull-multicontext.OL-template",
-        "name": "print content",
-        "x": 290,
-        "y": 1620,
-        "wires": [
-            [
-                "c77f6669.a6c9c"
-            ]
-        ]
-    },
-    {
-        "id": "c77f6669.a6c9c",
-        "type": "olcnr-print-job",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "jobPreset": "dmfull-default.OL-jobpreset",
-        "name": "print job",
-        "x": 440,
-        "y": 1620,
-        "wires": [
-            [
-                "34194aff.d0fcae"
-            ]
-        ]
-    },
-    {
-        "id": "34194aff.d0fcae",
-        "type": "olcnr-print-output",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "dmfull-full job.OL-outputpreset",
-        "name": "output: full job",
-        "x": 600,
-        "y": 1620,
-        "wires": [
-            [
-                "3019fbc3.8670cc",
-                "72464f82.2713f8"
-            ]
-        ]
-    },
-    {
         "id": "3019fbc3.8670cc",
         "type": "change",
         "z": "65f6e63.e225a18",
@@ -5978,37 +4758,6 @@
         "wires": [
             [
                 "7a91fe10.9969e"
-            ]
-        ]
-    },
-    {
-        "id": "7a91fe10.9969e",
-        "type": "olcnr-file-download",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "outputas": "",
-        "x": 890,
-        "y": 1620,
-        "wires": [
-            [
-                "db682080.f1189"
-            ]
-        ]
-    },
-    {
-        "id": "72464f82.2713f8",
-        "type": "olcnr-file-download",
-        "z": "65f6e63.e225a18",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "x": 890,
-        "y": 1680,
-        "wires": [
-            [
-                "d636ce2.ed7073"
             ]
         ]
     },
@@ -6246,22 +4995,6 @@
         ]
     },
     {
-        "id": "270e19fa.1e64f6",
-        "type": "olcnr-file-upload",
-        "z": "52e2b2e.d0444cc",
-        "connect_server": "23c3ba7a.febabe",
-        "filename": "",
-        "markAsPermanent": true,
-        "name": "",
-        "x": 750,
-        "y": 360,
-        "wires": [
-            [
-                "f31a8c34.77f1f8"
-            ]
-        ]
-    },
-    {
         "id": "f31a8c34.77f1f8",
         "type": "debug",
         "z": "52e2b2e.d0444cc",
@@ -6394,36 +5127,6 @@
         ]
     },
     {
-        "id": "c8facfda.8f0878",
-        "type": "olcnr-print-job",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "jobPreset": "printchunk-default.OL-jobpreset",
-        "name": "print job",
-        "x": 820,
-        "y": 1280,
-        "wires": [
-            [
-                "dd36c177.6e0f"
-            ]
-        ]
-    },
-    {
-        "id": "dd36c177.6e0f",
-        "type": "olcnr-print-output",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "printchunk-full job.OL-outputpreset",
-        "name": "output: full job",
-        "x": 980,
-        "y": 1280,
-        "wires": [
-            [
-                "269cb89.3681148"
-            ]
-        ]
-    },
-    {
         "id": "57122b42.c46e9c",
         "type": "file",
         "z": "1d910b2e.85ebd5",
@@ -6438,22 +5141,6 @@
         "wires": [
             [
                 "c92578c4.863988"
-            ]
-        ]
-    },
-    {
-        "id": "a503438e.4c4618",
-        "type": "olcnr-file-download",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "outputas": "",
-        "x": 670,
-        "y": 1380,
-        "wires": [
-            [
-                "baf2bb3d.2ea3c8"
             ]
         ]
     },
@@ -6543,21 +5230,6 @@
         "wires": [
             [
                 "daba6612.85acc8"
-            ]
-        ]
-    },
-    {
-        "id": "daba6612.85acc8",
-        "type": "olcnr-print-content",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "printchunk-invoice.OL-template",
-        "name": "print content",
-        "x": 550,
-        "y": 1280,
-        "wires": [
-            [
-                "a6b80567.9d209"
             ]
         ]
     },
@@ -6751,22 +5423,6 @@
         ]
     },
     {
-        "id": "2d979dfc.879dca",
-        "type": "olcnr-data-mapping",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "printbatch-csv.OL-datamapper",
-        "active": false,
-        "name": "",
-        "x": 790,
-        "y": 1540,
-        "wires": [
-            [
-                "1487eabe.3166e5"
-            ]
-        ]
-    },
-    {
         "id": "23ae6c35.242344",
         "type": "join",
         "z": "1d910b2e.85ebd5",
@@ -6795,36 +5451,6 @@
         ]
     },
     {
-        "id": "1487eabe.3166e5",
-        "type": "olcnr-print-content",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "printbatch-letter.OL-template",
-        "name": "print content",
-        "x": 1010,
-        "y": 1540,
-        "wires": [
-            [
-                "23ae6c35.242344"
-            ]
-        ]
-    },
-    {
-        "id": "1711b666.81ba02",
-        "type": "olcnr-print-output",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "printbatch-full-job.OL-outputpreset",
-        "name": "output: full job",
-        "x": 780,
-        "y": 1640,
-        "wires": [
-            [
-                "9ecf387a.033098"
-            ]
-        ]
-    },
-    {
         "id": "9ecf387a.033098",
         "type": "change",
         "z": "1d910b2e.85ebd5",
@@ -6848,21 +5474,6 @@
         "wires": [
             [
                 "53582248.78652c"
-            ]
-        ]
-    },
-    {
-        "id": "53582248.78652c",
-        "type": "olcnr-file-download",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "x": 670,
-        "y": 1740,
-        "wires": [
-            [
-                "bb5e4789.de1878"
             ]
         ]
     },
@@ -6940,21 +5551,6 @@
         "x": 975,
         "y": 120,
         "wires": []
-    },
-    {
-        "id": "b50690a8.e8efb8",
-        "type": "olcnr-print-job",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "jobPreset": "printbatch-group-rep.OL-jobpreset",
-        "name": "printbatch-group-rep",
-        "x": 580,
-        "y": 1640,
-        "wires": [
-            [
-                "1711b666.81ba02"
-            ]
-        ]
     },
     {
         "id": "3530d7cc.c402c8",
@@ -7201,40 +5797,6 @@
         ]
     },
     {
-        "id": "6dd02594.46e274",
-        "type": "olcnr-data-mapping",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "htmlrun-xml.OL-datamapper",
-        "active": false,
-        "name": "data mapping",
-        "x": 380,
-        "y": 1100,
-        "wires": [
-            [
-                "f34b4aa3.b7e"
-            ]
-        ]
-    },
-    {
-        "id": "f34b4aa3.b7e",
-        "type": "olcnr-data-get",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "IDs",
-        "includeSubdetails": false,
-        "flattened": true,
-        "name": "",
-        "x": 540,
-        "y": 1100,
-        "wires": [
-            [
-                "192e1f8.740ea61"
-            ]
-        ]
-    },
-    {
         "id": "3ea07d5a.b09372",
         "type": "file",
         "z": "a7446b3d.e40398",
@@ -7266,24 +5828,6 @@
         "x": 930,
         "y": 1180,
         "wires": []
-    },
-    {
-        "id": "cc4b235.6244e6",
-        "type": "olcnr-html-content",
-        "z": "a7446b3d.e40398",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "htmlrun-web page.OL-template",
-        "section": "",
-        "cssSelector": "",
-        "embedResources": true,
-        "name": "",
-        "x": 430,
-        "y": 1180,
-        "wires": [
-            [
-                "9f7ef042.e63d68"
-            ]
-        ]
     },
     {
         "id": "9f7ef042.e63d68",
@@ -7429,23 +5973,6 @@
         "wires": []
     },
     {
-        "id": "39bf6144.02d61e",
-        "type": "olcnr-file-download",
-        "z": "217b4fe9.13176",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "outputas": "utf8",
-        "x": 730,
-        "y": 460,
-        "wires": [
-            [
-                "6bd3e05c.6557b",
-                "6f778c7d.d6a08c"
-            ]
-        ]
-    },
-    {
         "id": "7e5d0281.aa94f4",
         "type": "change",
         "z": "217b4fe9.13176",
@@ -7545,23 +6072,6 @@
         "wires": []
     },
     {
-        "id": "2c63bbf.5d801c4",
-        "type": "olcnr-file-download",
-        "z": "217b4fe9.13176",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "outputas": "utf8",
-        "x": 730,
-        "y": 200,
-        "wires": [
-            [
-                "65c56781.431368",
-                "a95bc710.edbf88"
-            ]
-        ]
-    },
-    {
         "id": "d695feb5.6f3ce",
         "type": "debug",
         "z": "d9a4e9bb.013ae",
@@ -7577,147 +6087,6 @@
         "x": 710,
         "y": 160,
         "wires": []
-    },
-    {
-        "id": "f2b706df.5a5848",
-        "type": "olcnr-data-mapping",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "printbsc-transactional xml.OL-datamapper",
-        "active": false,
-        "name": "data mapping",
-        "x": 500,
-        "y": 520,
-        "wires": [
-            [
-                "c0d628b0.1da9a"
-            ]
-        ]
-    },
-    {
-        "id": "c0d628b0.1da9a",
-        "type": "olcnr-print-content",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "printbsc-invoice.OL-template",
-        "name": "print content",
-        "x": 670,
-        "y": 520,
-        "wires": [
-            [
-                "5eb72b68.a5d014"
-            ]
-        ]
-    },
-    {
-        "id": "5eb72b68.a5d014",
-        "type": "olcnr-print-job",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "jobPreset": "printbsc-group customers.OL-jobpreset",
-        "name": "print job",
-        "x": 820,
-        "y": 520,
-        "wires": [
-            [
-                "6306bd21.39458c",
-                "85e4d199.4611e8",
-                "c660b28a.607ef"
-            ]
-        ]
-    },
-    {
-        "id": "85e4d199.4611e8",
-        "type": "olcnr-print-output",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "printbsc-full job.OL-outputpreset",
-        "name": "output single PDF",
-        "x": 1010,
-        "y": 520,
-        "wires": [
-            [
-                "64e080b7.f6a71"
-            ]
-        ]
-    },
-    {
-        "id": "6306bd21.39458c",
-        "type": "olcnr-print-output",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "printbsc-per customer.OL-outputpreset",
-        "name": "output per customer",
-        "x": 1020,
-        "y": 580,
-        "wires": [
-            [
-                "c1a78b8a.93f558"
-            ]
-        ]
-    },
-    {
-        "id": "c660b28a.607ef",
-        "type": "olcnr-print-output",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "printbsc-per invoice.OL-outputpreset",
-        "name": "output individual invoices",
-        "x": 1030,
-        "y": 640,
-        "wires": [
-            [
-                "2b60acce.5b245c"
-            ]
-        ]
-    },
-    {
-        "id": "64e080b7.f6a71",
-        "type": "olcnr-file-download",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "outputas": "",
-        "x": 1230,
-        "y": 520,
-        "wires": [
-            [
-                "505047dc.d26ce8"
-            ]
-        ]
-    },
-    {
-        "id": "c1a78b8a.93f558",
-        "type": "olcnr-file-download",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "outputas": "",
-        "x": 1230,
-        "y": 580,
-        "wires": [
-            [
-                "c2ba0956.9cba58"
-            ]
-        ]
-    },
-    {
-        "id": "2b60acce.5b245c",
-        "type": "olcnr-file-download",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "outputas": "",
-        "x": 1230,
-        "y": 640,
-        "wires": [
-            [
-                "3c1b3aea.3b92c6"
-            ]
-        ]
     },
     {
         "id": "a125ca26.ecfdf",
@@ -7981,83 +6350,6 @@
         "x": 170,
         "y": 1140,
         "wires": []
-    },
-    {
-        "id": "4e375d0.2429ca4",
-        "type": "olcnr-data-mapping",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "printbsc-transactional xml.OL-datamapper",
-        "active": false,
-        "name": "data mapping",
-        "x": 600,
-        "y": 1900,
-        "wires": [
-            [
-                "6e543ad5.a2c454"
-            ]
-        ]
-    },
-    {
-        "id": "6e543ad5.a2c454",
-        "type": "olcnr-print-content",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "template": "printbsc-invoice.OL-template",
-        "name": "print content",
-        "x": 770,
-        "y": 1900,
-        "wires": [
-            [
-                "9f26332a.69782"
-            ]
-        ]
-    },
-    {
-        "id": "9f26332a.69782",
-        "type": "olcnr-print-job",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "jobPreset": "printbsc-group customers.OL-jobpreset",
-        "name": "print job",
-        "x": 920,
-        "y": 1900,
-        "wires": [
-            [
-                "1688afe4.36211"
-            ]
-        ]
-    },
-    {
-        "id": "1688afe4.36211",
-        "type": "olcnr-print-output",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "outputPreset": "printbsc-per invoice.OL-outputpreset",
-        "name": "output individual invoices",
-        "x": 1110,
-        "y": 1900,
-        "wires": [
-            [
-                "52b5943c.3329b4"
-            ]
-        ]
-    },
-    {
-        "id": "c30f99c1.39ff08",
-        "type": "olcnr-file-download",
-        "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
-        "managedFileId": "",
-        "name": "",
-        "outputas": "",
-        "x": 730,
-        "y": 2000,
-        "wires": [
-            [
-                "9cf6773b.354f1"
-            ]
-        ]
     },
     {
         "id": "605d32fb.8f1114",
@@ -8381,22 +6673,6 @@
         "wires": []
     },
     {
-        "id": "fae47229.8b2d3",
-        "type": "olcnr-file-upload",
-        "z": "7e87d273.bb52c4",
-        "connect_server": "23c3ba7a.febabe",
-        "filename": "",
-        "markAsPermanent": false,
-        "name": "",
-        "x": 570,
-        "y": 900,
-        "wires": [
-            [
-                "9dd833b9.9048a"
-            ]
-        ]
-    },
-    {
         "id": "5bd66fc.ebaff1",
         "type": "inject",
         "z": "7e87d273.bb52c4",
@@ -8513,22 +6789,6 @@
         ]
     },
     {
-        "id": "9dd833b9.9048a",
-        "type": "olcnr-data-mapping",
-        "z": "7e87d273.bb52c4",
-        "connect_server": "23c3ba7a.febabe",
-        "dataMapper": "nodered-377-invoice.OL-datamapper",
-        "active": false,
-        "name": "data mapping",
-        "x": 780,
-        "y": 900,
-        "wires": [
-            [
-                "fa86d6.46949128"
-            ]
-        ]
-    },
-    {
         "id": "db0d727d.fbfb9",
         "type": "watch-directory",
         "z": "7e87d273.bb52c4",
@@ -8556,24 +6816,6 @@
         "x": 200,
         "y": 800,
         "wires": []
-    },
-    {
-        "id": "fa86d6.46949128",
-        "type": "olcnr-data-get",
-        "z": "7e87d273.bb52c4",
-        "connect_server": "23c3ba7a.febabe",
-        "input": "set",
-        "output": "IDs",
-        "includeSubdetails": false,
-        "flattened": false,
-        "name": "",
-        "x": 980,
-        "y": 900,
-        "wires": [
-            [
-                "b62c6d7.ed8771"
-            ]
-        ]
     },
     {
         "id": "b62c6d7.ed8771",
@@ -8649,10 +6891,1863 @@
         "wires": []
     },
     {
+        "id": "563fa77e.2e417",
+        "type": "olcnr-data-mapping",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "basic xml data.OL-datamapper",
+        "active": false,
+        "name": "",
+        "x": 490,
+        "y": 100,
+        "wires": [
+            [
+                "804cca44.e633a",
+                "68a9888d.b07f68",
+                "9584d085.462b9",
+                "ca219283.f84958"
+            ]
+        ]
+    },
+    {
+        "id": "8ba33a0.8b87848",
+        "type": "olcnr-data-mapping",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "basic xml data.OL-datamapper",
+        "active": false,
+        "name": "",
+        "x": 650,
+        "y": 360,
+        "wires": [
+            [
+                "43767473.f0dc84"
+            ]
+        ]
+    },
+    {
+        "id": "9cd4b1a3.29756",
+        "type": "olcnr-data-mapping",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "printbsc-transactional xml.OL-datamapper",
+        "active": false,
+        "name": "data mapping",
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "1e468549.373fe3",
+                "ca7d5e4b.6d09c8"
+            ]
+        ]
+    },
+    {
+        "id": "b0a07af1.7b5a",
+        "type": "olcnr-data-mapping",
+        "z": "5131a1e3.fd76d8",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "COTG Timesheet Form.OL-datamapper",
+        "active": false,
+        "name": "",
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "de5e3e7f.76446"
+            ]
+        ]
+    },
+    {
+        "id": "3e327c70.bac804",
+        "type": "olcnr-data-mapping",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "update values.OL-datamapper",
+        "active": false,
+        "name": "",
+        "x": 490,
+        "y": 680,
+        "wires": [
+            [
+                "ff358f71.1aad5"
+            ]
+        ]
+    },
+    {
+        "id": "4e106048.e869",
+        "type": "olcnr-data-mapping",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "runtime parameters.OL-datamapper",
+        "active": false,
+        "name": "",
+        "x": 770,
+        "y": 540,
+        "wires": [
+            [
+                "64fe05fd.8e2dd4"
+            ]
+        ]
+    },
+    {
+        "id": "71ff9e96.a89b9",
+        "type": "olcnr-data-mapping",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "dmfull-multicontext.OL-datamapper",
+        "active": false,
+        "name": "",
+        "x": 500,
+        "y": 900,
+        "wires": [
+            [
+                "154418ba.7fbf6f",
+                "c434b2fb.f26ae"
+            ]
+        ]
+    },
+    {
+        "id": "83be265b.bcfd5",
+        "type": "olcnr-data-mapping",
+        "z": "217b4fe9.13176",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "emailbsc-xml.OL-datamapper",
+        "active": false,
+        "name": "",
+        "x": 490,
+        "y": 100,
+        "wires": [
+            [
+                "a81b2fac.a70e28"
+            ]
+        ]
+    },
+    {
+        "id": "433705d7.05559c",
+        "type": "olcnr-data-mapping",
+        "z": "5131a1e3.fd76d8",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "COTG Timesheet Report.OL-datamapper",
+        "active": false,
+        "name": "data mapping",
+        "x": 240,
+        "y": 940,
+        "wires": [
+            [
+                "2ee36853.06e5a"
+            ]
+        ]
+    },
+    {
+        "id": "a0a7ab6d.3192b8",
+        "type": "olcnr-data-mapping",
+        "z": "7d5be68c.52e92",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "pdfprevrun-xml.OL-datamapper",
+        "active": false,
+        "name": "",
+        "x": 490,
+        "y": 820,
+        "wires": [
+            [
+                "fd11008a.1ab49"
+            ]
+        ]
+    },
+    {
+        "id": "bdeccd22.486e48",
+        "type": "olcnr-data-mapping",
+        "z": "7d5be68c.52e92",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "pdfprevrun-xml.OL-datamapper",
+        "active": false,
+        "name": "",
+        "x": 490,
+        "y": 1020,
+        "wires": [
+            [
+                "e9275017.157748"
+            ]
+        ]
+    },
+    {
+        "id": "65a6145b.158334",
+        "type": "olcnr-data-mapping",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "htmlrun-xml.OL-datamapper",
+        "active": false,
+        "name": "data mapping",
+        "x": 380,
+        "y": 880,
+        "wires": [
+            [
+                "2f9dfc7b.21930c"
+            ]
+        ]
+    },
+    {
+        "id": "2ae4eb02.dde834",
+        "type": "olcnr-data-mapping",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "htmlrun-xml.OL-datamapper",
+        "active": false,
+        "name": "data mapping",
+        "x": 380,
+        "y": 660,
+        "wires": [
+            [
+                "5d5cbedb.3457d"
+            ]
+        ]
+    },
+    {
+        "id": "453eaaa7.8f8c8c",
+        "type": "olcnr-data-mapping",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "nodered-377-invoice.OL-datamapper",
+        "active": false,
+        "name": "Data mapping",
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "352de1ea.a2552e"
+            ]
+        ]
+    },
+    {
+        "id": "2d979dfc.879dca",
+        "type": "olcnr-data-mapping",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "printbatch-csv.OL-datamapper",
+        "active": false,
+        "name": "",
+        "x": 790,
+        "y": 1540,
+        "wires": [
+            [
+                "1487eabe.3166e5"
+            ]
+        ]
+    },
+    {
+        "id": "6dd02594.46e274",
+        "type": "olcnr-data-mapping",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "htmlrun-xml.OL-datamapper",
+        "active": false,
+        "name": "data mapping",
+        "x": 380,
+        "y": 1100,
+        "wires": [
+            [
+                "f34b4aa3.b7e"
+            ]
+        ]
+    },
+    {
+        "id": "f2b706df.5a5848",
+        "type": "olcnr-data-mapping",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "printbsc-transactional xml.OL-datamapper",
+        "active": false,
+        "name": "data mapping",
+        "x": 500,
+        "y": 520,
+        "wires": [
+            [
+                "c0d628b0.1da9a"
+            ]
+        ]
+    },
+    {
+        "id": "4e375d0.2429ca4",
+        "type": "olcnr-data-mapping",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "printbsc-transactional xml.OL-datamapper",
+        "active": false,
+        "name": "data mapping",
+        "x": 600,
+        "y": 1900,
+        "wires": [
+            [
+                "6e543ad5.a2c454"
+            ]
+        ]
+    },
+    {
+        "id": "9dd833b9.9048a",
+        "type": "olcnr-data-mapping",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "nodered-377-invoice.OL-datamapper",
+        "active": false,
+        "name": "data mapping",
+        "x": 780,
+        "y": 900,
+        "wires": [
+            [
+                "fa86d6.46949128"
+            ]
+        ]
+    },
+    {
+        "id": "dfe7a025.60c98",
+        "type": "olcnr-email-content",
+        "z": "217b4fe9.13176",
+        "connect_server": "c1987ef9.d65568",
+        "template": "emailrun-message.OL-template",
+        "section": "",
+        "renderEml": false,
+        "name": "",
+        "x": 950,
+        "y": 360,
+        "wires": [
+            [
+                "f9e68603.4c3f7"
+            ]
+        ]
+    },
+    {
+        "id": "8573eb03.8c1568",
+        "type": "olcnr-email-content",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "template": "dmfull-multicontext.OL-template",
+        "section": "",
+        "renderEml": true,
+        "name": "email content",
+        "x": 600,
+        "y": 1140,
+        "wires": [
+            [
+                "9a4098b4.2d418"
+            ]
+        ]
+    },
+    {
+        "id": "83b978eb.aec998",
+        "type": "olcnr-email-content",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "template": "dmfull-multicontext.OL-template",
+        "section": "",
+        "renderEml": true,
+        "name": "email content",
+        "x": 300,
+        "y": 1200,
+        "wires": [
+            [
+                "f7fc1f4b.2e5548"
+            ]
+        ]
+    },
+    {
+        "id": "affa7c75.93d7b",
+        "type": "olcnr-email-content",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "template": "dmfull-multicontext.OL-template",
+        "section": "",
+        "renderEml": true,
+        "name": "email content",
+        "x": 600,
+        "y": 1500,
+        "wires": [
+            [
+                "6f8f66e0.4e75"
+            ]
+        ]
+    },
+    {
+        "id": "3091636b.227acc",
+        "type": "olcnr-email-content",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "template": "dmfull-multicontext.OL-template",
+        "section": "",
+        "renderEml": true,
+        "name": "email content",
+        "x": 300,
+        "y": 1560,
+        "wires": [
+            [
+                "c32b4567.4c71d"
+            ]
+        ]
+    },
+    {
+        "id": "a81b2fac.a70e28",
+        "type": "olcnr-email-content",
+        "z": "217b4fe9.13176",
+        "connect_server": "c1987ef9.d65568",
+        "template": "emailbsc-message.OL-template",
+        "section": "",
+        "renderEml": false,
+        "name": "",
+        "x": 770,
+        "y": 100,
+        "wires": [
+            [
+                "d9ad1deb.2bd9b"
+            ]
+        ]
+    },
+    {
+        "id": "ccbf5ccb.f6621",
+        "type": "olcnr-preview-pdf",
+        "z": "7d5be68c.52e92",
+        "connect_server": "c1987ef9.d65568",
+        "template": "pdfprev-superhero.OL-template",
+        "name": "",
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "3ca95948.5df43e"
+            ]
+        ]
+    },
+    {
+        "id": "16f2930f.63af5d",
+        "type": "olcnr-preview-pdf",
+        "z": "7d5be68c.52e92",
+        "connect_server": "c1987ef9.d65568",
+        "template": "",
+        "name": "",
+        "x": 770,
+        "y": 360,
+        "wires": [
+            [
+                "4b930168.6c0488",
+                "afc0d66b.a475b"
+            ]
+        ]
+    },
+    {
+        "id": "f73d2e89.3360e8",
+        "type": "olcnr-preview-pdf",
+        "z": "7d5be68c.52e92",
+        "connect_server": "c1987ef9.d65568",
+        "template": "pdfprev-superhero.OL-template",
+        "name": "",
+        "x": 750,
+        "y": 640,
+        "wires": [
+            [
+                "f20b0f6.a7a63f"
+            ]
+        ]
+    },
+    {
+        "id": "31cc22a5.669836",
+        "type": "olcnr-preview-pdf",
+        "z": "5131a1e3.fd76d8",
+        "connect_server": "c1987ef9.d65568",
+        "template": "COTG Timesheet Report.OL-template",
+        "name": "preview pdf",
+        "x": 770,
+        "y": 940,
+        "wires": [
+            [
+                "2d881c35.6f5894"
+            ]
+        ]
+    },
+    {
+        "id": "bb08d3de.85dc3",
+        "type": "olcnr-preview-pdf",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "template": "dmfull-multicontext.OL-template",
+        "name": "preview pdf",
+        "x": 590,
+        "y": 1020,
+        "wires": [
+            [
+                "ffe95c10.4287c8"
+            ]
+        ]
+    },
+    {
+        "id": "f9c227cb.dc1278",
+        "type": "olcnr-preview-pdf",
+        "z": "7d5be68c.52e92",
+        "connect_server": "c1987ef9.d65568",
+        "template": "pdfprevrun-basic.OL-template",
+        "name": "",
+        "x": 490,
+        "y": 880,
+        "wires": [
+            [
+                "5e2300bc.fc78"
+            ]
+        ]
+    },
+    {
+        "id": "83fa15cc.1a071",
+        "type": "olcnr-preview-pdf",
+        "z": "7d5be68c.52e92",
+        "connect_server": "c1987ef9.d65568",
+        "template": "pdfprevrun-basic.OL-template",
+        "name": "",
+        "x": 490,
+        "y": 1080,
+        "wires": [
+            [
+                "37f354a0.3be40c"
+            ]
+        ]
+    },
+    {
+        "id": "f26e480f.1b07e",
+        "type": "olcnr-preview-pdf",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "template": "dmfull-multicontext.OL-template",
+        "name": "preview pdf",
+        "x": 590,
+        "y": 1380,
+        "wires": [
+            [
+                "be386ab2.725718"
+            ]
+        ]
+    },
+    {
+        "id": "7cc2b95d.0b8f6",
+        "type": "olcnr-print-job",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "jobPreset": "printbsc-group customers.OL-jobpreset",
+        "name": "print job",
+        "x": 840,
+        "y": 120,
+        "wires": [
+            [
+                "68c8eb5a.67066c",
+                "8bcbee3c.00e5"
+            ]
+        ]
+    },
+    {
+        "id": "553c4dca.a0ca0c",
+        "type": "olcnr-print-job",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "c1987ef9.d65568",
+        "jobPreset": "nodered-377-no-grouping.OL-jobpreset",
+        "name": "Print job",
+        "x": 440,
+        "y": 220,
+        "wires": [
+            [
+                "d2d88a13.e07658"
+            ]
+        ]
+    },
+    {
+        "id": "c44a81b.f106a",
+        "type": "olcnr-print-job",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "jobPreset": "dmfull-default.OL-jobpreset",
+        "name": "print job",
+        "x": 440,
+        "y": 1260,
+        "wires": [
+            [
+                "c5e5a958.131c4"
+            ]
+        ]
+    },
+    {
+        "id": "c77f6669.a6c9c",
+        "type": "olcnr-print-job",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "jobPreset": "dmfull-default.OL-jobpreset",
+        "name": "print job",
+        "x": 440,
+        "y": 1620,
+        "wires": [
+            [
+                "34194aff.d0fcae"
+            ]
+        ]
+    },
+    {
+        "id": "c8facfda.8f0878",
+        "type": "olcnr-print-job",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "jobPreset": "printchunk-default.OL-jobpreset",
+        "name": "print job",
+        "x": 820,
+        "y": 1280,
+        "wires": [
+            [
+                "dd36c177.6e0f"
+            ]
+        ]
+    },
+    {
+        "id": "b50690a8.e8efb8",
+        "type": "olcnr-print-job",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "jobPreset": "printbatch-group-rep.OL-jobpreset",
+        "name": "printbatch-group-rep",
+        "x": 580,
+        "y": 1640,
+        "wires": [
+            [
+                "1711b666.81ba02"
+            ]
+        ]
+    },
+    {
+        "id": "5eb72b68.a5d014",
+        "type": "olcnr-print-job",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "jobPreset": "printbsc-group customers.OL-jobpreset",
+        "name": "print job",
+        "x": 820,
+        "y": 520,
+        "wires": [
+            [
+                "6306bd21.39458c",
+                "85e4d199.4611e8",
+                "c660b28a.607ef"
+            ]
+        ]
+    },
+    {
+        "id": "9f26332a.69782",
+        "type": "olcnr-print-job",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "jobPreset": "printbsc-group customers.OL-jobpreset",
+        "name": "print job",
+        "x": 920,
+        "y": 1900,
+        "wires": [
+            [
+                "1688afe4.36211"
+            ]
+        ]
+    },
+    {
+        "id": "804cca44.e633a",
+        "type": "olcnr-data-get",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": false,
+        "name": "",
+        "x": 740,
+        "y": 100,
+        "wires": [
+            [
+                "3cf4ea56.75283e"
+            ]
+        ]
+    },
+    {
+        "id": "68a9888d.b07f68",
+        "type": "olcnr-data-get",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "values",
+        "includeSubdetails": true,
+        "flattened": false,
+        "name": "",
+        "x": 740,
+        "y": 160,
+        "wires": [
+            [
+                "3cf4ea56.75283e"
+            ]
+        ]
+    },
+    {
+        "id": "5ea5147a.94c9bc",
+        "type": "olcnr-data-get",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "input": "record",
+        "output": "values",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "",
+        "x": 1120,
+        "y": 360,
+        "wires": [
+            [
+                "aa47d04a.cb34b8"
+            ]
+        ]
+    },
+    {
+        "id": "43767473.f0dc84",
+        "type": "olcnr-data-get",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "",
+        "x": 860,
+        "y": 360,
+        "wires": [
+            [
+                "2900bdea.9a6d0a"
+            ]
+        ]
+    },
+    {
+        "id": "de5e3e7f.76446",
+        "type": "olcnr-data-get",
+        "z": "5131a1e3.fd76d8",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "values",
+        "includeSubdetails": false,
+        "flattened": false,
+        "name": "get data",
+        "x": 700,
+        "y": 100,
+        "wires": [
+            [
+                "99a91ad8.1243f"
+            ]
+        ]
+    },
+    {
+        "id": "ca219283.f84958",
+        "type": "olcnr-data-get",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "values",
+        "includeSubdetails": true,
+        "flattened": true,
+        "name": "",
+        "x": 740,
+        "y": 220,
+        "wires": [
+            [
+                "3cf4ea56.75283e"
+            ]
+        ]
+    },
+    {
+        "id": "54104995.906488",
+        "type": "olcnr-data-get",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "values",
+        "includeSubdetails": false,
+        "flattened": false,
+        "name": "",
+        "x": 900,
+        "y": 680,
+        "wires": [
+            [
+                "413a2c10.f2fd1c"
+            ]
+        ]
+    },
+    {
+        "id": "ddbfe8ae.4358c8",
+        "type": "olcnr-data-get",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "values",
+        "includeSubdetails": false,
+        "flattened": false,
+        "name": "",
+        "x": 1040,
+        "y": 760,
+        "wires": [
+            [
+                "ca21cbe6.c656d"
+            ]
+        ]
+    },
+    {
+        "id": "64fe05fd.8e2dd4",
+        "type": "olcnr-data-get",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "values",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "",
+        "x": 1000,
+        "y": 540,
+        "wires": [
+            [
+                "f82c409d.79cf28"
+            ]
+        ]
+    },
+    {
+        "id": "70716dca.23028c",
+        "type": "olcnr-data-get",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "values",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "",
+        "x": 160,
+        "y": 1020,
+        "wires": [
+            [
+                "d2340d33.f503e"
+            ]
+        ]
+    },
+    {
+        "id": "ade68750.4c0638",
+        "type": "olcnr-data-get",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": false,
+        "name": "",
+        "x": 160,
+        "y": 1380,
+        "wires": [
+            [
+                "b9676b6c.4ea8f8"
+            ]
+        ]
+    },
+    {
+        "id": "2ee36853.06e5a",
+        "type": "olcnr-data-get",
+        "z": "5131a1e3.fd76d8",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": false,
+        "name": "",
+        "x": 400,
+        "y": 940,
+        "wires": [
+            [
+                "df89937b.1047"
+            ]
+        ]
+    },
+    {
+        "id": "fd11008a.1ab49",
+        "type": "olcnr-data-get",
+        "z": "7d5be68c.52e92",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "",
+        "x": 700,
+        "y": 820,
+        "wires": [
+            [
+                "b4680534.e9523"
+            ]
+        ]
+    },
+    {
+        "id": "c436b96e.c6a6c8",
+        "type": "olcnr-data-get",
+        "z": "7d5be68c.52e92",
+        "connect_server": "c1987ef9.d65568",
+        "input": "record",
+        "output": "values",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "data values",
+        "x": 1070,
+        "y": 1020,
+        "wires": [
+            [
+                "8e9fb13a.c90e58"
+            ]
+        ]
+    },
+    {
+        "id": "e9275017.157748",
+        "type": "olcnr-data-get",
+        "z": "7d5be68c.52e92",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "",
+        "x": 700,
+        "y": 1020,
+        "wires": [
+            [
+                "e5d9d3a6.7a4928"
+            ]
+        ]
+    },
+    {
+        "id": "2f9dfc7b.21930c",
+        "type": "olcnr-data-get",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "",
+        "x": 540,
+        "y": 880,
+        "wires": [
+            [
+                "db0e69.08aa8198"
+            ]
+        ]
+    },
+    {
+        "id": "c065355c.d6dd68",
+        "type": "olcnr-data-get",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "input": "record",
+        "output": "values",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "data values",
+        "x": 910,
+        "y": 660,
+        "wires": [
+            [
+                "757b2ea4.5fb298"
+            ]
+        ]
+    },
+    {
+        "id": "5d5cbedb.3457d",
+        "type": "olcnr-data-get",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "",
+        "x": 540,
+        "y": 660,
+        "wires": [
+            [
+                "ae52f15.0e6231"
+            ]
+        ]
+    },
+    {
+        "id": "f34b4aa3.b7e",
+        "type": "olcnr-data-get",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": true,
+        "name": "",
+        "x": 540,
+        "y": 1100,
+        "wires": [
+            [
+                "192e1f8.740ea61"
+            ]
+        ]
+    },
+    {
+        "id": "fa86d6.46949128",
+        "type": "olcnr-data-get",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "c1987ef9.d65568",
+        "input": "set",
+        "output": "IDs",
+        "includeSubdetails": false,
+        "flattened": false,
+        "name": "",
+        "x": 980,
+        "y": 900,
+        "wires": [
+            [
+                "b62c6d7.ed8771"
+            ]
+        ]
+    },
+    {
+        "id": "f4552abd.5877",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "printbsc-full job.OL-outputpreset",
+        "name": "output: full job",
+        "x": 660,
+        "y": 200,
+        "wires": [
+            [
+                "a666a1ae.998a2"
+            ]
+        ]
+    },
+    {
+        "id": "99e66daf.de3cd",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "printbsc-per customer.OL-outputpreset",
+        "name": "output: per customer",
+        "x": 680,
+        "y": 260,
+        "wires": [
+            [
+                "a666a1ae.998a2"
+            ]
+        ]
+    },
+    {
+        "id": "5fc54d0c.0af8f4",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "printbsc-per invoice.OL-outputpreset",
+        "name": "output: individual invoices",
+        "x": 690,
+        "y": 320,
+        "wires": [
+            [
+                "a666a1ae.998a2"
+            ]
+        ]
+    },
+    {
+        "id": "d2d88a13.e07658",
+        "type": "olcnr-print-output",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "nodered-377-pdf-stationery.OL-outputpreset",
+        "name": "Print output",
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "de6e7508.d71c8"
+            ]
+        ]
+    },
+    {
+        "id": "c5e5a958.131c4",
+        "type": "olcnr-print-output",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "dmfull-full job.OL-outputpreset",
+        "name": "output: full job",
+        "x": 600,
+        "y": 1260,
+        "wires": [
+            [
+                "8169b9c5.0c4e78",
+                "de3008c9.e94b7"
+            ]
+        ]
+    },
+    {
+        "id": "34194aff.d0fcae",
+        "type": "olcnr-print-output",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "dmfull-full job.OL-outputpreset",
+        "name": "output: full job",
+        "x": 600,
+        "y": 1620,
+        "wires": [
+            [
+                "3019fbc3.8670cc",
+                "72464f82.2713f8"
+            ]
+        ]
+    },
+    {
+        "id": "dd36c177.6e0f",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "printchunk-full job.OL-outputpreset",
+        "name": "output: full job",
+        "x": 980,
+        "y": 1280,
+        "wires": [
+            [
+                "269cb89.3681148"
+            ]
+        ]
+    },
+    {
+        "id": "1711b666.81ba02",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "printbatch-full-job.OL-outputpreset",
+        "name": "output: full job",
+        "x": 780,
+        "y": 1640,
+        "wires": [
+            [
+                "9ecf387a.033098"
+            ]
+        ]
+    },
+    {
+        "id": "85e4d199.4611e8",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "printbsc-full job.OL-outputpreset",
+        "name": "output single PDF",
+        "x": 1010,
+        "y": 520,
+        "wires": [
+            [
+                "64e080b7.f6a71"
+            ]
+        ]
+    },
+    {
+        "id": "6306bd21.39458c",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "printbsc-per customer.OL-outputpreset",
+        "name": "output per customer",
+        "x": 1020,
+        "y": 580,
+        "wires": [
+            [
+                "c1a78b8a.93f558"
+            ]
+        ]
+    },
+    {
+        "id": "c660b28a.607ef",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "printbsc-per invoice.OL-outputpreset",
+        "name": "output individual invoices",
+        "x": 1030,
+        "y": 640,
+        "wires": [
+            [
+                "2b60acce.5b245c"
+            ]
+        ]
+    },
+    {
+        "id": "1688afe4.36211",
+        "type": "olcnr-print-output",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "outputPreset": "printbsc-per invoice.OL-outputpreset",
+        "name": "output individual invoices",
+        "x": 1110,
+        "y": 1900,
+        "wires": [
+            [
+                "52b5943c.3329b4"
+            ]
+        ]
+    },
+    {
+        "id": "ff90fde3.32c258",
+        "type": "olcnr-html-content",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "template": "htmlbsc-web page.OL-template",
+        "section": "",
+        "cssSelector": "",
+        "embedResources": false,
+        "name": "",
+        "x": 430,
+        "y": 100,
+        "wires": [
+            [
+                "1fbb7e31.e338a2"
+            ]
+        ]
+    },
+    {
+        "id": "26f856e0.bb087a",
+        "type": "olcnr-html-content",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "template": "htmlbsc-web page.OL-template",
+        "section": "",
+        "cssSelector": "",
+        "embedResources": false,
+        "name": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "3927e240.87ecee"
+            ]
+        ]
+    },
+    {
+        "id": "76a9c5b0.0be64c",
+        "type": "olcnr-html-content",
+        "z": "5131a1e3.fd76d8",
+        "connect_server": "c1987ef9.d65568",
+        "template": "COTG Timesheet Form.OL-template",
+        "section": "",
+        "cssSelector": "",
+        "embedResources": true,
+        "name": "",
+        "x": 690,
+        "y": 180,
+        "wires": [
+            [
+                "c6fba065.01061"
+            ]
+        ]
+    },
+    {
+        "id": "677279bc.7fb04",
+        "type": "olcnr-html-content",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "template": "htmlbsc-web page.OL-template",
+        "section": "",
+        "cssSelector": "",
+        "embedResources": false,
+        "name": "",
+        "x": 650,
+        "y": 380,
+        "wires": [
+            [
+                "5de5e230.dc95d4"
+            ]
+        ]
+    },
+    {
+        "id": "b5749849.3df4a",
+        "type": "olcnr-html-content",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "template": "htmlbsc-web page.OL-template",
+        "section": "",
+        "cssSelector": "",
+        "embedResources": false,
+        "name": "",
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "b1740f14.f4f57"
+            ]
+        ]
+    },
+    {
+        "id": "62d3412c.d1cd",
+        "type": "olcnr-html-content",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "template": "dmfull-multicontext.OL-template",
+        "section": "",
+        "cssSelector": "",
+        "embedResources": false,
+        "name": "html content",
+        "x": 590,
+        "y": 1080,
+        "wires": [
+            [
+                "58962d0d.f19abc"
+            ]
+        ]
+    },
+    {
+        "id": "ec2b41ee.9c61b8",
+        "type": "olcnr-html-content",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "template": "dmfull-multicontext.OL-template",
+        "section": "",
+        "cssSelector": "",
+        "embedResources": false,
+        "name": "html content",
+        "x": 590,
+        "y": 1440,
+        "wires": [
+            [
+                "a0df1a3c.a7fd98"
+            ]
+        ]
+    },
+    {
+        "id": "42699214.6cad54",
+        "type": "olcnr-html-content",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "template": "htmlrun-web page.OL-template",
+        "section": "",
+        "cssSelector": "",
+        "embedResources": true,
+        "name": "",
+        "x": 430,
+        "y": 740,
+        "wires": [
+            [
+                "b39365c1.7a7ce"
+            ]
+        ]
+    },
+    {
+        "id": "e48a822e.b495d",
+        "type": "olcnr-html-content",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "template": "htmlrun-web page.OL-template",
+        "section": "",
+        "cssSelector": "",
+        "embedResources": true,
+        "name": "",
+        "x": 430,
+        "y": 960,
+        "wires": [
+            [
+                "ec6428ae.90a1a8"
+            ]
+        ]
+    },
+    {
+        "id": "cc4b235.6244e6",
+        "type": "olcnr-html-content",
+        "z": "a7446b3d.e40398",
+        "connect_server": "c1987ef9.d65568",
+        "template": "htmlrun-web page.OL-template",
+        "section": "",
+        "cssSelector": "",
+        "embedResources": true,
+        "name": "",
+        "x": 430,
+        "y": 1180,
+        "wires": [
+            [
+                "9f7ef042.e63d68"
+            ]
+        ]
+    },
+    {
+        "id": "ba86a73.14a88d8",
+        "type": "olcnr-file-download",
+        "z": "d9a4e9bb.013ae",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 690,
+        "y": 100,
+        "wires": [
+            [
+                "429a0717.d686d8"
+            ]
+        ]
+    },
+    {
+        "id": "a02cfeda.99aff",
+        "type": "olcnr-file-download",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 890,
+        "y": 1140,
+        "wires": [
+            [
+                "93f3daa7.fa86f8"
+            ]
+        ]
+    },
+    {
+        "id": "7650b2f6.8de02c",
+        "type": "olcnr-file-download",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 890,
+        "y": 1200,
+        "wires": [
+            [
+                "fb82f568.f49b9"
+            ]
+        ]
+    },
+    {
+        "id": "f96c49b2.fac29",
+        "type": "olcnr-file-download",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 890,
+        "y": 1500,
+        "wires": [
+            [
+                "fcdd3b01.47d3e8"
+            ]
+        ]
+    },
+    {
+        "id": "29084b0f.1e8fbc",
+        "type": "olcnr-file-download",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 890,
+        "y": 1560,
+        "wires": [
+            [
+                "7663a907.4d8c88"
+            ]
+        ]
+    },
+    {
+        "id": "de6e7508.d71c8",
+        "type": "olcnr-file-download",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 750,
+        "y": 220,
+        "wires": [
+            [
+                "6b57d000.231228"
+            ]
+        ]
+    },
+    {
+        "id": "b8b1e175.044c6",
+        "type": "olcnr-file-download",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 890,
+        "y": 1260,
+        "wires": [
+            [
+                "7f790aa.954b074"
+            ]
+        ]
+    },
+    {
+        "id": "de3008c9.e94b7",
+        "type": "olcnr-file-download",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 890,
+        "y": 1320,
+        "wires": [
+            [
+                "1340a8d2.998c6f"
+            ]
+        ]
+    },
+    {
+        "id": "7a91fe10.9969e",
+        "type": "olcnr-file-download",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 890,
+        "y": 1620,
+        "wires": [
+            [
+                "db682080.f1189"
+            ]
+        ]
+    },
+    {
+        "id": "72464f82.2713f8",
+        "type": "olcnr-file-download",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 890,
+        "y": 1680,
+        "wires": [
+            [
+                "d636ce2.ed7073"
+            ]
+        ]
+    },
+    {
+        "id": "a503438e.4c4618",
+        "type": "olcnr-file-download",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 670,
+        "y": 1380,
+        "wires": [
+            [
+                "baf2bb3d.2ea3c8"
+            ]
+        ]
+    },
+    {
+        "id": "53582248.78652c",
+        "type": "olcnr-file-download",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 670,
+        "y": 1740,
+        "wires": [
+            [
+                "bb5e4789.de1878"
+            ]
+        ]
+    },
+    {
+        "id": "39bf6144.02d61e",
+        "type": "olcnr-file-download",
+        "z": "217b4fe9.13176",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "utf8",
+        "x": 730,
+        "y": 460,
+        "wires": [
+            [
+                "6bd3e05c.6557b",
+                "6f778c7d.d6a08c"
+            ]
+        ]
+    },
+    {
+        "id": "2c63bbf.5d801c4",
+        "type": "olcnr-file-download",
+        "z": "217b4fe9.13176",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "utf8",
+        "x": 730,
+        "y": 200,
+        "wires": [
+            [
+                "65c56781.431368",
+                "a95bc710.edbf88"
+            ]
+        ]
+    },
+    {
+        "id": "64e080b7.f6a71",
+        "type": "olcnr-file-download",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 1230,
+        "y": 520,
+        "wires": [
+            [
+                "505047dc.d26ce8"
+            ]
+        ]
+    },
+    {
+        "id": "c1a78b8a.93f558",
+        "type": "olcnr-file-download",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 1230,
+        "y": 580,
+        "wires": [
+            [
+                "c2ba0956.9cba58"
+            ]
+        ]
+    },
+    {
+        "id": "2b60acce.5b245c",
+        "type": "olcnr-file-download",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "23c3ba7a.febabe",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 1230,
+        "y": 640,
+        "wires": [
+            [
+                "3c1b3aea.3b92c6"
+            ]
+        ]
+    },
+    {
+        "id": "c30f99c1.39ff08",
+        "type": "olcnr-file-download",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "managedFileId": "",
+        "name": "",
+        "outputas": "",
+        "x": 730,
+        "y": 2000,
+        "wires": [
+            [
+                "9cf6773b.354f1"
+            ]
+        ]
+    },
+    {
+        "id": "8f97fb27.ab77a",
+        "type": "olcnr-file-upload",
+        "z": "d9a4e9bb.013ae",
+        "connect_server": "c1987ef9.d65568",
+        "filename": "",
+        "markAsPermanent": false,
+        "name": "",
+        "x": 490,
+        "y": 100,
+        "wires": [
+            [
+                "ba86a73.14a88d8",
+                "d695feb5.6f3ce"
+            ]
+        ]
+    },
+    {
+        "id": "b012747.0351588",
+        "type": "olcnr-file-upload",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "filename": "",
+        "markAsPermanent": false,
+        "name": "",
+        "x": 430,
+        "y": 360,
+        "wires": [
+            [
+                "8ba33a0.8b87848"
+            ]
+        ]
+    },
+    {
+        "id": "270e19fa.1e64f6",
+        "type": "olcnr-file-upload",
+        "z": "52e2b2e.d0444cc",
+        "connect_server": "c1987ef9.d65568",
+        "filename": "",
+        "markAsPermanent": true,
+        "name": "",
+        "x": 750,
+        "y": 360,
+        "wires": [
+            [
+                "f31a8c34.77f1f8"
+            ]
+        ]
+    },
+    {
+        "id": "fae47229.8b2d3",
+        "type": "olcnr-file-upload",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "c1987ef9.d65568",
+        "filename": "",
+        "markAsPermanent": false,
+        "name": "",
+        "x": 570,
+        "y": 900,
+        "wires": [
+            [
+                "9dd833b9.9048a"
+            ]
+        ]
+    },
+    {
+        "id": "1e468549.373fe3",
+        "type": "olcnr-print-content",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "template": "printbsc-invoice.OL-template",
+        "name": "print content",
+        "x": 650,
+        "y": 120,
+        "wires": [
+            [
+                "7cc2b95d.0b8f6",
+                "471a9f2c.18c1b"
+            ]
+        ]
+    },
+    {
+        "id": "352de1ea.a2552e",
+        "type": "olcnr-print-content",
+        "z": "7e87d273.bb52c4",
+        "connect_server": "c1987ef9.d65568",
+        "template": "nodered-377-invoice.OL-template",
+        "name": "Print content",
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "553c4dca.a0ca0c"
+            ]
+        ]
+    },
+    {
+        "id": "330776f0.afe11a",
+        "type": "olcnr-print-content",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "template": "dmfull-multicontext.OL-template",
+        "name": "print content",
+        "x": 290,
+        "y": 1260,
+        "wires": [
+            [
+                "c44a81b.f106a"
+            ]
+        ]
+    },
+    {
+        "id": "d7a51875.487f18",
+        "type": "olcnr-print-content",
+        "z": "65f6e63.e225a18",
+        "connect_server": "c1987ef9.d65568",
+        "template": "dmfull-multicontext.OL-template",
+        "name": "print content",
+        "x": 290,
+        "y": 1620,
+        "wires": [
+            [
+                "c77f6669.a6c9c"
+            ]
+        ]
+    },
+    {
+        "id": "daba6612.85acc8",
+        "type": "olcnr-print-content",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "template": "printchunk-invoice.OL-template",
+        "name": "print content",
+        "x": 550,
+        "y": 1280,
+        "wires": [
+            [
+                "a6b80567.9d209"
+            ]
+        ]
+    },
+    {
+        "id": "1487eabe.3166e5",
+        "type": "olcnr-print-content",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "template": "printbatch-letter.OL-template",
+        "name": "print content",
+        "x": 1010,
+        "y": 1540,
+        "wires": [
+            [
+                "23ae6c35.242344"
+            ]
+        ]
+    },
+    {
+        "id": "c0d628b0.1da9a",
+        "type": "olcnr-print-content",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "template": "printbsc-invoice.OL-template",
+        "name": "print content",
+        "x": 670,
+        "y": 520,
+        "wires": [
+            [
+                "5eb72b68.a5d014"
+            ]
+        ]
+    },
+    {
+        "id": "6e543ad5.a2c454",
+        "type": "olcnr-print-content",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "template": "printbsc-invoice.OL-template",
+        "name": "print content",
+        "x": 770,
+        "y": 1900,
+        "wires": [
+            [
+                "9f26332a.69782"
+            ]
+        ]
+    },
+    {
         "id": "7e6de27f.e215e4",
         "type": "olcnr-cotg-publish",
         "z": "5131a1e3.fd76d8",
-        "cotg_server": "ce432802.f887c",
+        "cotg_server": "8fac3107.fd6688",
         "name": "",
         "x": 890,
         "y": 260,
@@ -8660,6 +8755,46 @@
             [
                 "81ab6793.c48738",
                 "954e05d6.52418"
+            ]
+        ]
+    },
+    {
+        "id": "ea668aa1.990eb8",
+        "type": "olcnr-all-in-one",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "printbsc-transactional xml.OL-datamapper",
+        "template": "",
+        "jobPreset": "",
+        "outputPreset": "",
+        "persistData": false,
+        "name": "all in one - full",
+        "x": 620,
+        "y": 940,
+        "wires": [
+            [
+                "bcdac458.f7e99",
+                "7c356ed5.03e74"
+            ]
+        ]
+    },
+    {
+        "id": "e0f48daa.353608",
+        "type": "olcnr-all-in-one",
+        "z": "1d910b2e.85ebd5",
+        "connect_server": "c1987ef9.d65568",
+        "dataMapper": "printbsc-transactional xml.OL-datamapper",
+        "template": "printbsc-invoice.OL-template",
+        "jobPreset": "printbsc-group customers.OL-jobpreset",
+        "outputPreset": "printbsc-per invoice.OL-outputpreset",
+        "persistData": true,
+        "name": "all in one - group customers",
+        "x": 480,
+        "y": 760,
+        "wires": [
+            [
+                "c12c7b33.112c3",
+                "521ed59b.625d64"
             ]
         ]
     }
