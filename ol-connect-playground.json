@@ -119,9 +119,7 @@
             "d8c4a31d.56e38"
         ],
         "x": 34,
-        "y": 399,
-        "w": 1172,
-        "h": 282
+        "y": 399
     },
     {
         "id": "1a9d1481.5387cb",
@@ -222,14 +220,12 @@
     {
         "id": "c1987ef9.d65568",
         "type": "OL Connect Server",
-        "z": "",
         "url": "http://192.168.2.245:9340",
         "name": ""
     },
     {
         "id": "8fac3107.fd6688",
         "type": "OL COTG Server",
-        "z": "",
         "server": "nubook",
         "privateURL": "https://localhost/cotg/wp-json/cotg/v1/documents",
         "name": ""
@@ -4992,7 +4988,7 @@
                 "t": "set",
                 "p": "project",
                 "pt": "global",
-                "to": "/data/projects/OL-Connect-playground-for-Node-RED",
+                "to": ".node-red/projects/OL-Connect-playground-for-Node-RED",
                 "tot": "str"
             },
             {
