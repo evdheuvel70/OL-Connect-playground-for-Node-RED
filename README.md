@@ -16,7 +16,7 @@ To change the base parameters of the project:
  * Open the properties of the **Set Globals** step
     * Set the **project** global to the location of the checked out playground files
         * When running a Node-RED in a container this could be something like: /data/projects/OL-Connect-playground-for-Node-RED
-        * Running on a local machine this may look like: C:\Users\{username}\.node-red/projects/OL-Connect-playground-for-Node-RED
+        * Running on a local machine this may look like: C:/Users/{username}/.node-red/projects/OL-Connect-playground-for-Node-RED
     * Set the **email** global to your email address
  * Open the properties of the **File upload** step
     * Click the **Edit** button of the Server option and enter the location and credentials of your OL Connect Server. This will update the **Connect Server configuration** for all flows.
