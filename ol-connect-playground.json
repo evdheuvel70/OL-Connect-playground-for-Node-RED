@@ -6343,7 +6343,7 @@
         "y": 1900,
         "wires": [
             [
-                "77e3db1.036b124"
+                "4e375d0.2429ca4"
             ]
         ]
     },
@@ -6357,7 +6357,7 @@
                 "t": "set",
                 "p": "filename",
                 "pt": "msg",
-                "to": "msg.out & '/' & msg.managedFileName",
+                "to": "$globalContext('output') & 'printcontent/split job/' & msg.managedFileName",
                 "tot": "jsonata"
             }
         ],
@@ -6389,33 +6389,6 @@
         "wires": [
             [
                 "e7d8682a.54a1e"
-            ]
-        ]
-    },
-    {
-        "id": "77e3db1.036b124",
-        "type": "change",
-        "z": "1d910b2e.85ebd5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "out",
-                "pt": "msg",
-                "to": "/data/projects/OL-Connect-playground-for-Node-RED/workspace/output/printcontent/split job",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 430,
-        "y": 1900,
-        "wires": [
-            [
-                "4e375d0.2429ca4"
             ]
         ]
     },
@@ -7142,7 +7115,7 @@
         "dataMapper": "printbsc-transactional xml.OL-datamapper",
         "active": false,
         "name": "data mapping",
-        "x": 600,
+        "x": 440,
         "y": 1900,
         "wires": [
             [
@@ -7504,7 +7477,7 @@
         "connect_server": "c1987ef9.d65568",
         "jobPreset": "printbsc-group customers.OL-jobpreset",
         "name": "print job",
-        "x": 920,
+        "x": 760,
         "y": 1900,
         "wires": [
             [
@@ -8046,7 +8019,7 @@
         "connect_server": "c1987ef9.d65568",
         "outputPreset": "printbsc-per invoice.OL-outputpreset",
         "name": "output individual invoices",
-        "x": 1110,
+        "x": 950,
         "y": 1900,
         "wires": [
             [
@@ -8702,7 +8675,7 @@
         "connect_server": "c1987ef9.d65568",
         "template": "printbsc-invoice.OL-template",
         "name": "print content",
-        "x": 770,
+        "x": 610,
         "y": 1900,
         "wires": [
             [
