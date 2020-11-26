@@ -63,20 +63,6 @@
         "info": ""
     },
     {
-        "id": "5c61743a.bb9a0c",
-        "type": "tab",
-        "label": "Recovered Nodes",
-        "disabled": false,
-        "info": "The nodes on this flow were missing a valid flow id when they were imported. They have been added to this flow so you can either restore or delete them."
-    },
-    {
-        "id": "4d4aab0b.91b6a4",
-        "type": "tab",
-        "label": "Recovered Nodes",
-        "disabled": false,
-        "info": "The nodes on this flow were missing a valid flow id when they were imported. They have been added to this flow so you can either restore or delete them."
-    },
-    {
         "id": "c3595fe9.6f8168",
         "type": "subflow",
         "name": "Create Runtime Parameters",
@@ -232,21 +218,6 @@
                 "py": 0
             }
         }
-    },
-    {
-        "id": "23c3ba7a.febabe",
-        "type": "OL Connect Server",
-        "z": "5c61743a.bb9a0c",
-        "url": "http://192.168.2.245:9340",
-        "name": ""
-    },
-    {
-        "id": "ce432802.f887c",
-        "type": "OL COTG Server",
-        "z": "4d4aab0b.91b6a4",
-        "server": "nubook",
-        "privateURL": "https://localhost/cotg/wp-json/cotg/v1/documents",
-        "name": ""
     },
     {
         "id": "c1987ef9.d65568",
@@ -8497,7 +8468,7 @@
         "id": "64e080b7.f6a71",
         "type": "olcnr-file-download",
         "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
+        "connect_server": "c1987ef9.d65568",
         "managedFileId": "",
         "name": "",
         "outputas": "",
@@ -8513,7 +8484,7 @@
         "id": "c1a78b8a.93f558",
         "type": "olcnr-file-download",
         "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
+        "connect_server": "c1987ef9.d65568",
         "managedFileId": "",
         "name": "",
         "outputas": "",
@@ -8529,7 +8500,7 @@
         "id": "2b60acce.5b245c",
         "type": "olcnr-file-download",
         "z": "1d910b2e.85ebd5",
-        "connect_server": "23c3ba7a.febabe",
+        "connect_server": "c1987ef9.d65568",
         "managedFileId": "",
         "name": "",
         "outputas": "",
